@@ -5,7 +5,7 @@ title: "「アート思考」の話"
 description: "「アート思考」という言葉は、「過去や常識に囚われることなく、自由にアイデアを出す発想法」という意味で使われることが多い。しかし、それは本物のアーティストの思考法なのだろうか？"
 show_description: true
 thumbnail: /assets/blog/2020-11-23-art-thinking/thumbnail.jpg
-updated: 2020-11-25
+updated: 2020-11-27
 ---
 
 {% figure caption:"サンドロ・ボッティチェッリの絵画《ヴィーナスの誕生》" %}
