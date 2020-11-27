@@ -4,3 +4,5 @@ public
 .DS_Store
 node_modules
 .jekyll-cache
+docs
+node_modules

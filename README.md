@@ -17,6 +17,12 @@ Development or Authoring
 $ bundle exec jekyll serve --watch --future
 ```
 
+or you can specify `host` and `port`:
+
+```console
+$ bundle exec jekyll serve --watch --future --host 192.168.10.3 --port 4004
+```
+
 CAUTION: You shouldn't deploy generated files since URLs in them are 'localhost.'
 注意: 書き出されたファイル中のURLがlocalhostになっているので、そのままデプロイしてはいけない。
 
@@ -25,7 +31,7 @@ Build
 -----
 
 ```console
-$ bundle exec jekyll build
+$ ./deploy.sh
 ```
 
 Deployment
