@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>インフォメーション・アーキテクチャを設計するアプローチのコペルニクス的転回 エコシステムとユーザー・エクスペリエンスの重視へ | 石橋秀仁 (Hide Ishi)</title>
+    <meta name="description" content="インフォメーション・アーキテクチャの設計パラダイムが変わりつつあります。この変化は、サービスデザインというパラダイムとも深く関係しています。">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/print.css" media="print">
+    <link rel="canonical" href="https://hideishi.com/blog/2014/04/25/copernican-turn-on-information-architecture.html">
+    <link href="/favicon.png" type="image/png" rel="icon">
+    <link href="/favicon.png" rel="apple-touch-icon">
+    <link rel="pgpkey" href="/hideishi.pubkey.asc"/>
+    <link href="/atom.xml" rel="alternate" title="石橋秀仁 (Hide Ishi)" type="application/atom+xml">
+    <meta property="og:title" content="インフォメーション・アーキテクチャを設計するアプローチのコペルニクス的転回 エコシステムとユーザー・エクスペリエンスの重視へ">
+    <meta property="og:description" content="インフォメーション・アーキテクチャの設計パラダイムが変わりつつあります。この変化は、サービスデザインというパラダイムとも深く関係しています。">
+    <meta property="og:url" content="https://hideishi.com/blog/2014/04/25/copernican-turn-on-information-architecture.html">
+    <meta property="og:image" content="https://hideishi.com/assets/blog/2014-04-25-copernican-turn-on-information-architecture/thumbnail.png">
+    <meta property="og:site_name" content="石橋秀仁 (Hide Ishi)">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="og:type" content="article">
+    <meta property="fb:app_id" content="422391257870402">
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:creator" content="@zerobase" />
+    <meta name="twitter:title" content="インフォメーション・アーキテクチャを設計するアプローチのコペルニクス的転回 エコシステムとユーザー・エクスペリエンスの重視へ" />
+    <meta name="twitter:description" content="インフォメーション・アーキテクチャの設計パラダイムが変わりつつあります。この変化は、サービスデザインというパラダイムとも深く関係しています。" />
+    <meta name="twitter:image" content="https://hideishi.com/assets/blog/2014-04-25-copernican-turn-on-information-architecture/thumbnail.png">
+  </head>
+  <body>
+    <header class="site header">
+      <nav class="top_navigation container">
+        <ul class="top_navigation-items">
+          <li>
+            <a href="/">
+              <img alt="石橋秀仁の顔の写真" src="/assets/site_id.png" class="vid">
+            </a>
+          </li>
+          <li class="active">
+            <a href="/blog/">ブログ</a>
+          </li>
+          <li >
+            <a href="/activity/">活動</a>
+          </li>
+          <li >
+            <a href="/podcast/">Podcast</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="main container">
+      <main class="blog post">
+        <article>
+          <header>
+            <h1 class="page title">
+              インフォメーション・アーキテクチャを設計するアプローチのコペルニクス的転回
+              <span class="meta subtitle">エコシステムとユーザー・エクスペリエンスの重視へ</span>
+            </h1>
+            <p class="meta author">石橋秀仁 (Hide Ishi)</p>
+            <p class="meta time">2014年04月25日（2016年04月19日更新）</p>
+                </header>
+          <section class="article-body">
+            <p><img src="/assets/blog/2014-04-25-copernican-turn-on-information-architecture/ia-books.jpg" alt="インフォメーション・アーキテクチャ関連書籍"></p>
+            <p>インフォメーション・アーキテクチャの設計パラダイムが変わりつつあります。この変化は、<strong>サービスデザイン</strong>というパラダイムとも深く関係しています。</p>
+            <h2 id="対象読者">対象読者</h2>
+            <p>情報建築（インフォメーション・アーキテクチャ／IA）という言葉を知っている人を対象とした文章です。</p>
+            <h2 id="客観的情報を扱う古典的アプローチから主観的経験を扱う現代的アプローチへ">客観的情報を扱う古典的アプローチから、主観的経験を扱う現代的アプローチへ</h2>
+            <p>情報建築の古典的な設計アプローチ <sup id="fnref:Resmini2013" role="doc-noteref"><a href="#fn:Resmini2013" class="footnote">1</a></sup> の端緒となった記念碑的な著作は、ローゼンフェルドとモービルによる<strong>『Web情報アーキテクチャ』</strong>です。 <sup id="fnref:PolarBear" role="doc-noteref"><a href="#fn:PolarBear" class="footnote">2</a></sup> その表紙のイラストから「シロクマ本」とも呼ばれています。著者らのバックグラウンドは図書館情報学 <sup id="fnref:LIS" role="doc-noteref"><a href="#fn:LIS" class="footnote">3</a></sup> という分野です。私見ですが、現代的なアプローチに比べると、ウェブサイトというモノ（アーティファクト）や、情報「そのもの」に注目するアプローチだと思います。</p>
+            <p>一方の現代的アプローチは、<strong>ユーザー・エクスペリエンス</strong>という抽象的な物事を重視します。 <sup id="fnref:UX" role="doc-noteref"><a href="#fn:UX" class="footnote">4</a></sup> そのときには「自分たちが作る物」だけでなく、「他者が作る物」も一緒に考える必要が生じます。言い換えると、<strong>情報のエコシステム（生態系）</strong>のなかに「自分たちが作る物」を位置づけていくような思考法が大事になってきます。</p>
+            <h2 id="エコシステムとユーザーエクスペリエンスを重視してデザインコンセプトを考える">エコシステムとユーザー・エクスペリエンスを重視してデザイン・コンセプトを考える</h2>
+            <p>例えば<a href="http://tabelog.com/" target="_blank">食べログ</a>を現代的アプローチで考えてみましょう：</p>
+            <blockquote>
+              <p>AndroidのGoogle Nowで「付近のレストラン」を見て、食べログにアクセスした。この店については、以前に雑誌か何かで見たような気がする。食べログのレビューを見てお店を決めたら、Google Mapsのナビ機能でお店に向かった。（中略）お店に行った後で、Facebookにシェアした。友人から「いいね！」やコメントをもらえた。</p>
+            </blockquote>
+            <p>このようにユーザー・エクスペリエンスを理解していきます。ここにはGoogle Now、Google Maps、Facebookなどが登場します。食べログだけを考えるのではなく、「ユーザーにとって食べログを使うとは一体どういうことか」を大きな枠組で考えようとします。大きな枠組とは、「<strong>情報のエコシステム</strong>」、あるいは少し限定すると「ウェブのエコシステム」のことです。</p>
+            <p>また、「ユーザー同士のやりとり」 <sup id="fnref:SX" role="doc-noteref"><a href="#fn:SX" class="footnote">5</a></sup> を理解することも大事です。上の例で書かれたレビューを、別のユーザーが読んだと想定してみます：</p>
+            <blockquote>
+              <p>レビューを書いた友人とやりとりして、自分も行きたくなってきたので、お店をEvernoteにクリッピングしておいた。数カ月後、実際に行くことになった。薦められた料理は、たしかに良かったので満足できた。帰宅中の電車でFacebookに投稿し、さっそく友人に報告した。さらに数カ月後、別の友人を誘って行った。</p>
+            </blockquote>
+            <p>こういったユーザー理解に基づいて、例えば「人と人が幸せな時間を共有する『レストラン体験』に携わるメディアとして、食べログには何ができるだろうか」などと考えます。いわゆる<strong>デザイン・コンセプト</strong>（設計理念）の検討です。 <sup id="fnref:disclaimer" role="doc-noteref"><a href="#fn:disclaimer" class="footnote">6</a></sup></p>
+            <h2 id="自社中心主義から顧客中心主義へ">自社中心主義から顧客中心主義へ</h2>
+            <p>情報建築の世界では、だいたい10年間かけて、上述のようなパラダイム・シフトが起こりました。それをもう少し抽象的に説明します。</p>
+            <p>古典的アプローチは<strong>天動説</strong>的です。自社のまわりに沢山のユーザーがいて、その一部が自社サイトにやってくるのだと。そうしてやったきたユーザーの自社サイト内行動を最適化するのだと。</p>
+            <p>一方、現代的アプローチは<strong>地動説</strong>的です。ユーザーの周りを我々事業者が回っているのだと。ユーザーが「選ぶ立場」であり、我々事業者は「選ばれる立場」で競争しているのだと。自社を含むたくさんのサービス提供者が、ユーザーの周りを取り囲んでエコシステムを作っているのだと。</p>
+            <p>そこでユーザーから選ばれるためには、ユニークな価値を訴求しなければならない、言い換えれば、「この指とまれ」と主張しなければならない、というのが松井道夫氏の考えです。 <sup id="fnref:Matsui" role="doc-noteref"><a href="#fn:Matsui" class="footnote">7</a></sup> 松井氏は「地動説」の立場で次のように語ります：</p>
+            <blockquote>
+              <p>一人一人のお客さまの前には指が無数に立っているんです。どの指に止まろうかな、掴もうかなというのはお客さまの勝手です。お客さまは自分にとってのナンバーワンの指を掴むんです。それは業界のナンバーワンでもなんでもないんです。それを勘違いするなよと。お客さまは掴んだ指を未来永劫離さないなんてことはないんです。気に食わなかったらすぐそれを手離して他の指を掴むというのが当たり前なんです。</p>
+              <p>お客さまが中心の世の中になった時、一体企業はどういうことをしなければならないのか。。やはり、今までのような20世紀的な発想で物事を考えているのでは駄目です。組織だって変わらなければならない。お客さまが全てを決める。顧客中心主義なんです。（後略）</p>
+            </blockquote>
+            <p>ユーザーは、自社のサービスだけを使うわけではなく、様々なサービスを併用するでしょう。食べログはGoogle MapsやFacebookと併用されたりするわけです。ですから天動説的・自社中心的な発想ではダメです。地動説的・エコシステム的な考え方が大事になってきます。</p>
+            <h2 id="クロスチャネルな設計への挑戦">クロスチャネルな設計への挑戦</h2>
+            <p>ユーザーが複数のチャネルをまたいで行動することも考慮しなければなりません。このようにチャネルをまたぐ行動のことを<strong>クロスチャネル</strong>といいます。 <sup id="fnref:CrossChannel" role="doc-noteref"><a href="#fn:CrossChannel" class="footnote">8</a></sup></p>
+            <p>例えば、もしGmailのようなサービスを設計するならば、「スマートフォンでメールチェックしておいて、あとでデスクに戻ってからPCで返信する」といったクロスチャネルな使い方がスムーズにできるようデザインしなければなりません。</p>
+            <p>クロスチャネルなサービスデザインは、紙媒体や放送媒体といったチャネルにまで広がりうるでしょう。例えば、紙のカタログからスマートフォンで注文して、店頭で受け取ったり。テレビ画面のハッシュタグを見て生放送番組に関してツイートすることでポイントがもらえたり。</p>
+            <p>このようなクロスチャネルなサービスデザインが可能になりました。うまく設計すればユーザーの行動の自由度が高まり、よりよいユーザーエクスペリエンスにつながります。しかし、自由度が高まるということは、ユーザーの行動を一定のパターンに押し込めて制御できなくなったということです。設計は難しくなり、コストもかかります。</p>
+            <h2 id="デザインコンセプトは価値の訴求である">デザイン・コンセプトは「価値の訴求」である</h2>
+            <p>前述のように、「よりよいユーザーエクスペリエンス」について考えるのが現代的アプローチですが、そもそも「よりよいユーザーエクスペリエンス」とは何なのでしょうか。たいへん難しい問いですが、これを考えるのは大事なことです。</p>
+            <p>私の考えでは、そういった思想的・哲学的な対話を通じて<strong>デザイン・コンセプト</strong>を練り上げていくことが、現代的な情報建築の設計において重要な手順です。デザイン・コンセプトは、市場や社会に対して<strong>ユニークな価値を訴求</strong>するもの <sup id="fnref:ValueProposition" role="doc-noteref"><a href="#fn:ValueProposition" class="footnote">9</a></sup> でなければならない、というのが私の考えです。言い換えれば、「この指とまれ」と指を立てることです。あるいは、自分たちの矜持を示すということでもあります。</p>
+            <h2 id="まとめ現代的アプローチの概要">まとめ：現代的アプローチの概要</h2>
+            <p>この文章では、最初に情報建築を設計する際の「古典的アプローチ」と「現代的アプローチ」の違いを説明しました。現代的アプローチでは、「顧客中心」の考え方で、「市場のナンバーワン」よりも「そのユーザーにとってのナンバーワン」を目指します。そのとき大事なのが「ユニークな価値の訴求」や「デザイン・コンセプト」です。そのためにはユーザーを十分に理解する必要があります。ユーザーの主観的な「ユーザー・エクスペリエンス」と、ユーザーを取り巻く「エコシステム」の理解です。また、デバイスの多様化とクラウドの存在を前提に、「クロスチャネル」な設計に取り組むことが求められます。</p>
+            <h2 id="さらなる探求">さらなる探求</h2>
+            <p>この文章の内容をさらに抽象的に大きなスケールで考えたい人には、デザイン理論家クラウス・クリッペンドルフの『<a href="http://www.amazon.co.jp/dp/4434130331" target="_blank">意味論的転回−デザインの新しい基礎理論</a>』を参照して頂ければと思います。デザインの対象は、時代を通じて、個別のプロダクトからサービスへ、そして「エコシステム」へと移ってきた、という認識から出発しています。詳しくは<a href="http://ja.ishibashihideto.net/blog/semantic-turn/" target="_blank">ユーザー・エクスペリエンスについて考える人に読んで欲しいクリッペンドルフの『意味論的転回−デザインの新しい基礎理論』</a>でも紹介しています。</p>
+            <p>「エコシステム」という考え方は、経営学の観点から深めることもできます。三宅秀道著『<a href="http://www.amazon.co.jp/dp/4492522050" target="_blank">新しい市場のつくりかた―明日のための「余談の多い」経営学</a>』には「価値のエコシステムをデザインせよ」という章があり、目線の高い事業構想の在り方が論じられています。また、野中郁次郎他『<a href="http://www.amazon.co.jp/dp/4492521828" target="_blank">流れを経営する–持続的イノベーション企業の動態理論</a>』では、環境（生態系）は決して固定しておらず、流れ（動詞的プロセス）のなかにあるのだと論じられており、またそのような変化（イノベーション）を起こすための方法（知識創造理論）が論じられています。</p>
+            <h2 id="参考文献">参考文献</h2>
+            <ul>
+              <li>石橋 秀仁、<a href="http://ja.ishibashihideto.net/blog/why-society-needs-ia/" target="_blank">なぜ社会には情報建築家が必要なのか？</a>、2013年</li>
+              <li>石橋 秀仁、<a href="http://ja.ishibashihideto.net/blog/semantic-turn/" target="_blank">ユーザー・エクスペリエンスについて考える人に読んで欲しいクリッペンドルフの『意味論的転回−デザインの新しい基礎理論』</a>、2013年</li>
+              <li>クラウス クリッペンドルフ 著、小林 昭世、西澤 弘行、川間 哲夫、氏家 良樹、國澤 好衛、小口 裕史、蓮池 公威 訳、<a href="http://www.amazon.co.jp/dp/4434130331" target="_blank">意味論的転回−デザインの新しい基礎理論</a>、2009年</li>
+              <li>三宅 秀道、<a href="http://www.amazon.co.jp/dp/4492522050" target="_blank">新しい市場のつくりかた―明日のための「余談の多い」経営学</a>、2012年</li>
+              <li>野中 郁次郎 他、<a href="http://www.amazon.co.jp/dp/4492521828" target="_blank">流れを経営する–持続的イノベーション企業の動態理論</a>、2010年</li>
+              <li>大林 寛、<a href="http://www.architexture.jp/201402/588.html" target="_blank">経験主義のエクスペリエンスデザイン</a>、2014年</li>
+              <li>プレジデントビジョン、松井証券株式会社 代表取締役社長 松井 道夫 氏インタビュー、<a href="http://www.president-vision.com/index.php?state=backnumber&amp;action=view&amp;id=134" target="_blank">自分達にとって一番不利なことを考えろ</a>、2004年</li>
+              <li>Andrea Resmini, Luca Rosati, <a href="http://pervasiveia.com/" target="_blank">Pervasive Information Architecture: Designing Cross-Channel User Experiences</a>, 2011</li>
+              <li>Andrea Resmini, <a href="http://andrearesmini.com/blog/the-architecture-of-information" target="_blank">The Architecture of Information</a>, 2013</li>
+              <li>Louis Rosenfeld, Peter Morville 共著、篠原 稔和 監訳、牧之瀬 みどり、長谷川 智可 共訳、<a href="http://www.oreilly.co.jp/out/inforarc/" target="_blank">情報アーキテクチャ（初版）</a>、1998年</li>
+              <li>Louis Rosenfeld, Peter Morville著、篠原 稔和 監訳、ソシオメディア株式会社 訳、<a href="http://www.oreilly.co.jp/books/487311134X/" target="_blank">Web情報アーキテクチャ（第2版）</a>、2003年</li>
+              <li>Christina Wodtke, <a href="https://medium.com/user-experience-design-1/f38b5cc904c0" target="_blank">Towards a New Information Architecture</a>, 2014</li>
+            </ul>
+            <iframe src="https://rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&amp;bc1=000000&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=hidetoi-22&amp;o=9&amp;p=8&amp;l=as4&amp;m=amazon&amp;f=ifr&amp;ref=ss_til&amp;asins=487311134X" style="width:120px;height:240px;border:none;"></iframe>
+            <iframe src="https://rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&amp;bc1=000000&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=hidetoi-22&amp;o=9&amp;p=8&amp;l=as4&amp;m=amazon&amp;f=ifr&amp;ref=ss_til&amp;asins=4873112834" style="width:120px;height:240px;border:none;"></iframe>
+            <iframe src="https://rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&amp;bc1=000000&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=hidetoi-22&amp;o=9&amp;p=8&amp;l=as4&amp;m=amazon&amp;f=ifr&amp;ref=ss_til&amp;asins=0123820944" style="width:120px;height:240px;border:none;"></iframe>
+            <iframe src="https://rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&amp;bc1=000000&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=hidetoi-22&amp;o=9&amp;p=8&amp;l=as4&amp;m=amazon&amp;f=ifr&amp;ref=ss_til&amp;asins=4492522050" style="width:120px;height:240px;border:none;"></iframe>
+            <iframe src="https://rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&amp;bc1=000000&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=hidetoi-22&amp;o=9&amp;p=8&amp;l=as4&amp;m=amazon&amp;f=ifr&amp;ref=ss_til&amp;asins=4492521828" style="width:120px;height:240px;border:none;"></iframe>
+            <div class="footnotes" role="doc-endnotes">
+              <ol>
+                <li id="fn:Resmini2013" role="doc-endnote">
+                  <p>「古典的情報建築」 (classical information architectutre) という言葉は <a href="http://andrearesmini.com/blog/the-architecture-of-information" target="_blank">The Architecture of Information</a> からとりました。次の「現代的情報建築」 (contemporary information architecture) も同様です。 <a href="#fnref:Resmini2013" class="reversefootnote" role="doc-backlink">↩</a></p>
+                </li>
+                <li id="fn:PolarBear" role="doc-endnote">
+                  <p>1998年の『[情報アーキテクチャ入門（初版）]』および2003年の『<a href="http://www.oreilly.co.jp/books/487311134X/" target="_blank">Web情報アーキテクチャ（第2版）</a>』 <a href="#fnref:PolarBear" class="reversefootnote" role="doc-backlink">↩</a></p>
+                </li>
+                <li id="fn:LIS" role="doc-endnote">
+                  <p>図書館情報学は英語の “Library and Information Science (LIS)” のことです。 <a href="#fnref:LIS" class="reversefootnote" role="doc-backlink">↩</a></p>
+                </li>
+                <li id="fn:UX" role="doc-endnote">
+                  <p>古典的アプローチでも、ユーザー・エクスペリエンスを考えていなかったわけではありません。何が違うかといえば、私見では、現代的アプローチは「ユーザー・エクスペリエンス思考ありき」です。それに比べれば、古典的アプローチはそこまでユーザー・エクスペリエンス重視ではありませんでした。 <a href="#fnref:UX" class="reversefootnote" role="doc-backlink">↩</a></p>
+                </li>
+                <li id="fn:SX" role="doc-endnote">
+                  <p>「ユーザー同士のやりとり」を（細かいニュアンスを無視して）短く言えば「社交経験」や「社会経験」になります。これは英語の “social experience” に対応します。 <a href="#fnref:SX" class="reversefootnote" role="doc-backlink">↩</a></p>
+                </li>
+                <li id="fn:disclaimer" role="doc-endnote">
+                  <p>これは現代的アプローチのイメージですが、あくまでも精度の低い架空のサンプルであることをお断りしておきます。実際には、それなりの時間と費用をかけて調査する必要があるでしょう。また、「何のためにこのようなシナリオを作るのか」「このシナリオを使ってどうするのか」というゴールイメージとプロセスイメージにもとづいて、作業を計画し、実際に作業します。その意味でも、上に書いたサンプルは、ほとんど無意味な作文でしかありません。設計の実例ではなく、架空の例ということで、ご了承ください。 <a href="#fnref:disclaimer" class="reversefootnote" role="doc-backlink">↩</a></p>
+                </li>
+                <li id="fn:Matsui" role="doc-endnote">
+                  <p>松井道夫氏は第4代松井証券社長。引用した発言は『<a href="http://www.president-vision.com/index.php?state=backnumber&amp;action=view&amp;id=134" target="_blank">自分達にとって一番不利なことを考えろ</a>』に掲載されたもの。 <a href="#fnref:Matsui" class="reversefootnote" role="doc-backlink">↩</a></p>
+                </li>
+                <li id="fn:CrossChannel" role="doc-endnote">
+                  <p>クロスチャネル・ユーザー・エクスペリエンス (cross-channel user experiences) については “<a href="http://pervasiveia.com/" target="_blank">Pervasive Information Architecture: Designing Cross-Channel User Experiences</a>” で詳しく論じられています。 <a href="#fnref:CrossChannel" class="reversefootnote" role="doc-backlink">↩</a></p>
+                </li>
+                <li id="fn:ValueProposition" role="doc-endnote">
+                  <p>「価値の訴求」はマーケティング分野で使われている言葉です。「価値を訴える」「売り込む」ということです。また近年は「企業にとっての価値と社会にとっての価値を両立させること」 (Creating Shared Value, CSV) が経営分野でも重視されるようになってきています。「価値の訴求」は益々重要になってきていると言えます。 <a href="#fnref:ValueProposition" class="reversefootnote" role="doc-backlink">↩</a></p>
+                </li>
+              </ol>
+            </div>
+          </section>
+          <footer>
+          </footer>
+        </article>
+      </main>
+    </div>
+    <footer class="site footer">
+      <div class="copyrights container">
+        <a rel="license" href="https://creativecommons.org/licenses/by/4.0/" target="_blank"><img alt="Creative Commons License" style="border-width:0" src="/assets/cc-by-88x31.png" width="88" height="31"></a> <a href="/">石橋秀仁 (Hide Ishi)</a>
+      </div>
+    </footer>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-41591703-2']);
+      _gaq.push(['_trackPageview']);
+      
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>
