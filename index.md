@@ -11,10 +11,7 @@ description: インフォメーション・アーキテクト石橋秀仁のウ�
 [ゼロベース株式会社][zerobase]  
 代表取締役／情報アーキテクト
 
-[GMO VenturePartners 株式会社][gmo-vp]  
-デザインフェロー
-
-久留米高専卒業後、日本最大級の就活コミュニティJobwebのプログラマー(2000-2002)を経て2003年に独立。2004年に[ゼロベース][zerobase]を創業し、同年ベンチャーキャピタル[GMO-VP][gmo-vp]のデザインフェローに就任。[情報アーキテクト(IA)][information-architect]として、インターネットやソフトウェアに関する開発、批評、および[スタートアップ支援][startup-consulting]に取り組んでいる。モットーは「[思想を実装する][philosophy]」。[アートファン][art-experience]。
+久留米高専卒業後、日本最大級の就活コミュニティJobwebのプログラマー（2000-2002）を経て2003年に独立。2004年に[ゼロベース][zerobase]を創業。同年ベンチャーキャピタル[GMO-VP][gmo-vp]のデザインフェローに就任。[情報アーキテクト（IA）][information-architect]として、インターネットやソフトウェアに関する開発、批評、および[スタートアップ支援][startup-consulting]に取り組んでいる。モットーは「[思想を実装する][philosophy]」。[アートファン][art-experience]。
 
 ## Hide Ishi
 
@@ -44,13 +41,13 @@ He is a design activist who is exploring alternative methods of designing things
 : 「ITについて深く考えたい人たちのコミュニティ」を作りたいと思い、[ゼロベースサロン][salon]を作りました（オンライン・サロンではありません）。ふだんの仕事で関わっている目の前の課題から、少し距離をとって物事を考えてみたい（つまり、大きな視野、抽象的なレベルで。いわゆる知的な思考）、という方に参加して頂ければと思っています。とはいえ、決して堅苦しくない、ふまじめな会です。
 
 World IA Day Fukuoka
-: World IA Day は情報アーキテクチャ(IA)に関するグローバル・イベントです。その福岡支部を立ち上げ、 [World IA Day Fukuoka 2020](/activity/2020/01/28/world-ia-day-fukuoka-2020.html) を開催しました。美術館の新たなサービスを発想するイベントです。新型コロナウイルスの流行を受け、完全にオンラインで基調講演とワークショップを実施しました。これから毎年開催していきたいと考えています。
+: World IA Day は情報アーキテクチャ（IA）に関するグローバル・イベントです。その福岡支部を立ち上げ、 [World IA Day Fukuoka 2020](/activity/2020/01/28/world-ia-day-fukuoka-2020.html) を開催しました。美術館の新たなサービスを発想するイベントです。新型コロナウイルスの流行を受け、完全にオンラインで基調講演とワークショップを実施しました。これから毎年開催していきたいと考えています。
 
 ウィキペディア日本語版「ユーザーエクスペリエンス」記事執筆
 : 「ユーザーエクスペリエンス」という言葉は広まりつつありますが、それについての人々の理解が深まっているとは言えません。手軽にアクセスできるウィキペディア日本語版に良質な記事があれば良いのですが、残念ながらそうではありませんでした。そこで新たにテキストを[書き下ろしました][wikipedia-ux]。
 
 起業家メンタルヘルス調査
-: 経済成長を担うとして期待される起業家たちが、一方では過剰なストレスにより心身の健康を損ね、ときに深刻な状態に陥ることもあるということは、あまり知られていません。その実態を明らかにし、広く知らしめるために、[起業家のメンタルヘルス調査レポート][startup-mental-health]を2017年8月に発表しました(名古屋市立大学大学院医学研究科と共同で)。その後、この問題に関する[特集記事](https://journal.ridilover.jp/topics/31)や[起業家向けサービス](https://www.value-press.com/pressrelease/209090)が登場しました。
+: 経済成長を担うとして期待される起業家たちが、一方では過剰なストレスにより心身の健康を損ね、ときに深刻な状態に陥ることもあるということは、あまり知られていません。その実態を明らかにし、広く知らしめるために、[起業家のメンタルヘルス調査レポート][startup-mental-health]を2017年8月に発表しました（名古屋市立大学大学院医学研究科と共同で）。その後、この問題に関する[特集記事](https://journal.ridilover.jp/topics/31)や[起業家向けサービス](https://www.value-press.com/pressrelease/209090)が登場しました。
 
 Hide 'Like' Notifications
 : Facebookから「いいね！されました」通知を消すための[Chrome拡張機能](https://chrome.google.com/webstore/detail/hide-likes-on-facebook-no/kbfakkkdllpodegeoggpfcmjabodhpca)を2013年にリリースしました（※ウェブサイト版のみ対応）。Facebookは「ドーパミン・ハック」でユーザーを中毒にします。それに抵抗するための道具です。（海外のクチコミ：[1](https://www.quora.com/How-do-you-turn-off-like-notifications-on-Facebook)、[2](https://www.tubblog.co.uk/blog/tech-reviews/hide-facebook-like-notifications/)）

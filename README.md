@@ -37,12 +37,12 @@ $ ./deploy.sh
 Deployment
 ----------
 
-Since GitHub Actions configured, just push the master branch to GitHub, then the CI will deploy to Firebase Hosting.
+Since the website is hosted on GitHub Pages, just push the gh-pages branch to GitHub, then 'docs' directory is published.
 
 Maintenance
 ----------
 
-- `bundle update` -> [The GitHub Pages Gem](https://pages.github.com/versions/)
+`bundle update` -> [The GitHub Pages Gem](https://pages.github.com/versions/)
 
 Notice
 ------
