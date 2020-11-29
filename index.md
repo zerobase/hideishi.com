@@ -1,24 +1,17 @@
 ---
 layout: top
 permalink: /
-thumbnail: /assets/thumbnail.png
 title: 石橋秀仁
 description: インフォメーション・アーキテクト石橋秀仁のウェブサイト。
 ---
 
 # <ruby><rb>石橋</rb><rt>いしばし</rt></ruby> <ruby><rb>秀仁</rb><rt>ひでと</rt></ruby>
 
-[ゼロベース株式会社][zerobase]  
-代表取締役／情報アーキテクト
+[情報アーキテクト][information-architect]。[ゼロベース株式会社][zerobase]代表取締役。[World IA Day Fukuoka][wiad-fukuoka]ローカル・オーガナイザー。モットーは「[思想を実装する][philosophy]」。[アートファン][art-experience]。
 
-久留米高専卒業後、日本最大級の就活コミュニティJobwebのプログラマー（2000-2002）を経て2003年に独立。2004年に[ゼロベース][zerobase]を創業。同年ベンチャーキャピタル[GMO-VP][gmo-vp]のデザインフェローに就任。[情報アーキテクト（IA）][information-architect]として、インターネットやソフトウェアに関する開発、批評、および[スタートアップ支援][startup-consulting]に取り組んでいる。モットーは「[思想を実装する][philosophy]」。[アートファン][art-experience]。
+## 略歴
 
-## Hide Ishi
-
-Information Architect,  
-Zerobase Inc
-
-He is a design activist who is exploring alternative methods of designing things from philosophy to implementation. He is always troubled with anti-modern reactionists and obscurantists in Japan. He has two homes in metropolitan Tokyo and livable Fukuoka. He likes to travel and see art exhibitions.
+国立久留米工業高等専門学校制御情報工学科で電子工学、制御工学、情報処理を専攻。2000年、当時日本最大級の就活コミュニティJobwebのプログラマーとなり、メーリングリストやウェブのシステムを開発。2004年、インターネットサービス開発企業[ゼロベース][zerobase]を設立。Ajaxメーリングリストを設立し、ウェブのユーザー・インターフェイスに関する情報を発信。様々な開発プロジェクトに従事（[コマーシャライザー、ポンパレなど][works]）。2008年、マネジメントの危機を乗り越えるために[セルフマネジメントテクノロジーZa](https://www.zerobase.jp/za/)を開発。2005年からベンチャーキャピタル[GMO VenturePartners][gmo-vp]の顧問（デザインフェロー）として[スタートアップ支援][startup-consulting]。
 
 ## ブログ
 
@@ -68,10 +61,10 @@ Hide 'Like' Notifications
 [zerobase]: https://www.zerobase.jp/
 [gmo-vp]: https://www.gmo-vp.com/
 [design-fellow]: /blog/2015/08/03/consulting-for-startups.html
-[advisory]: /about/advice.html
 [wikipedia-ux]: https://www.zerobase.jp/2017/09/20/wikipedia-user-experience.html
 [startup-mental-health]: https://medium.com/@zerobase/%E8%B5%B7%E6%A5%AD%E5%AE%B6%E3%81%AE%E3%83%A1%E3%83%B3%E3%82%BF%E3%83%AB%E3%83%98%E3%83%AB%E3%82%B9%E8%AA%BF%E6%9F%BB%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88-%E3%81%AE%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%E3%81%AB%E9%9A%9B%E3%81%97%E3%81%A6-fff14c69408b
 [za]: https://www.zerobase.jp/za/
 [salon]: https://www.zerobase.jp/salon/
 [wiad-fukuoka]: /activity/2020/01/28/world-ia-day-fukuoka-2020.html
 [art-experience]: /activity/2020/01/20/art-experience.html
+[works]: /about/works.html

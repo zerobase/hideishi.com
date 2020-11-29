@@ -10,8 +10,8 @@ Installation
 $ bundle install
 ```
 
-Development or Authoring
-------------------------
+Authoring & Development
+-----------------------
 
 ```console
 $ bundle exec jekyll serve --watch --future
@@ -24,20 +24,15 @@ $ bundle exec jekyll serve --watch --future --host 192.168.10.3 --port 4004
 ```
 
 CAUTION: You shouldn't deploy generated files since URLs in them are 'localhost.'
-注意: 書き出されたファイル中のURLがlocalhostになっているので、そのままデプロイしてはいけない。
 
-
-Build
------
+Build & Deployment
+------------------
 
 ```console
 $ ./deploy.sh
 ```
 
-Deployment
-----------
-
-Since the website is hosted on GitHub Pages, just push the gh-pages branch to GitHub, then 'docs' directory is published.
+'deploy.sh' will generate the website to the 'docs' directory with Jekyll, commit it to the 'gh-pages' branch, and push it to GitHub. Then it will be published on GitHub Pages.
 
 Maintenance
 ----------
