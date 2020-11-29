@@ -1,7 +1,6 @@
 # Build settings
 destination: docs
 exclude: [
-  CNAME,
   Gemfile,
   Gemfile.lock,
   LICENSE,
