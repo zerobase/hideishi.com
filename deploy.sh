@@ -1,5 +1,6 @@
 #!/bin/sh
 git checkout gh-pages && \
+  git pull --no-edit origin gh-pages && \
   git merge --commit --no-edit master && \
   bundle exec jekyll build && \
   grep -v docs < .gitignore > .gitignore.new && \
