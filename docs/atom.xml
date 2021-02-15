@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
   <feed xmlns="http://www.w3.org/2005/Atom">
-    <title><![CDATA[石橋秀仁 (Hide Ishi)]]></title>
+    <title><![CDATA[石橋秀仁 (Hideto Ishibashi)]]></title>
     <link href="https://hideishi.com/atom.xml" rel="self"/>
     <link href="https://hideishi.com/"/>
     <updated>2020-11-23T00:00:00+09:00</updated>
     <id>https://hideishi.com/</id>
     <author>
-      <name><![CDATA[石橋秀仁 (Hide Ishi)]]></name>
+      <name><![CDATA[石橋秀仁 (Hideto Ishibashi)]]></name>
       <email><![CDATA[hide@hideishi.com]]></email>
     </author>
     <entry>
