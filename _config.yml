@@ -17,8 +17,8 @@ exclude: [
   ]
 
 # Site settings
-title: 石橋秀仁 (Hide Ishi)
-author: 石橋秀仁 (Hide Ishi)
+title: 石橋秀仁 (Hideto Ishibashi)
+author: 石橋秀仁 (Hideto Ishibashi)
 thumbnail: /assets/thumbnail.jpg
 email: hide@hideishi.com
 description: "an information architect / インフォメーション・アーキテクト"
@@ -56,7 +56,7 @@ defaults:
       type: "posts" # previously `post` in Jekyll 2.2.
     values:
       layout: "post"
-      author: "石橋秀仁 (Hide Ishi)"
+      author: "石橋秀仁 (Hideto Ishibashi)"
   -
     scope:
       path: "_posts/blog"
