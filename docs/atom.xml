@@ -3,616 +3,755 @@
     <title><![CDATA[石橋秀仁 (Hideto Ishibashi)]]></title>
     <link href="https://hideishi.com/atom.xml" rel="self"/>
     <link href="https://hideishi.com/"/>
-    <updated>2020-11-23T00:00:00+09:00</updated>
+    <updated>2021-02-22T00:00:00+09:00</updated>
     <id>https://hideishi.com/</id>
     <author>
       <name><![CDATA[石橋秀仁 (Hideto Ishibashi)]]></name>
       <email><![CDATA[hide@hideishi.com]]></email>
     </author>
     <entry>
-      <title type="html"><![CDATA[「アート思考」の話]]></title>
-      <link href="https://hideishi.com/blog/2020/11/23/art-thinking.html"/>
-      <updated>2020-11-23T00:00:00+09:00</updated>
-      <id>https://hideishi.com/blog/2020/11/23/art-thinking</id>
-      <content type="html"><![CDATA[<figure>
-        <p><img src="/assets/blog/2020-11-23-art-thinking/Sandro_Botticelli-La_nascita_di_Venere.jpg" alt="《ヴィーナスの誕生》の図像" /></p>
-        <figcaption>サンドロ・ボッティチェッリの絵画《ヴィーナスの誕生》</figcaption>
+      <title type="html"><![CDATA[接触確認アプリCOCOA失敗の本質]]></title>
+      <link href="https://hideishi.com/blog/2021/02/22/true-reason-why-cocoa-failed.html"/>
+      <updated>2021-02-22T00:00:00+09:00</updated>
+      <id>https://hideishi.com/blog/2021/02/22/true-reason-why-cocoa-failed</id>
+      <content type="html"><![CDATA[<p class="fig-small"><img src="/assets/blog/2021-02-22-true-reason-why-cocoa-failed/cocoa-icon.png" alt="接触確認アプリCOCOAのアイコン" /></p>
+      <p>接触確認アプリCOCOAが政治問題化しています。</p>
+      <p>昨年6月、首相の肝煎りでリリースされ、感染対策の切り札担うかと期待されました<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote">1</a></sup>。ダウンロードは2千万件を超えました<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote">2</a></sup>。しかし、9月末から2月中旬まで、ユーザーの3割ほどを占めるAndroidユーザーに通知が届かない不具合が見つかりました<sup id="fnref:3" role="doc-noteref"><a href="#fn:3" class="footnote">3</a></sup>。そしてiOSでも深刻な不具合があると発表されました<sup id="fnref:4" role="doc-noteref"><a href="#fn:4" class="footnote">4</a></sup>。政府は、相次ぐ不具合を修正することで、COCOAを正常に機能させようと躍起になっています<sup id="fnref:5" role="doc-noteref"><a href="#fn:5" class="footnote">5</a></sup>。</p>
+      <p>僕は絶望しています。</p>
+      <p>COCOAは日本人の能力を超えたプロジェクトでした。そのことを人々が認められないことに、僕は絶望しています。厚労省だけの問題ではない。犯人探しをして処分すれば済むというものではない<sup id="fnref:6" role="doc-noteref"><a href="#fn:6" class="footnote">6</a></sup>。ITの問題ですらない。なぜそれが分からないのか。</p>
+      <p>これは日本の統治能力の問題であり、民度の問題です。</p>
+      <p>「現時点の我々の政府の能力では、このプロジェクトを成功させることはできない」という戦略的思考ができない。精神論でなんでも出来ると信じている。能力の不足を認めようとしない。あの敗戦から何も学んでいない。</p>
+      <p>開発に失敗したことを怒るべきではないのです。やったこと自体が間違いだったのですから。「なぜやったのだ」と怒るべきなのです。その合理的思考ができない人々に絶望しています。あの敗戦から何も学ばなかった人々に。</p>
+      <p>「日本人には能力が足りないから失敗した」という事実を認めることは悔しい。しかし、戦後の日本人なら、この認識に至らないといけない。太平洋戦争は昭和16年の夏に敗戦していました<sup id="fnref:7" role="doc-noteref"><a href="#fn:7" class="footnote">7</a></sup>。総力戦研究所が合理的に日本必敗の結論を出した時点で。能力不足にも関わらず開戦したこと自体が失敗だったのです。</p>
+      <dl>
+        <dt>COCOAをやるべきでなかった理由(1)</dt>
+        <dd>接触確認アプリ(ENS)が感染制御に有効であるという科学的エビデンスはない。Bluetoothによる距離測定の精度が著しく低く、ENSが原理的に信頼性に乏しいものであることは、ENS発表時点で自明だった<sup id="fnref:8" role="doc-noteref"><a href="#fn:8" class="footnote">8</a></sup>。エビデンスに基づく政策(EBPM)に関する能力の欠如を示している。</dd>
+        <dt>COCOAをやるべきでなかった理由(2)</dt>
+        <dd>エビデンス不足にも関わらず強行するなら、それ相応の手続き的正統性が必要となる。運用しながらエビデンスを得るための調査計画、及びプロジェクト終了条件やシステム廃棄手続きなど。そういうことができない。統治権力の正統性の欠如。情報倫理的な能力の欠如<sup id="fnref:9" role="doc-noteref"><a href="#fn:9" class="footnote">9</a></sup>。</dd>
+        <dt>COCOAをやるべきでなかった理由(3)</dt>
+        <dd>いわゆる「首相案件」で、緊急事態宣言解除後の県境越え移動解禁に関する首相会見のスケジュールに合わせてリリース日を設定した<sup id="fnref:10" role="doc-noteref"><a href="#fn:10" class="footnote">10</a></sup>。政治的パフォーマンスありきの無茶な開発スケジュールの設定。実質的な政策成果に対する関心の欠如。ITガバナンス能力の欠如。</dd>
+      </dl>
+      <figure>
+        <p><img src="/assets/blog/2021-02-22-true-reason-why-cocoa-failed/shinzo-abe.png" alt="" /></p>
+        <figcaption>2020年5月25日の首相記者会見（<a href="https://www.kantei.go.jp/jp/98_abe/statement/2020/0525kaiken.html">首相官邸ウェブサイト</a>より）</figcaption>
       </figure>
-      <p>ビジネス界隈で「アート思考」と呼ばれるものの実態は「クリエイティブ思考」だろう。では、言葉の本来の意味での「アート思考」は一体どういう意味になるべきか。それは、<strong>アートの営みが拠って立つ原理のように思考すること</strong>だと思う。</p>
-      <p>ちょっと分かりにくい言い方かもしれないので、易しく言い直してみる。アートという営みは、一体どういう作動原理によって動いているのだろうか。その原理を理解し、その原理に従って様々な物事について考えてみるということ。そのような思考を「アート思考」と呼びたい。</p>
-      <p>では、アートの営みの根底にあるのは、一体どういう原理なのだろうか。それは、人工物の制作における<strong>規範と逸脱の歴史的動力学</strong>だろう。</p>
-      <p>これも簡単に言い直しておくことにする。道具にせよ作品にせよ、何らかの物を作り出す人々がいる。物を作る人は、必ず何かを手本とする。そこには従うべきルール、つまり規範がある。</p>
-      <p>そのような規範は、時代とともに移り変わっていく。移り変わるということは、つまりこういうことだ。ある時点での規範を逸脱する美意識があり、それが次第に支持を得ることで、新たな規範として取り込まれていく。逸脱のダイナミズムによって規範が更新されていく。</p>
-      <p><img src="/assets/blog/2020-11-23-art-thinking/norm-and-deviation.png" alt="規範から逸脱し、その逸脱が規範に取り込まれる流れの図解" /></p>
-      <p>そのような運動は人類史に渡って繰り返されてきたし、今後も繰り返されていく。</p>
-      <p>逸脱もまた完全に新奇であることなどない。かつて歴史上存在した規範を参照し、それを復興するという形を取ることがほとんどである。その代表例が、教会の宗教的美意識が支配的だった時代に、古代ギリシアの人間中心的美意識を復興したルネサンスだ。規範と逸脱の動力学は、過去の歴史を参照しながら繰り返される。</p>
-      <p>以上のことを短く言うと、「人工物の制作における<strong>規範と逸脱の歴史的動力学</strong>」という言葉になる。</p>
+      <p>その他、政府IT調達の問題<sup id="fnref:11" role="doc-noteref"><a href="#fn:11" class="footnote">11</a></sup>、厚労省のIT担当能力の問題<sup id="fnref:12" role="doc-noteref"><a href="#fn:12" class="footnote">12</a></sup>、オープンソース開発プロセスの問題<sup id="fnref:13" role="doc-noteref"><a href="#fn:13" class="footnote">13</a></sup>などは、すでに様々な識者が指摘している通りです。</p>
+      <p>その上で、最大の問題となるのは、これらの問題がCOCOAリリース前から分かっていたということです。だから、COCOAをやるべきではなかったと申し上げているのです。</p>
+      <p>もし「新型コロナウイルス感染症対策テックチーム」や「接触確認アプリに関する有識者検討会合」<sup id="fnref:14" role="doc-noteref"><a href="#fn:14" class="footnote">14</a></sup>が総力戦研究所のようであったなら、同じ結論に至ったはずです。</p>
+      <p>そして、その報告を受けた指導者は……東條のように行動したのでしょう。残念ながら。</p>
+      <blockquote>
+        <p>諸君の研究の労を多とするが、これはあくまでも机上の演習でありまして、（…）戦というものは、計画通りにいかない。意外裡な事が勝利に繋がっていく。（…）なお、この机上演習の経緯を、諸君は軽はずみに口外してはならぬということであります。 <sup id="fnref:15" role="doc-noteref"><a href="#fn:15" class="footnote">15</a></sup></p>
+      </blockquote>
+      <p>このような問題は、すでに情報倫理学者ルチアーノ・フロリディ教授らが指摘していました。僕はその論文を翻訳し、COCOAリリース前の5月26日に発表しました。</p>
+      <blockquote>
+        <p>粗末な設計や限定的な検証にも関わらずDTTを稼働させようとする政府は、「なんでもやってみよう」の精神を示すためにそうしようとするのであり、それゆえ批判を無視し、あらゆる犠牲を払ってでもやりかねません。これは危機の時にあっては危険なことです。 <sup id="fnref:16" role="doc-noteref"><a href="#fn:16" class="footnote">16</a></sup></p>
+      </blockquote>
+      <p>COCOAをやらない選択肢はあった。せめて慎重に検討してからやることもできた。しかし、慎重な検討を避け、政治的パフォーマンスありきで強行した。その結果は深刻な失敗です。人々の政府ITシステムに対する信頼が根本的に損なわれる結果となりました。</p>
+      <blockquote>
+        <p>COVID-19状況においては、（あらゆる意味での）コストは高く、「外部性」として無視できません。それは現在の人口と政府を深く速く直撃し、問題全体を悪化させる恐れがあります。なぜなら、倫理的に正しくない類いのDTTシステムは、単に効果がないだけでなく、解決しようとしている問題それ自体を劇化させるかもしれないからです。失敗の繰り返しや高過ぎるコストが市民の信頼を裏切ることにつながる以上、政府には正しく介入するチャンスがただの一度しか与えられていないというべきです。 <sup id="fnref:17" role="doc-noteref"><a href="#fn:17" class="footnote">17</a></sup></p>
+      </blockquote>
+      <p>ですから、これは情報倫理上の失敗であり、政治的な失敗なのです。断じてITの失敗ではありません。</p>
+      <blockquote>
+        <p>倫理的分析は、リスクと機会に光を当て、緊急の意思決定を、社会を支える長年の価値観と、統治の適切な領域設定に関する社会の期待に合わせるためのコンパスを提供します。ですから危機の時にあっても倫理的な慎重さが成功には不可欠なのです。 <sup id="fnref:18" role="doc-noteref"><a href="#fn:18" class="footnote">18</a></sup></p>
+      </blockquote>
+      <p>「ハンマーを持つ人には全てが釘に見える」という言葉があります。IT専門家がしきりにCOCOA問題について論じています。ITの問題とみなして、どうすれば上手くやれたかを論じています。しかし、そもそもやるべきだったかどうかを問わずに、やり方の問題ばかりを論じていることに、強い違和感を覚えます。</p>
       <hr />
-      <p>さて、身近なiPhoneという例について考えてみたい。それ以前の携帯電話のユーザーインターフェイスは、テンキー、カーソルキー、スタイラス（タッチペン）などを使うことが常識（規範）だった。そこに「フィンガータッチの方が優れている」という異質な美意識をぶつけた。そう、「美意識」なのだ。iPhoneの勝利は単なる技術的合理性では説明できない。これは「より便利」「より高性能」だとかいう話ではない。</p>
-      <p>2007年に最初のiPhoneを紹介したスティーブ・ジョブズのプレゼンテーションを思い出してみればいい。彼はスタイラスという当時の規範に対して、「ウンザリ」という負のレッテル貼りをした。</p>
-      <p><img src="/assets/blog/2020-11-23-art-thinking/who-wants-stylus.png" alt="&quot;Who wants a stylus?&quot; と書かれたスライドとスティーブ・ジョブズの写真" /></p>
-      <p>その上で、指で直接タッチできるスクリーンは「魔法のようだ」という美意識を訴求した。</p>
-      <p><img src="/assets/blog/2020-11-23-art-thinking/works-like-magic.png" alt="&quot;Works like magic&quot; と書かれたスライドとスティーブ・ジョブズの写真" /></p>
-      <p>iPhoneをひっさげたスティーブ・ジョブズが当時の競合スマートフォンに対して挑んだのは、技術の戦争ではない。美意識の戦争だった。この点は誤解されがちだ。</p>
-      <p>このような規範と逸脱の動力学は、まさにアートヒストリーのアナロジーで理解できる。アートの世界でも、規範を逸脱するような表現がいくつも登場してきた。その多くは単に黙殺されてきただろう。しかしその中で、当初は批判されつつも支持を集め、結果として美術史に登録されたものがある。例えば印象派、キュビズム、フォービズム、もの派など。そういった、今日我々が知るトレンド（芸術運動、アートムーブメント）も、最初は規範からの逸脱であり、批判の対象だった。</p>
-      <p>ついでに言えば、「〜派」「〜イズム」などの言葉は、当初は蔑称だったものが次第に正式名称として定着したものも多い。それらの運動が当初は逸脱として始まったことの動かぬ証拠だ。</p>
-      <p>忘れがちだが、iPhoneだって最初から理解されたわけではない。「こんなもの流行るはずがない」という懐疑的・批判的な意見の方が多かったと思う。そもそも最初から全員に理解されるものは、規範からまったく逸脱していないということになる。逆に言えば、新たなトレンドを作りたい者は、万人に理解されることをしてはならない。</p>
-      <figure>
-        <p><img src="/assets/blog/2020-11-23-art-thinking/Phase-Mother_Earth.jpg" alt="《位相-大地》の写真" /></p>
-        <figcaption>もの派の代表的な作品：関根伸夫《位相-大地》1968年<br />
-          <small>出典：作者自身による, CC BY-SA 4.0 License（<a href="https://commons.wikimedia.org/w/index.php?curid=40068012">リンク</a>）</small></figcaption>
-      </figure>
-      <p>iPhoneが作り出したスマートフォンのあり方が、現在のファッショントレンドになっている。これはあくまでトレンドであって、将来は分からない。ブラックベリー型やスタイラス型、あるいはフィーチャーフォン型の復権もありえると思う。</p>
-      <figure>
-        <p><img src="/assets/blog/2020-11-23-art-thinking/BlackBerry_Torch.jpg" alt="BlackBerry Torch 9800の写真" /></p>
-        <figcaption>BlackBerry Torch 9800 タッチパネル+スライドキーボード<br />
-          <small>出典：edans / Enrique Dans による, CC BY 2.0 License（<a href="https://commons.wikimedia.org/w/index.php?curid=12475879">リンク</a>）</small></figcaption>
-      </figure>
-      <p>技術にばかり関心が向いている人は、「携帯電話はスマートフォンに<strong>進歩</strong>した」と考えがちだ。単純な進歩史観。しかし、実際にはそうではない。</p>
-      <p>例えば、なぜ2020年にアナログレコードが売れているのか。「中高年の懐古趣味」では説明がつかない。若者に人気なのだから。彼らは技術的に優れている（と一般に思われている）配信やCDよりも、劣った（と一般的に思われている）アナログレコードを好む。これが美意識だ。技術の問題ではない。</p>
-      <figure>
-        <p><img src="/assets/blog/2020-11-23-art-thinking/analog-records.jpg" alt="アナログレコードの写真" /></p>
-        <figcaption>アナログレコード<br />
-          <small>出典：Pexelsによる, Simplified Pixabay License（<a href="https://pixabay.com/images/id-1867697/">リンク</a>）</small></figcaption>
-      </figure>
-      <p>同じことが携帯電話についても言える。そもそも携帯電話にはアクセサリー（服飾小物）としての役割もある。ファッショントレンドの変遷と無関係なはずがない。</p>
+      <p>COCOAを走りながら立て直そうとしないでください。いったん運用を停止し、国会に事故調査委を設置し、政治過程を究明すべきです。そして、COCOAとHER-SYSを立て直す計画を慎重に策定すべきです。その実行チームと伴走しながら監督する有識者会議を設置すべきです。科学的に有効なシステムにしていくため、必要なデータを収集し、エビデンスを集めながら、感染制御のためのフィードバックシステムとしてチューニングし続けていくべきです。そのために法改正等が必要なら実施すべきです。英国<sup id="fnref:19" role="doc-noteref"><a href="#fn:19" class="footnote">19</a></sup>、ドイツ<sup id="fnref:20" role="doc-noteref"><a href="#fn:20" class="footnote">20</a></sup>、スイス<sup id="fnref:21" role="doc-noteref"><a href="#fn:21" class="footnote">21</a></sup>などの取り組みを参考に。</p>
+      <p>いえ、政府にこんな期待をすること自体が虚しい。これができるなら、最初からやっているはずですから。いまさら何を期待できるというのでしょう。これまで出来ていなかったことが、どうすれば一朝一夕にして出来るようになるというのでしょう。まったく非現実的な夢想です。</p>
+      <p>僕は絶望しています。現実主義的に問題を分析すれば、絶望せざるをえません。みなさんも絶望すべきです。</p>
+      <p>日本人には絶望が足りない。「どうすれば上手くやれたか」という問いを止めてください。それは現実逃避です。負け惜しみです。我々は現実を直視すべきです。根本的な能力不足によって、やる前から失敗していたのです。対米戦争のように。</p>
+      <p>この無力感。徹底的な絶望。つまりは敗戦の認識。そこに至らずして、本質的な立て直しなど不可能です。単なる去勢で立て直しを叫ぶべきではありません。それは不誠実な現実逃避です。絶望こそが現実主義的で真摯な反省なのです。</p>
+      <p>それによって、はじめて「どうすれば戦争を回避できたか」「どうすればCOCOAをうまくやれる政府を作れたか」という真に有意義な議論が可能になるのです。</p>
+      <p>いちど徹底的に絶望してください。私たちはどうしようもなく無能なのだと。敗戦から真に復興する道は、その絶望からしか始まりません。</p>
+      <p>大前提、政府は「我々の政府」なのであって、こんな馬鹿な失敗をする政府が我々の政府なのだと、問題を引き受けなければなりません。それこそが真摯な反省というものです。「民間に比べて政府はダメだ」などと「お上」を批判する態度も止めるべきです。今は江戸時代ではなく民主国家なのですから。</p>
+      <p>ITガバナンスをやるには、精神を近代化しなければなりません。「我々」と「お上」を分ける江戸時代の精神から、「我々の政府」と考える近代人の精神へ。だから「民間はマシなのに」という発想はダメなのです。COCOAの失敗は日本社会のショボさの表れです。「ショボいのは日本人」という屈辱的な絶望が必要です。</p>
+      <h2 id="結論">結論</h2>
+      <p>COCOAは一時停止して失敗を総括すべきです。それなしに小手先で取り繕う限り、再び同様の失敗が起こりかねません。そもそもシステムが正常に稼働してもなお感染制御の効果が出るか怪しい。何度国民を裏切るつもりでしょうか。ダラダラ続けず、失敗を認め、総括し、ゼロベースで継続か中止かの判断をすべきです。</p>
+      <p>そして、それができないと確信できてしまうことに、僕は絶望しています。みなさんも、この認識に到達してほしいと思います。</p>
       <hr />
-      <p>冒頭の問題意識に戻る。「アート的な思考」という言葉は、本来こういう思考を指すべきだと思う。<strong>規範と逸脱の歴史的動力学</strong>という枠組みを用いて状況を分析する思考。より抽象的に言えば、過去を参照しながら規範を逸脱していく<strong>再帰的な経路依存性</strong>において、社会の運動性を理解するということ。</p>
-      <p>「再帰的な経路依存性」を言い換えれば、要するに「新しいアイデアは無から生まれることはなく、必ず過去の歴史の中から再発見されたものの変奏として現れてくる」ということを「再帰的」と呼んでいる。</p>
-      <p>また、「過去にこうだったから、今こうなっている」という歴史的経緯が全ての物事を制約しているということ。そこから自由な逸脱や飛躍など人間社会にはありえないという制約、あるいは法則のことを「経路依存性」と呼ぶ。（余談だが、経路依存性への意識は、良い意味で、そして本来の意味での保守主義に通じる）</p>
-      <p>アート的思考とは、トレンドが移り変わっていく運動の法則を、</p>
-      <ul>
-        <li>過去の歴史を参照して自らを更新していこうとする<strong>再帰性</strong>と、</li>
-        <li>あらゆるものが過去の経緯によって制約されるという<strong>経路依存性</strong></li>
-      </ul>
-      <p>とを通じて理解していく思考のことだ。先に「規範と逸脱の歴史的動力学」について説明した。そのダイナミズムを生み出す、より根底的な力が再帰的な経路依存性だということになる。</p>
-      <hr />
-      <p>同じことはファッションについても言える。ファッションにおける美意識（おしゃれ）の本質は「差異」（人とは違うこと）だ。</p>
-      <p>あるトレンドがあまりにも普及しきって、みんな同じようになってしまえば、先進的な人（おしゃれな人）はそこから逸脱しようとする。人と違うことをしようとする。その結果、新しいトレンドが生まれる。それもまた人々に真似され、しまいにはみんなに行き渡る。そうすればまた先進的な人は差異を求めて違うことを始める。</p>
-      <p>その運動はまるで回転運動や潮の満ち引きのように定期的に繰り返す。逸脱のリソース（元ネタ）は、ほとんどの場合、過去のファッション史から引っ張り出されてくる。過去の歴史があるからこそ、新たな創造が可能になっている。</p>
-      <p><img src="/assets/blog/2020-11-23-art-thinking/norm-and-deviation-referencing-past.png" alt="過去のある時点を参照している逸脱が、再び規範に取り込まれていく流れの図解" /></p>
-      <p>アートにせよ、ファッションにせよ、デザインにせよ、学問にせよ、なんであれ人間が関わる物事（人文）には、こういう循環運動がある。いわば敗者復活戦がある。</p>
-      <p>これこそ文系（人文知）と、理系（科学・工学）との違いでもある。文系の対象が人文（人間に関わる事物）であるのに対して、理系の対象は自然（人間でないもの）である。理系の論理の中には、過去に「敗者」となった理論が復活してくることはない（ごく稀に例外はあるが）。天動説の復活はないだろう。理論は単線的に進歩し続ける。後戻りはない。そういうシンプルな進歩史観が理系の世界観だ。</p>
-      <p>しかし、アートやファッションなど文系の領域においては、過去のトレンドが何度も再来してくる。この点において理系と文系の世界観は全く違う。文系では単純な進歩史観を採用することは難しい。</p>
-      <hr />
-      <p>これまでIT業界は歴史が短かった（というのも本当は誤解なのだが、一般大衆にとってのIT業界史はせいぜい1995年くらいから始まっているだろう）。したがって、IT業界の中で歴史的循環を意識することなどなかったかもしれない。だが、IT業界の歴史も充分に長くなってきた。今後はアートやファッションと同じように、過去のトレンドの再来が普通になってくるだろう。</p>
-      <p>IT業界に多い技術的進歩史観の人には理解しづらいことだろう。彼らの考えでは、「過去は全てにおいて現在より劣っており、未来は全てにおいて現在より優れている」ということになっている。しかし現実はそうなっていない。単にIT業界の歴史が短く、過去のトレンドの再来を目にしたことがないために、単線的に進歩してきたのだと勘違いしているだけだ。</p>
-      <p>今月（2020年11月）発表された話題の新型コンピューター <a href="https://www.raspberrypi.org/products/raspberry-pi-400/">Raspberry Pi 400</a> （ラズベリーパイ400）を見てみよう。キーボードにパソコン本体が組み込まれている。電源とマウスとディスプレイを接続すれば、完全なコンピューターとして使える。このようなコンピューターは現在の市場にほとんど存在していない。</p>
-      <figure>
-        <p><img src="/assets/blog/2020-11-23-art-thinking/raspberry-pi-400.jpg" alt="Raspberry Pi 400の写真" /></p>
-        <figcaption>Raspberry Pi 400<br />
-          <small>出典：<a href="https://www.raspberrypi.org/products/raspberry-pi-400">The Raspberry Pi Foundation</a> ©</small></figcaption>
-      </figure>
-      <p>キーボード一体型パーソナル・コンピューターという形態を「新しい！」と思う人もいるかもしれない。ところが、これはむしろパーソナル・コンピューター史的には先祖返りに近い。40年ほど前には、むしろ主流だった。</p>
-      <figure>
-        <p><img src="/assets/blog/2020-11-23-art-thinking/Apple_II_typical_configuration_1977.png" alt="Apple IIおよび周辺機器の写真" /></p>
-        <figcaption>Apple II（1977年）<br />
-          本体およびモノクロ・モニター、ゲーム・パドル、カセット・デッキ<br />
-          <small>出典：FozzTexx, CC BY-SA 4.0 License（<a href="https://commons.wikimedia.org/w/index.php?curid=79580939">リンク</a>）</small></figcaption>
-      </figure>
-      <figure>
-        <p><img src="/assets/blog/2020-11-23-art-thinking/pc-6001.png" alt="PC-6001の写真" /></p>
-        <figcaption>NEC PC-6001（1981年）<br />
-          <small>出典：Morianuによる, CC BY-SA 4.0 License（<a href="https://commons.wikimedia.org/w/index.php?curid=79547564による">リンク</a>）</small></figcaption>
-      </figure>
-      <figure>
-        <p><img src="/assets/blog/2020-11-23-art-thinking/Sharp_MZ-700.jpg" alt="MZ-700の写真" /></p>
-        <figcaption>シャープMZ-700（1982年）<br />
-          <small>出典：Bilbyによる, CC BY 3.0 License（<a href="https://commons.wikimedia.org/wiki/File:Sharp_MZ-700.jpg">リンク</a>）</small></figcaption>
-      </figure>
-      <figure>
-        <p><img src="/assets/blog/2020-11-23-art-thinking/commodore-64.png" alt="コモドール64の写真" /></p>
-        <figcaption>コモドール64（1982年）</figcaption>
-      </figure>
-      <figure>
-        <p><img src="/assets/blog/2020-11-23-art-thinking/Sony_HitBit_HB-10P.jpg" alt="Sony MSX HitBit 10-Pの写真" /></p>
-        <figcaption>Sony HitBit 10-P（1985年頃？）<br />
-          MSX規格の製品例</figcaption>
-      </figure>
-      <p>ラズベリーパイ400のようなキーボード一体型デザインが、今後のトレンドになるかどうかは分からない。ただ、「過去の歴史を参照しつつ、現在の規範から逸脱する」という創造の運動性を見出すことはできるだろう。IT業界にも、アート界と同じような創造の運動がある。だからアート思考はIT業界も射程に入れることができる。</p>
-      <hr />
-      <p>この話も終わりに近づいてきた。最後に、アート思考でアイデアを出すための方法について考えておきたい。それは「歴史を学べ」という一言に尽きる。歴史の中にヒントがある。歴史上の出来事を単に点で捉えるのではなく、線として、物語として理解することだ。例えば「シンプルなトレンドが流行した後には、複雑なトレンドが来て、またその次はシンプルになる」といった具合に。</p>
-      <p>世間で「アート思考」という言葉が使われるとき、その意味は「過去や常識に囚われることなく、自由にアイデアを出す発想法」といったものだ。しかし、実際のアーティストやファッションデザイナーがやっていることは全く異なる。</p>
-      <p>作家は歴史上の作品を驚くほどたくさん知っている（専門家なのだから当然だ）。過去の作品やトレンドを参照しつつ、同時代の作品やトレンドも横目に見ながら制作している（展覧会やコレクションをまめにチェックする作家は多い）。主流の規範に、かなりの程度まで従っている（そうしないと、そもそも「作品」として成立しない）。しかし、どこかで逸脱することも常に模索している（創造の価値は、他との差異から生じるのだから）。自分の逸脱が人々に支持され、トレンドになっていけば、「新たなトレンドの創始者」として歴史に名を残すことができる。</p>
-      <p>ある種のハードコアなアーティストたちは、こういうゲームをプレイしている。村上隆を思い浮かべてもらえれば分かりやすい。彼はこのゲームのプレイヤー役を、露悪的なまでに徹底的に演じている。</p>
-      <div class="jekyll-linkpreview-wrapper">
-        <p><a href="https://www.gentosha.jp/article/11800/" target="_blank">https://www.gentosha.jp/article/11800/</a></p>
-        <div class="jekyll-linkpreview-wrapper-inner">
-          <div class="jekyll-linkpreview-content">
-            <div class="jekyll-linkpreview-image">
-              <a href="https://www.gentosha.jp/article/11800/" target="_blank">
-                <img src="http://www.gentosha.jp/files/uploads/series/1545227430_rectangle_icon.jpg" />
-              </a>
-            </div>
-            <div class="jekyll-linkpreview-body">
-              <h2 class="jekyll-linkpreview-title">
-                <a href="https://www.gentosha.jp/article/11800/" target="_blank">日本人アーティストはなぜ世界で通用しないのか？｜芸術起業論｜村上隆</a>
-              </h2>
-              <div class="jekyll-linkpreview-description">海外で高く評価され、作品が高く取引される村上隆。彼は、他のアーティストと何が大きく違ったのか？　稀代の芸術家が熱い情熱と冷静な分析をもって綴った名著『芸術起業論』『芸術闘争論』の待望の文庫化を記念して、まず『芸術起業論』の冒頭をお届けします。
-                芸術には、世界基準の戦略が必要である
-                　なぜ、これまで、日本人アーティストは、片手で数えるほどしか世界で通用しなかったのでしょうか。
-                　単純です。
-                「欧米の芸術の世界のルールをふまえていなかったから」なのです。
-                　欧米の芸術の世界は、確固たる不文律が存在しており、ガチガチに整備されております。
-                　そのルールに沿わない作品は「評価の対象外」</div>
-            </div>
-          </div>
-          <div class="jekyll-linkpreview-footer">
-            <a href="//www.gentosha.jp" target="_blank">www.gentosha.jp</a>
-          </div>
-        </div>
+      <p>その上で、もし希望があるとすれば、政治の失敗を自分ごととして引き受け、自ら考え、手を動かして解決しようとする人たちの存在です。</p>
+      <p>採用されなかったものの、接触確認アプリの開発に名乗りを上げたCode for Japanという民間の非営利団体があります。そのミッション・ステートメントは「ともに考え、ともにつくる」です<sup id="fnref:22" role="doc-noteref"><a href="#fn:22" class="footnote">22</a></sup>。それは北欧の参加型デザイン運動の流れを汲む「コ・デザイン」の精神でもあります<sup id="fnref:23" role="doc-noteref"><a href="#fn:23" class="footnote">23</a></sup>。つまり、人民が社会の問題を自分ごととして引き受け、自ら考え、手を動かして解決していくという社会運動の精神です。政府がダメな以上、民間からボトムアップの社会改革を地道にやっていくしかありません。</p>
+      <p>あるいは幾度かの世代交代を経た何十年後かに、Code for Japanのような市民運動に理解のあるエリートが政府中枢に増えてくれば、日本でもまともなIT統治が実現するかもしれません。そのとき真の意味で政府と人民が「ともに考え、ともにつくる」というコ・デザインの時代が到来するのです。</p>
+      <p>これはデジタル庁の設立だとかいった数年単位の取り組みでどうにかなる問題ではありません。短期的な成功という非現実的な夢想を止めるべきです。いちど絶望すべきです。その上で、数十年後を見据えて草の根の活動を地道に続けていくしかありません。変革は絶望するほどゆっくりとしか起こりません。しかし、そこにしか希望はありません。</p>
+      <div class="footnotes" role="doc-endnotes">
+        <ol>
+          <li id="fn:1" role="doc-endnote">
+            <p><a href="https://www.kantei.go.jp/jp/98_abe/statement/2020/0525kaiken.html">令和2年5月25日 新型コロナウイルス感染症に関する安倍内閣総理大臣記者会見 令和2年 総理の演説・記者会見など ニュース 首相官邸ホームページ</a> <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+          </li>
+          <li id="fn:2" role="doc-endnote">
+            <p><a href="https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/cocoa_00138.html">新型コロナウイルス接触確認アプリ（COCOA) COVID-19 Contact-Confirming Application 厚生労働省</a> <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+          </li>
+          <li id="fn:3" role="doc-endnote">
+            <p><a href="https://www3.nhk.or.jp/news/html/20210203/k10012847671000.html?utm_int=detail_contents_news-related_001">新型コロナ 接触確認アプリ「COCOA」一部で検知や通知行われず 新型コロナウイルス NHKニュース</a> (2021年2月3日) <a href="#fnref:3" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+          </li>
+          <li id="fn:4" role="doc-endnote">
+            <p><a href="https://mainichi.jp/articles/20210217/k00/00m/040/255000c">接触アプリ「COCOA」 「iOS」の一部でも通知届かぬ不具合 毎日新聞</a> (2021年2月17日) <a href="#fnref:4" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+          </li>
+          <li id="fn:5" role="doc-endnote">
+            <p><a href="https://www.itmedia.co.jp/news/articles/2102/12/news142.html">COCOA不具合の原因は「APIの使い方を誤った」 平井デジタル相、改善を約束 開発の下請け構造改善も — ITmedia NEWS</a> (2021年2月12日) <a href="#fnref:5" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+          </li>
+          <li id="fn:6" role="doc-endnote">
+            <p><a href="https://mainichi.jp/articles/20210209/k00/00m/040/217000c">ココア巡り関係者処分へ 接触通知届かず 年度内に検証 厚労省 毎日新聞</a> (2021年2月9日) <a href="#fnref:6" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+          </li>
+          <li id="fn:7" role="doc-endnote">
+            <p>猪瀬直樹著『<a href="https://www.chuko.co.jp/bunko/2020/06/206892.html">昭和16年夏の敗戦</a>』中央公論新社、新版初版、2020年 <a href="#fnref:7" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+          </li>
+          <li id="fn:8" role="doc-endnote">
+            <p><a href="https://www.bluetooth.com/blog/proximity-and-rssi/">Proximity and RSSI, Bluetooth® Technology Website</a> (2015年) <a href="#fnref:8" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+          </li>
+          <li id="fn:9" role="doc-endnote">
+            <p><a href="https://hideishi.com/blog/2020/05/26/ethical-guidelines-for-contact-tracing-apps.html">新型コロナウイルス接触追跡アプリのための倫理的指針 正しいアプリが正しく作られているかを評価するための16の問い 石橋秀仁</a> (2020年5月26日) <a href="#fnref:9" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+          </li>
+          <li id="fn:10" role="doc-endnote">
+            <p><a href="https://www.asahi.com/articles/ASP2F6GZRP2DULBJ01V.html">COCOA、スピード開発あだ 首相会見後に余裕なくす [新型コロナウイルス]：朝日新聞デジタル</a> (2021年2月14日) <a href="#fnref:10" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+          </li>
+          <li id="fn:11" role="doc-endnote">
+            <p><a href="https://xtech.nikkei.com/atcl/nxt/column/18/00001/05203/">COCOA不具合放置の遠因か、開発ベンダー選定で繰り返された「丸投げ」の実態 日経クロステック（xTECH）</a> (2021年2月15日) <a href="#fnref:11" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+          </li>
+          <li id="fn:12" role="doc-endnote">
+            <p><a href="https://www.yomiuri.co.jp/national/20210210-OYT1T50248/">接触アプリ、外部から不具合指摘も対応せず…厚労省ずさんな管理 : 社会 : ニュース : 読売新聞オンライン</a> (2021年2月10日) <a href="#fnref:12" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+          </li>
+          <li id="fn:13" role="doc-endnote">
+            <p><a href="https://xtech.nikkei.com/atcl/nxt/column/18/00001/05159/">Android版COCOAを「無用の長物」にした重大バグ、4カ月以上見過ごされた理由 日経クロステック（xTECH）</a> (2021年2月5日) <a href="#fnref:13" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+          </li>
+          <li id="fn:14" role="doc-endnote">
+            <p><a href="https://cio.go.jp/techteam">新型コロナウイルス感染症対策 テックチーム Anti-Covid-19 Tech Team 政府CIOポータル</a> <a href="#fnref:14" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+          </li>
+          <li id="fn:15" role="doc-endnote">
+            <p><a href="https://ja.wikipedia.org/wiki/%E7%B7%8F%E5%8A%9B%E6%88%A6%E7%A0%94%E7%A9%B6%E6%89%80">総力戦研究所 — Wikipedia</a> <a href="#fnref:15" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+          </li>
+          <li id="fn:16" role="doc-endnote">
+            <p><a href="https://hideishi.com/blog/2020/05/26/ethical-guidelines-for-contact-tracing-apps.html">新型コロナウイルス接触追跡アプリのための倫理的指針 正しいアプリが正しく作られているかを評価するための16の問い 石橋秀仁</a> (2020年5月26日) <a href="#fnref:16" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+          </li>
+          <li id="fn:17" role="doc-endnote">
+            <p>同上 <a href="#fnref:17" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+          </li>
+          <li id="fn:18" role="doc-endnote">
+            <p>同上 <a href="#fnref:18" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+          </li>
+          <li id="fn:19" role="doc-endnote">
+            <p><a href="https://www.turing.ac.uk/blog/demonstrating-impact-nhs-covid-19-app">Demonstrating the impact of the NHS COVID-19 app, The Alan Turing Institute</a> (2021年2月9日) <a href="#fnref:19" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+          </li>
+          <li id="fn:20" role="doc-endnote">
+            <p><a href="https://news.sap.com/2021/02/germanys-covid-19-app-break-infection-chain/">Designing Germany’s COVID-19 App, SAP News Center</a> (2021年2月1日) <a href="#fnref:20" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+          </li>
+          <li id="fn:21" role="doc-endnote">
+            <p><a href="https://github.com/admin-ch/PT-System-Documents/blob/master/SwissCovid-ExposureScore.pdf">PT-System-Documents/SwissCovid-ExposureScore.pdf at master · admin-ch/PT-System-Documents · GitHub</a> (2020年9月11日) <a href="#fnref:21" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+          </li>
+          <li id="fn:22" role="doc-endnote">
+            <p><a href="https://www.code4japan.org/">Code for Japan</a> <a href="#fnref:22" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+          </li>
+          <li id="fn:23" role="doc-endnote">
+            <p>上平崇仁著『<a href="https://www.nttpub.co.jp/search/books/detail/100002509.html">コ・デザイン デザインすることをみんなの手に</a>』 NTT出版、2020年 <a href="#fnref:23" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+          </li>
+        </ol>
       </div>
-      <p>こう考えれば分かるように、アーティストは通俗的な「アート思考」の理解とは異なり、むしろ「過去や常識に囚われ」まくっている。まったく「自由」ではない。しかし、それは決して悪いことではなく、むしろ創造の源泉となっている。</p>
-      <p>アートというゲームにはルールがあり、観客もいる。ルールと観客の存在こそが、アーティストによるアートのプレイを可能にしている。アート思考とは、つまりはルールと観客について考えることである。それらは固定的ではない。ルールを書き換えたり、新たな観客を作り出す試みもまた、アートというゲームにおいては高得点（美術史への登録）につながりうるプレイなのである。</p>
-      <hr />
-      <p>これで「アート思考」の話は終わり。まとめておく。</p>
-      <p>創造におけるトレンドの変遷は、<strong>規範と逸脱の歴史的動力学</strong>によって理解できる。その動力学は<strong>再帰的な経路依存性</strong>の法則に支配されている。アーティストは規範という不自由なものに従ったり、逸脱したりする。規範とダンスする。その運動から価値を生み出していく。それがアーティストという存在であり、そのプレイを支えるのが（私が考える）<strong>アート思考</strong>である。それはゲームのルールと観客についての思考である。</p>
-      <p>このようなアート思考は、「過去や常識に囚われない自由な発想」などという、通俗的な「アート思考」の理解とは全く異なる。むしろ真逆に位置するものだ。そして、遥かに射程が広いものだ。あらゆる人文領域におけるトレンドの変遷を理解することに役立つ。さらには、新たな価値の創造にも役立つ。</p>
-      <p>結局のところ、アート思考とは、<strong>歴史を使って歴史に介入し、自分に有利な歴史を作っていくための戦略思考</strong>なのだ。</p>
       ]]></content>
   </entry>
   <entry>
-    <title type="html"><![CDATA[起業がふたたび社会変革の前衛になるために]]></title>
-    <link href="https://hideishi.com/blog/2020/10/14/philosophy-for-startup.html"/>
-    <updated>2020-10-14T00:00:00+09:00</updated>
-    <id>https://hideishi.com/blog/2020/10/14/philosophy-for-startup</id>
-    <content type="html"><![CDATA[<p><img src="/assets/blog/2020-10-14-philosophy-for-startup/fist.png" alt="突き上げた拳のイラスト" /></p>
-    <p>先日、ベンチャー・キャピタリストの方が来訪された。近況を話し合う中で、「最近のスタートアップには社会変革の大志がなくなった」という認識で一致してしまった。では、なぜ起業家から大志が失われてしまったのか。来客に話したことを、文章として残しておく。</p>
-    <h2 id="社会を変える">社会を変える</h2>
-    <p>多くのスタートアップは「社会を変える」と言う。「社会を変える」とは、社会問題を解決するということだ。</p>
-    <p>貧困、医療、搾取、経済格差、教育格差、機会格差、男女格差、ジェンダー差別、人種差別、民族差別、国籍差別、職業差別、暴力、ハラスメント、環境汚染、災害、エネルギー、食糧、住宅……数え上げればキリがない。</p>
-    <p>「社会を変える」と言っているスタートアップは、こういった類の社会問題に取り組んでいるだろうか。生活をちょっと便利にするアプリを提供することが「社会を変える」ことなのだろうか。ちょっとした不便が「社会問題」なのだろうか。</p>
-    <p>「社会を変える」という言葉の耐えられない軽さ。</p>
-    <h2 id="お金配りおじさん">お金配りおじさん</h2>
-    <p>全共闘以後、若者は政治音痴になった。運動嫌いになった。だから起業家もノンポリになった。目的は自己実現か金儲けになった。その成れの果てが「<a href="https://www.itmedia.co.jp/news/articles/2006/29/news098.html">お金配りおじさん</a>」。</p>
-    <p>何のために金を集めるのか。金を使って何をするのか。思想のない者が大金を稼いだところで、やることといえば金を配るくらい。そういう身も蓋もない事実が、誰の目にも明らかになった。じつに最悪で、それゆえ最良の反面教師だ。今後は説明しやすくなった。</p>
-    <p>「お金配りおじさんになりたくなかったら、ちゃんとした思想を持って起業しよう」</p>
-    <h2 id="カウンターカルチャー">カウンターカルチャー</h2>
-    <p>若者は「何か意味のあること」をしたがるもの。昔ならロックバンドをやっていたような若者が、今はスタートアップをしている。だから<a href="https://www.buzzfeed.com/jp/narumi/a-sha">スタートアップの写真がアー写っぽくなる</a>としても、何ら不思議ではない。スタートアップは格好良くなければならないと思われている。</p>
-    <div class="jekyll-linkpreview-wrapper">
-      <p><a href="https://www.buzzfeed.com/jp/narumi/a-sha" target="_blank">https://www.buzzfeed.com/jp/narumi/a-sha</a></p>
-      <div class="jekyll-linkpreview-wrapper-inner">
-        <div class="jekyll-linkpreview-content">
-          <div class="jekyll-linkpreview-image">
-            <a href="https://www.buzzfeed.com/jp/narumi/a-sha" target="_blank">
-              <img src="https://img.buzzfeed.com/buzzfeed-static/static/2018-11/27/7/enhanced/buzzfeed-prod-web-03/original-15872-1543321201-3.jpg?crop=1724:902;0,399%26downsize=1250:*" />
-            </a>
-          </div>
-          <div class="jekyll-linkpreview-body">
-            <h2 class="jekyll-linkpreview-title">
-              <a href="https://www.buzzfeed.com/jp/narumi/a-sha" target="_blank">最近のスタートアップの記事、サムネ画像がアー写感すごい説</a>
-            </h2>
-            <div class="jekyll-linkpreview-description">「ろくろ」はもう古い。</div>
-          </div>
-        </div>
-        <div class="jekyll-linkpreview-footer">
-          <a href="//www.buzzfeed.com" target="_blank">www.buzzfeed.com</a>
-        </div>
-      </div>
-    </div>
-    <p>ただし、昔のロックバンドと現代のスタートアップには決定的な違いがある。昔のロックバンドには思想や政治性があった。彼らは「今の社会は腐っている」と歌った。つまり反権力、反政府、反体制、反主流、反権威、反商業主義、反資本主義などの思想があった。そういう文化を<strong>カウンターカルチャー</strong>（対抗文化）と呼ぶ。そもそもパーソナル・コンピューターだってカウンターカルチャーだった。それを象徴したブランドがAppleだ。</p>
-    <p>ところが今のスタートアップにはカウンター（対抗）の思想がない。「社会を変える」と言っているが、口先で言っているだけだ。内実が伴っていない。今の社会を肯定し、その中で小金を稼ぐだけ。彼らの会社が経済的に成功したところで、社会はまったく変わらない。なんと保守的なスタートアップだろうか。</p>
-    <p>まあ保守的なスタートアップが多数派でも構わない。しかし、少数派であってもカウンター勢力が一定数は必要だ。カウンター勢力がいない社会では、さまざまな問題が放置されてしまう。多数派や既得権益層による不当な支配体制が温存される。不正義が放置される。そのしわ寄せは少数派や弱者へと向かう。</p>
-    <p>というわけで、<strong>カウンターカルチャーとしてのスタートアップ</strong>というものについて、いまから論じていきたい。</p>
-    <p>注釈しておくと、「前衛」という言葉には「マルクス主義」「革命運動」「左翼思想」などの含意がある。共産党が自らを「前衛党」と呼称してきたように。しかし、僕の主張は「起業家は左翼思想に染まれ」「起業家は革命を目指せ」ということではない。この文章において「前衛」とは「左」という意味ではない。社会変革の最前線で闘う、その立ち位置を「前衛」と呼んでいる。</p>
-    <h2 id="全共闘以後">全共闘以後</h2>
-    <p>かつて社会問題に真摯に取り組んだ若者がいた。1968年を頂点とする<a href="https://kotobank.jp/word/%E5%AD%A6%E7%94%9F%E9%81%8B%E5%8B%95-43684">学生運動</a>（<a href="https://kotobank.jp/word/%E3%82%B9%E3%83%81%E3%83%A5%E3%83%BC%E3%83%87%E3%83%B3%E3%83%88%E3%83%BB%E3%83%91%E3%83%AF%E3%83%BC-1347148">スチューデント・パワー</a>）の時代のことだ。彼らは国家と闘い、そして挫折した。</p>
-    <p>日本における学生運動（または学園闘争）の象徴が東大安田講堂事件。若者は派閥（セクト）の違いを超えて「全学共闘会議（全共闘）」を結成し、一丸となって大学や国家と闘った。そして敗れた。</p>
-    <div class="jekyll-linkpreview-wrapper">
-      <p><a href="https://www.sankei.com/affairs/news/190117/afr1901170050-n1.html" target="_blank">https://www.sankei.com/affairs/news/190117/afr1901170050-n1.html</a></p>
-      <div class="jekyll-linkpreview-wrapper-inner">
-        <div class="jekyll-linkpreview-content">
-          <div class="jekyll-linkpreview-image">
-            <a href="https://www.sankei.com/affairs/news/190117/afr1901170050-n1.html" target="_blank">
-              <img src="https://www.sankei.com/images/news/190117/afr1901170050-p1.jpg" />
-            </a>
-          </div>
-          <div class="jekyll-linkpreview-body">
-            <h2 class="jekyll-linkpreview-title">
-              <a href="https://www.sankei.com/affairs/news/190117/afr1901170050-n1.html" target="_blank">過激派、武装闘争の分岐点　安田講堂事件５０年</a>
-            </h2>
-            <div class="jekyll-linkpreview-description">大学の頂点・東京大学の安田講堂に昭和４４年１月、火炎ビンなどで武装した学生らが立てこもった。大学の自治確立や医学部の民主化といった要求を掲げた一大学の闘争に始ま…</div>
-          </div>
-        </div>
-        <div class="jekyll-linkpreview-footer">
-          <a href="//www.sankei.com" target="_blank">www.sankei.com</a>
-        </div>
-      </div>
-    </div>
-    <p>これが歴史の分水嶺。熱い「政治の季節」が終わった。若者は政治から撤退し、「<a href="https://ja.wikipedia.org/wiki/%E3%81%97%E3%82%89%E3%81%91%E4%B8%96%E4%BB%A3">しらけ世代</a>」となった。全共闘以後、現在までの半世紀にわたり非政治的な季節が続いている。<sup id="fnref:season-of-politics" role="doc-noteref"><a href="#fn:season-of-politics" class="footnote">1</a></sup></p>
-    <p>全共闘以後、問題意識を持つ若者には、一体どんな運動が可能なのだろうか。連合赤軍のように、より過激な武力闘争へ身を投じた若者がいた。</p>
-    <div class="jekyll-linkpreview-wrapper">
-      <p><a href="https://kc.kodansha.co.jp/product?item=0000043680" target="_blank">https://kc.kodansha.co.jp/product?item=0000043680</a></p>
-      <div class="jekyll-linkpreview-wrapper-inner">
-        <div class="jekyll-linkpreview-content">
-          <div class="jekyll-linkpreview-image">
-            <a href="https://kc.kodansha.co.jp/product?item=0000043680" target="_blank">
-              <img src="https://cv.bkmkn.kodansha.co.jp/9784063723229/9784063723229_w.jpg" />
-            </a>
-          </div>
-          <div class="jekyll-linkpreview-body">
-            <h2 class="jekyll-linkpreview-title">
-              <a href="https://kc.kodansha.co.jp/product?item=0000043680" target="_blank">『レッド（１）』（山本　直樹）　製品詳細　講談社コミックプラス</a>
-            </h2>
-            <div class="jekyll-linkpreview-description">この物語の舞台は１９６９年から１９７２年にかけての日本。ベトナム戦争や公害問題など高度成長の歪みを背景に、当たり前のように学生運動に参加していった普通の若者たちが、やがて矛盾に満ちた国家体制を打倒するという革命運動に身を投じていく様と、その行き着く先をクールに描き出す、若き革命家たちの青春群像劇である。</div>
-          </div>
-        </div>
-        <div class="jekyll-linkpreview-footer">
-          <a href="//kc.kodansha.co.jp" target="_blank">kc.kodansha.co.jp</a>
-        </div>
-      </div>
-    </div>
-    <p>あるいは、政治家として議会活動に転じた若者もいた。大学人や塾講師として学生をオルグする道を選んだ者もいたし、マスコミの社員になった者もいた。さらには、社会問題を解決するための事業を起こし、自ら経営していく道を選んだ若者もいた。<sup id="fnref:zensho" role="doc-noteref"><a href="#fn:zensho" class="footnote">2</a></sup></p>
-    <h2 id="大地を守る会">大地を守る会</h2>
-    <p>元全学連委員長の<a href="https://ja.wikipedia.org/wiki/%E8%97%A4%E6%9C%AC%E6%95%8F%E5%A4%AB">藤本敏夫</a>氏は、大地を守る会（発足時「大地を守る市民の会」、現オイシックス・ラ・大地）の初代会長になった。以下、戎谷徹也氏のオーラルヒストリーから引用する：</p>
-    <div class="jekyll-linkpreview-wrapper">
-      <p><a href="https://www.daichi-m.co.jp/history/572/" target="_blank">https://www.daichi-m.co.jp/history/572/</a></p>
-      <div class="jekyll-linkpreview-wrapper-inner">
-        <div class="jekyll-linkpreview-content">
-          <div class="jekyll-linkpreview-image">
-            <a href="https://www.daichi-m.co.jp/history/572/" target="_blank">
-              <img src="https://www.daichi-m.co.jp/wp-content/uploads/2015/06/064aed51ec004cd42e38cf6675562067-e1451032934671.jpg" />
-            </a>
-          </div>
-          <div class="jekyll-linkpreview-body">
-            <h2 class="jekyll-linkpreview-title">
-              <a href="https://www.daichi-m.co.jp/history/572/" target="_blank">【第1話】 目標は「大地を守る会」を消滅させること！</a>
-            </h2>
-            <div class="jekyll-linkpreview-description">【第1話】目標は「大地を守る会」を消滅させること！大地を守る会が2015年の夏でついに設立40年を迎える。有機農業が当たり前で、農薬による健康被害などない、食べものや水や環境が当たり前に大切にされる社会、大地を守る会のような組織がいらなくな</div>
-          </div>
-        </div>
-        <div class="jekyll-linkpreview-footer">
-          <a href="//www.daichi-m.co.jp" target="_blank">www.daichi-m.co.jp</a>
-        </div>
-      </div>
-    </div>
-    <blockquote>
-      <p>気が付けば設立当時のメンバーも藤田代表含め３名になって、そのメンバーと僕の間にいた諸先輩は一人も残っていない。そして「40周年」という年月。この節目にあたって、改めて大地を守る会が歩んできた道のりを振り返り、原点を見つめ直したいと思う。カッコよく言えば、大地を守る会の「魂」の部分を次の世代に託しておきたいと思うのである。数少ない”生き残り”の義務として。</p>
-      <p>そこでまずはあの頃の議論、「俺たちの目標は……」から始めたい。 この意味は簡単なことで、”大地を守る”などと掲げる団体が存在すること自体が、よろしくない社会だということだ。有機農業が当たり前で、農薬による健康被害などない、食べものや水や環境が当たり前に大切にされる社会、こんな組織がいらなくなる社会をつくるために、大地を守る会は設立されたんだと。</p>
-      <p>「僕らは解散に向かって、前進する！」</p>
-      <p>解散したらオイラは…と不安そうに質問した者がいて、藤本さんは胸を張って答えた。ただの八百屋になればいいのだ。あるいは農民になろう。君は肥料屋、肥料製造は静脈産業になるぞ。しかしそのためには、社会の価値観が有機農業（オーガニック）的に変わらなければならない。社会運動と事業の拡大はそんな時代を創るためにある。<sup id="fnref:daichi-history-1" role="doc-noteref"><a href="#fn:daichi-history-1" class="footnote">3</a></sup></p>
-    </blockquote>
-    <div class="jekyll-linkpreview-wrapper">
-      <p><a href="https://www.daichi-m.co.jp/history/980/" target="_blank">https://www.daichi-m.co.jp/history/980/</a></p>
-      <div class="jekyll-linkpreview-wrapper-inner">
-        <div class="jekyll-linkpreview-content">
-          <div class="jekyll-linkpreview-image">
-            <a href="https://www.daichi-m.co.jp/history/980/" target="_blank">
-              <img src="https://www.daichi-m.co.jp/wp-content/uploads/2015/06/632fe5786ceb3e2afa0bde0dc3f1fc6b.jpg" />
-            </a>
-          </div>
-          <div class="jekyll-linkpreview-body">
-            <h2 class="jekyll-linkpreview-title">
-              <a href="https://www.daichi-m.co.jp/history/980/" target="_blank">【第4話】大地を守る会は「希望」であり続けているか</a>
-            </h2>
-            <div class="jekyll-linkpreview-description">【第4話】大地を守る会は「希望」であり続けているか。社会は公害問題で揺れる時代に入っていて、高度経済成長の夢を砕くオイルショックがあり、有吉佐和子さんの『複合汚染』がベストセラーになっていた。1975年8月19日、大地を守る会の前身となる「</div>
-          </div>
-        </div>
-        <div class="jekyll-linkpreview-footer">
-          <a href="//www.daichi-m.co.jp" target="_blank">www.daichi-m.co.jp</a>
-        </div>
-      </div>
-    </div>
-    <blockquote>
-      <p>社会は公害問題で揺れる時代に入っていて、高度経済成長の夢を砕くオイルショックがあり、ローマクラブが発表した『成長の限界』が議論を呼び、有吉佐和子さんの『複合汚染』がベストセラーになっていた。</p>
-      <p>この運動に確信を持った藤田や同じ出版社に勤めていた加藤保明（現：(株)フルーツバスケット会長）たちは1975年8月19日、大手町・農協ホールを借り、大地を守る会の前身となる「大地を守る市民の会」設立集会を開催する。生産者・消費者200人が集まってくれた。会場にはまだ駆け出しの毎日新聞記者・鳥越俊太郎さんの顔があったと聞いている。<sup id="fnref:daichi-history-4" role="doc-noteref"><a href="#fn:daichi-history-4" class="footnote">4</a></sup></p>
-    </blockquote>
-    <div class="jekyll-linkpreview-wrapper">
-      <p><a href="https://www.daichi-m.co.jp/history/1057/" target="_blank">https://www.daichi-m.co.jp/history/1057/</a></p>
-      <div class="jekyll-linkpreview-wrapper-inner">
-        <div class="jekyll-linkpreview-content">
-          <div class="jekyll-linkpreview-image">
-            <a href="https://www.daichi-m.co.jp/history/1057/" target="_blank">
-              <img src="https://www.daichi-m.co.jp/wp-content/uploads/2015/07/637b355282267b97676e224674d3c8ae.jpg" />
-            </a>
-          </div>
-          <div class="jekyll-linkpreview-body">
-            <h2 class="jekyll-linkpreview-title">
-              <a href="https://www.daichi-m.co.jp/history/1057/" target="_blank">【第5話】藤本敏夫・加藤登紀子の登場、そして伝説のフェアへ</a>
-            </h2>
-            <div class="jekyll-linkpreview-description">【第5話】藤本敏夫・加藤登紀子の登場、そして伝説のフェアへ。大地を守る会の設立には至ったが、設立初期は困窮にあえぐときもあった。しかし藤本敏夫・加藤登紀子夫妻をはじめ、人に恵まれ開催した「無農薬農産物フェア」は評判を呼ぶこととなった。</div>
-          </div>
-        </div>
-        <div class="jekyll-linkpreview-footer">
-          <a href="//www.daichi-m.co.jp" target="_blank">www.daichi-m.co.jp</a>
-        </div>
-      </div>
-    </div>
-    <blockquote>
-      <p>1975年8月19日の「大地を守る市民の会」設立集会は、マスコミでも小さく取り上げられた。そのニュースを見てやってきたのが、藤本敏夫さんである。</p>
-      <p>藤本敏夫、元全学連委員長。「火の出るようなアジテーション、演説の天才だった」と藤田から聞かされたことがある。防衛庁突入なる過激な行動を指揮したカドでお縄を頂戴し、服役中に東大出身の歌手・加藤登紀子さんと結婚する。<sup id="fnref:daichi-history-5" role="doc-noteref"><a href="#fn:daichi-history-5" class="footnote">5</a></sup></p>
-    </blockquote>
-    <h2 id="前衛的な社会運動としてのスタートアップ">前衛的な社会運動としてのスタートアップ</h2>
-    <p>活動家が具体的な運動論として「起業」という選択肢を選ぶことがある。「社会を変える」と口で言ってるだけのノンポリ起業家ではない。実際に社会を変えていく社会運動のビジョンがあり、その方法論として事業経営という手段が選ばれている。これが<strong>前衛的な社会運動としてのスタートアップ</strong>のあり方だ。</p>
-    <p>もちろん、みんながみんな前衛でなくてもいい。むしろ、前衛的な起業家なんて、いつの時代だって少数派でしかありえない。とはいえ、それにしても今の時代には少なすぎる。それでは世の中が良くならない。だいいち面白くもない。僕には「応援したい」と思える起業家がほとんどいなくなってしまった。「<strong>カウンターカルチャーとしてのスタートアップ</strong>」の文化は失われてしまったのだ。</p>
-    <p>そういう起業家が全くいないわけではない。しかし「文化」としては残っていない。この文化を復興するには、まさにこうした知識を伝えていかなければならないのだろうと思う。言論の力で起業家予備軍を啓蒙していくこと。それしかない。</p>
-    <h2 id="トムザッキー">トム・ザッキー</h2>
-    <p>現代の前衛起業家も紹介しておこう。現代の起業家にとってロールモデルとなりうる人物を。</p>
-    <p>まずはテラサイクルのトム・ザッキー氏だ。</p>
-    <div class="jekyll-linkpreview-wrapper">
-      <p><a href="https://www.nikkei.com/article/DGXMZO57456440R30C20A3TL3000/" target="_blank">https://www.nikkei.com/article/DGXMZO57456440R30C20A3TL3000/</a></p>
-      <div class="jekyll-linkpreview-wrapper-inner">
-        <div class="jekyll-linkpreview-content">
-          <div class="jekyll-linkpreview-image">
-            <a href="https://www.nikkei.com/article/DGXMZO57456440R30C20A3TL3000/" target="_blank">
-              <img src="https://cf-images.ap-northeast-1.prod.boltdns.net/v1/static/4504957054001/025924dc-0aa1-4085-a7b4-2389d5c7ee30/b7b4a615-a154-4ae4-b0b9-0af0207a4346/640x360/match/image.jpg" />
-            </a>
-          </div>
-          <div class="jekyll-linkpreview-body">
-            <h2 class="jekyll-linkpreview-title">
-              <a href="https://www.nikkei.com/article/DGXMZO57456440R30C20A3TL3000/" target="_blank">祖国と別れ、ごみと出合った　リサイクルの革命児: 日本経済新聞</a>
-            </h2>
-            <div class="jekyll-linkpreview-description">「世の中から捨てるという概念をなくす。それが創業当初から一貫した我が社のパーパス（存在意義）だ」米テラサイクルの創業者で最高経営責任者（CEO）のトム・ザッキー（38）は相手の目を真っすぐ見つめて熱く語る。</div>
-          </div>
-        </div>
-        <div class="jekyll-linkpreview-footer">
-          <a href="//www.nikkei.com" target="_blank">www.nikkei.com</a>
-        </div>
-      </div>
-    </div>
-    <blockquote>
-      <p>テラサイクルのミミズ堆肥は質のよさで評判を呼び、米ホームセンターのホーム・デポなど大手チェーンも販売する人気商品になった。事業は軌道に乗っていた。だが、ザッキーは満足できなかった。「生ごみをミミズに処理させているだけでは、社会からゴミはなくならない」。08年、ザッキーは周囲の反対を押し切り、ミミズ堆肥事業を売却。テラサイクルを「リサイクル困難と思われていた素材をリサイクル可能にする企業」に転換させた。</p>
-    </blockquote>
-    <p>上手くいっている事業を売却し、また新たなスタートアップに挑戦する。金儲けが目的ならば考えられないことだ。金儲けではないのだ。</p>
-    <blockquote>
-      <p>「資本主義が利益の奴隷なのはおかしい。利益は経営の健全性を示す指標にすぎない。企業の存在意義ではない」</p>
-    </blockquote>
-    <p>まさにその通りだ。企業の目的は利益を上げることではない。目的を実現するために利益が必要なだけだ。</p>
-    <p>僕が彼を知ったのは、サービスデザイン・グローバル・カンファレンス(SDGC)2019だった。彼の<a href="https://youtu.be/ChgIUcohsIY">キーノート</a>をトロントで聴き、大きな感銘を受けた。会場も湧いていた。彼の新たな容器再利用事業Loopは、グローバル企業のCEOらと共同で<a href="https://www.nikkei.com/article/DGXMZO40452320V20C19A1000000/">ダボス会議で発表</a>された<sup id="fnref:loop-tokyo" role="doc-noteref"><a href="#fn:loop-tokyo" class="footnote">6</a></sup>。トム・ザッキー氏はミレニアル世代の若者を代表する前衛起業家だ。</p>
-    <h2 id="東浩紀">東浩紀</h2>
-    <p>1971年生まれの哲学者、東浩紀氏が創業した<a href="https://genron.co.jp/">株式会社ゲンロン</a>も、前衛的な社会運動としてのスタートアップだ：</p>
-    <blockquote>
-      <p>ゲンロンは、2010年4月に、批評家の東浩紀によって創業された小さな企業です。2020年4月で創立10周年を迎えます。</p>
-      <p>ゲンロンは、学会や人文書の常識には囚われない、領域横断的な「知のプラットフォーム」の構築を目指して創業されました。批評誌『ゲンロン』や単行本シリーズ《ゲンロン叢書》の刊行のほか、東京・五反田にあるイベントスペース「ゲンロンカフェ」の運営、友の会会員の交流事業、関連する放送プラットフォームの開発などを行っています。最先端の知を市民に開く公共的使命を担いつつも、助成金や補助金には頼らない独立の運営姿勢が高く評価され、多くのかたから支援をいただいています。</p>
-      <p>哲学（フィロソフィー）はもともと、古代ギリシア語で知（ソフィア）を愛する（フィロ）ことを意味する言葉でした。哲学の起源に戻り、知をふたたび愛されるものに変えること。それがゲンロンのミッションです。<sup id="fnref:genron-about" role="doc-noteref"><a href="#fn:genron-about" class="footnote">7</a></sup></p>
-    </blockquote>
-    <p>ゲンロンは商売ありきの会社ではない。コンテンツ事業のために人文知という商材が選ばれたのではない。その逆で、思想を実践するために起業という手段が選ばれている。大学を辞め、在野にこだわる哲学者が、株式会社という組織形態を使って社会変革の前衛で闘っている。「最先端の知を市民に開く公共的使命を担いつつも、助成金や補助金には頼らない独立の運営姿勢」。まさにカウンターカルチャーとしてのスタートアップだ。<sup id="fnref:genron-counter-culture" role="doc-noteref"><a href="#fn:genron-counter-culture" class="footnote">8</a></sup></p>
-    <p>今年、ゲンロンは独自の動画配信プラットフォーム「<a href="https://shirasu.io/">シラス</a>」を立ち上げた。驚くべきことだ。そんなものを作ろうと思ったら、数千万円は必要になるだろう。普通、哲学者は動画配信プラットフォームなど作らない。何のためにそんな事業を立ち上げるのか：</p>
-    <blockquote>
-      <p>ゲンロンを創業して10年。ゲンロンカフェを開業して7年。<br />
-        なぜ似た場所がもっと増えないのか、ずっと考え続けてきました。<br />
-        その疑問への答えがシラスです。<br />
-        いまのネットは、みなが自分の一部を切り売りして<br />
-        閲覧数を稼ぐしかなくなっています。<br />
-        だからみな同じ言葉しか発せられなくなっています。<br />
-        けれどもネットには別の可能性もあったはずです。<br />
-        ツイッターとニコ生が民主主義を更新すると（少なくとも一部では）<br />
-        信じられた時代があった。<br />
-        その理想をふたたび手繰り寄せるために、<br />
-        人間が人間でいられるための小さな空間を、泡のようにたくさん作りたい。<br />
-        シラスはそんな願いを込めて開発しました。<br />
-        シラスは広告モデルに頼りません。無料放送もしません。<br />
-        だから100万人に見られても意味がありません。<br />
-        いっときバズるよりも100人の心をしっかり掴む、<br />
-        そんな番組を作りたい配信者と、<br />
-        そんな番組を見たい観客をともに支援する<br />
-        プラットフォームを目指しています。<sup id="fnref:shirasu" role="doc-noteref"><a href="#fn:shirasu" class="footnote">9</a></sup></p>
-    </blockquote>
-    <p>シラスというプラットフォームは、東氏の思想を実装したものだ。彼はアーキテクチャの力でインターネット上の言論環境を変えようとしている。だから、これは単なる伊達や酔狂ではなく、思想的な必然性のある事業なのだ。これぞ本質的な「デザイン」の営みだ。</p>
-    <div class="jekyll-linkpreview-wrapper">
-      <p><a href="https://hideishi.com/blog/2013/12/03/semantic-turn.html" target="_blank">https://hideishi.com/blog/2013/12/03/semantic-turn.html</a></p>
-      <div class="jekyll-linkpreview-wrapper-inner">
-        <div class="jekyll-linkpreview-content">
-          <div class="jekyll-linkpreview-image">
-            <a href="https://hideishi.com/blog/2013/12/03/semantic-turn.html" target="_blank">
-              <img src="https://hideishi.com/assets/blog/2013-12-03-semantic-turn/thumbnail.png" />
-            </a>
-          </div>
-          <div class="jekyll-linkpreview-body">
-            <h2 class="jekyll-linkpreview-title">
-              <a href="https://hideishi.com/blog/2013/12/03/semantic-turn.html" target="_blank">ユーザー・エクスペリエンスについて考える人に読んで欲しいクリッペンドルフの『意味論的転回−デザインの新しい基礎理論』</a>
-            </h2>
-            <div class="jekyll-linkpreview-description">『意味論的転回』は、「デザインとは、そもそも何なのか？」という根源的な問いに答える哲学書でありつつ、実践的手法を紹介する本でもあります。</div>
-          </div>
-        </div>
-        <div class="jekyll-linkpreview-footer">
-          <a href="//hideishi.com" target="_blank">hideishi.com</a>
-        </div>
-      </div>
-    </div>
-    <p>トム・ザッキー氏と東浩紀氏の活動について見てきた。彼らような前衛起業家がもっと必要だ。そのほうが社会はより良くなっていくし、なにより面白くなっていくはずだ。そうは思わないだろうか？</p>
-    <h2 id="前衛起業家の理論武装">前衛起業家の理論武装</h2>
-    <p>起業志望の若者へ提言しておきたい。まずは『<a href="https://morning.kodansha.co.jp/c/strangelessonsbyprofessorterror.html">テロール教授の怪しい授業</a>』を読んで、カルトや洗脳への免疫をつけておこう。これは大事な準備だ。軽い気持ちで社会運動に興味を持った結果、いつの間にかカルトに洗脳されることがある。彼らの勧誘は実に巧みなので、「自分は十分に賢いから大丈夫」と思っている者ほど危ない。多くの東大生がオウム真理教のテロリストになったことを思い出そう。</p>
-    <div class="jekyll-linkpreview-wrapper">
-      <p><a href="https://morning.kodansha.co.jp/c/strangelessonsbyprofessorterror.html" target="_blank">https://morning.kodansha.co.jp/c/strangelessonsbyprofessorterror.html</a></p>
-      <div class="jekyll-linkpreview-wrapper-inner">
-        <div class="jekyll-linkpreview-content">
-          <div class="jekyll-linkpreview-image">
-            <a href="https://morning.kodansha.co.jp/c/strangelessonsbyprofessorterror.html" target="_blank">
-              <img src="https://morning.kodansha.co.jp/content/images/c/strangelessonsbyprofessorterror/wide.jpg" />
-            </a>
-          </div>
-          <div class="jekyll-linkpreview-body">
-            <h2 class="jekyll-linkpreview-title">
-              <a href="https://morning.kodansha.co.jp/c/strangelessonsbyprofessorterror.html" target="_blank">テロール教授の怪しい授業</a>
-            </h2>
-            <div class="jekyll-linkpreview-description">泣く子も黙るローレンツ・ゼミには、今年もそうとは知らない学生たちが集まっている。
-              「あなたたちはテロリスト予備軍です。」
-              予想だにしない一言に愕然とする生徒たち。脱落＝テロリスト認定。恐ろしすぎる授業が始まる——。
-              そもそもテロリズムとは何か？　日常に潜むテロの根っことは？
-              今までメディアで語られてきたテロ論は全部ウソ。テロ教授が教える、知るのは怖い、知らないのはもっと怖い「テロとカルト」の真実。
-            </div>
-          </div>
-        </div>
-        <div class="jekyll-linkpreview-footer">
-          <a href="//morning.kodansha.co.jp" target="_blank">morning.kodansha.co.jp</a>
-        </div>
-      </div>
-    </div>
-    <p>その次は『<a href="https://www.eastpress.co.jp/goods/detail/9784781617466">全共闘以後</a>』だ。1968年以後の半世紀にわたる若者の運動史を学ぼう。時代時代の若者たちは、何に怒り、どのように闘ってきたか。それはほとんど失敗と敗北の歴史でもある。先人の失敗を繰り返さないためにも、歴史を学んでおきたい。</p>
-    <div class="jekyll-linkpreview-wrapper">
-      <p><a href="https://www.eastpress.co.jp/goods/detail/9784781617466" target="_blank">https://www.eastpress.co.jp/goods/detail/9784781617466</a></p>
-      <div class="jekyll-linkpreview-wrapper-inner">
-        <div class="jekyll-linkpreview-content">
-          <div class="jekyll-linkpreview-image">
-            <a href="https://www.eastpress.co.jp/goods/detail/9784781617466" target="_blank">
-              <img src="https://www.eastpress.co.jp:443/img/cover_image_l/9784781617466.jpg" />
-            </a>
-          </div>
-          <div class="jekyll-linkpreview-body">
-            <h2 class="jekyll-linkpreview-title">
-              <a href="https://www.eastpress.co.jp/goods/detail/9784781617466" target="_blank">書籍詳細 - 改訂版　全共闘以後｜イースト・プレス</a>
-            </h2>
-            <div class="jekyll-linkpreview-description">1968年の全共闘から50年。1972年の連合赤軍事件を境に学生運動は急速に退潮し、その後は「シラケでバブルでオタクでサブカル」の時代――。そんな歴史認識は間違っている！　70年代以降も若者たちの社会運動・学生運動は、ほぼ10年おきに高揚していた。ただ、それらを一貫した視点で記述した「通史」が存在せず、これまで不可視になっていたのである。全共闘以後50年の歴史を新しく塗りかえる著者渾身の原稿用紙1000枚超の大冊！　絓秀実氏、推薦。菅野完氏、解説。</div>
-          </div>
-        </div>
-        <div class="jekyll-linkpreview-footer">
-          <a href="//www.eastpress.co.jp" target="_blank">www.eastpress.co.jp</a>
-        </div>
-      </div>
-    </div>
-    <p>いま起業する人にとって、パーソナル・コンピューターやインターネットは不可欠なツールだ。では、それらは歴史的にどういうものとして構想され、実現され、普及してきたのか。その歴史を理解することは、これらのツールの本質を理解する上でも極めて有意義なことだ。カウンターカルチャー史としてのパーソナル・コンピューター史、インターネット史を語ったことがある。そのための<a href="https://www.evernote.com/shard/s7/client/snv?noteGuid=90040ece-63fb-4ce8-bf06-d0ede90b2705&amp;noteKey=97c03a8c0100d956&amp;sn=https%3A%2F%2Fwww.evernote.com%2Fshard%2Fs7%2Fsh%2F90040ece-63fb-4ce8-bf06-d0ede90b2705%2F97c03a8c0100d956&amp;title=%25E3%2582%25AA%25E3%2583%2596%25E3%2582%25B8%25E3%2582%25A7%25E3%2582%25AF%25E3%2583%2588%25E6%258C%2587%25E5%2590%2591%25E5%25B9%25BB%25E8%25A6%259A%25E5%2589%25A4%2B%25E3%2582%25AB%25E3%2582%25A6%25E3%2583%25B3%25E3%2582%25BF%25E3%2583%25BC%25E3%2582%25AB%25E3%2583%25AB%25E3%2583%2581%25E3%2583%25A3%25E3%2583%25BC%25E3%2581%25A8%25E3%2581%2597%25E3%2581%25A6%25E3%2581%25AE%25E3%2583%2591%25E3%2583%25BC%25E3%2582%25BD%25E3%2583%258A%25E3%2583%25AB%25E3%2583%25BB%25E3%2582%25B3%25E3%2583%25B3%25E3%2583%2594%25E3%2583%25A5%25E3%2583%25BC%25E3%2583%2586%25E3%2582%25A3%25E3%2583%25B3%25E3%2582%25B0%25E5%25B0%258F%25E5%258F%25B2%25EF%25BC%2588%25E4%25BB%25AE%25EF%25BC%2589">年表</a>も用意した。いずれバージョンアップして再演したい。</p>
-    <div class="jekyll-linkpreview-wrapper">
-      <p><a href="https://www.zerobase.jp/salon/2019/12/01/object-oriented-psychedelics.html" target="_blank">https://www.zerobase.jp/salon/2019/12/01/object-oriented-psychedelics.html</a></p>
-      <div class="jekyll-linkpreview-wrapper-inner">
-        <div class="jekyll-linkpreview-content">
-          <div class="jekyll-linkpreview-image">
-            <a href="https://www.zerobase.jp/salon/2019/12/01/object-oriented-psychedelics.html" target="_blank">
-              <img src="https://www.zerobase.jp/salon/images/2019-12-01-object-oriented-psychedelics.png" />
-            </a>
-          </div>
-          <div class="jekyll-linkpreview-body">
-            <h2 class="jekyll-linkpreview-title">
-              <a href="https://www.zerobase.jp/salon/2019/12/01/object-oriented-psychedelics.html" target="_blank">オブジェクト指向幻覚剤 カウンターカルチャーとしてのパーソナル・コンピューティング小史（仮）</a>
-            </h2>
-            <div class="jekyll-linkpreview-description">2019年12月1日、Fukuoka Growth NextにてFGNエンジニアMeetup vol. 4に当社代表の石橋が登壇した際の記録映像を公開しました。タイトルは「オブジェクト指向幻覚剤 カウンターカルチャーとしてのパーソナル・コンピューティング小史（仮）」といいます。やばい歴史の話です。やばい年表もあります。
-            </div>
-          </div>
-        </div>
-        <div class="jekyll-linkpreview-footer">
-          <a href="//www.zerobase.jp" target="_blank">www.zerobase.jp</a>
-        </div>
-      </div>
-    </div>
-    <p>大地を守る市民の会が発足した時代、ローマクラブ『成長の限界』(1972)が世界的に話題となっていた。その主執筆者ドネラ・H・メドウズは、のちにシステム思考の啓蒙書を書いている。その知恵は起業家の武器になるはずだ。「社会問題の元凶はXだ」と考えてXを叩いた結果、問題は解決するどころかむしろ悪化することがある。問題の理解が表層的なまま、解決策を考えてはいけない。物事はそう単純ではない。</p>
-    <div class="jekyll-linkpreview-wrapper">
-      <p><a href="https://eijipress.ocnk.net/product/449" target="_blank">https://eijipress.ocnk.net/product/449</a></p>
-      <div class="jekyll-linkpreview-wrapper-inner">
-        <div class="jekyll-linkpreview-content">
-          <div class="jekyll-linkpreview-image">
-            <a href="https://eijipress.ocnk.net/product/449" target="_blank">
-              <img src="https://eijipress.ocnk.net/data/eijipress/product/20150127_d0f053.gif" />
-            </a>
-          </div>
-          <div class="jekyll-linkpreview-body">
-            <h2 class="jekyll-linkpreview-title">
-              <a href="https://eijipress.ocnk.net/product/449" target="_blank">世界はシステムで動く――いま起きていることの本質をつかむ考え方</a>
-            </h2>
-            <div class="jekyll-linkpreview-description">『世界がもし100人の村だったら』『成長の限界』ドネラ・H・メドウズに学ぶ「氷山の全体」を見る技術。株価の暴落、資源枯渇、価格競争のエスカレート…さまざまな出来事の裏側では何が起きているのか?　　 「…</div>
-          </div>
-        </div>
-        <div class="jekyll-linkpreview-footer">
-          <a href="//eijipress.ocnk.net" target="_blank">eijipress.ocnk.net</a>
-        </div>
-      </div>
-    </div>
-    <p>もちろん、基礎教養として、人文知の諸分野にも幅広く興味を持ってほしい。そうすることで、様々な社会問題への意識が高まり、その問題を解決するための事業構想も湧いてくる。</p>
-    <p>教養が足りない者には、その存在も知覚できないし、その意味も理解できないような問題というものがある。複雑な問題の全体像を多角的に理解することなしに、その解決などできるはずもない。誤った「解決」は、しばしば現状維持にも劣る。これは保守主義の知恵だ。急進的な改革や革命の失敗を反面教師としつつ、先に進まなければならない。</p>
-    <h2 id="あとがき">あとがき</h2>
-    <p>このようなことを来客に話したら、「スタートアップのための思想史・運動史」を講義してくれと言われた。確かにそういう啓蒙活動が必要なのだろう。僕なりにやってきたけれど、質・量ともにまったく足りない。もっと勉強して、きちんと体系化して、なにより面白がってもらえるコンテンツにして伝えていきたいと思う。</p>
-    <p>そして最後に、この文章を読んだ人なら誰でも抱くであろう疑問に応えておかなければならない。「偉そうに語っているけど、お前自身は何かやってるの？」という問いに。何かを批判する者は、その同じ批判によって自らもまた批判されなければならないのだ。</p>
-    <p>僕自身のプロジェクトについては、<a href="/">このサイト</a>に書いてある通り。中でも<a href="https://www.zerobase.jp/za/">セルフマネジメントテクノロジー Za</a>は、近代的な企業経営のイデオロギーを批判し、そこから人々を自由にするためのプロジェクトであり、僕のライフワークだ<sup id="fnref:za" role="doc-noteref"><a href="#fn:za" class="footnote">10</a></sup>。まだ偉大な成果を出すには至っていない。自社では10年を超える実践の蓄積があるが、まだ世に出せてはいない。まだまだこれから。まさにスタートアップの段階にある。</p>
-    <p>それはさておき、「成功した経営者の言うことは正しいに違いない」という<a href="https://kotobank.jp/word/%E5%BE%8C%E5%85%89%E5%8A%B9%E6%9E%9C-64519">ハロー効果</a>のバイアスには注意が必要だ。僕がこの文章で論じたことは、「金が儲かる経営術」や「組織を大きくする経営術」ではない。むしろ、単なる金儲けや規模拡大とは異なる、オルタナティブなスタートアップのあり方を論じた。したがって、僕にはこの問題について論じる資格があると思うのだが、あとは読者の判断に委ねたい。</p>
+    <title type="html"><![CDATA[「アート思考」の話]]></title>
+    <link href="https://hideishi.com/blog/2020/11/23/art-thinking.html"/>
+    <updated>2020-11-23T00:00:00+09:00</updated>
+    <id>https://hideishi.com/blog/2020/11/23/art-thinking</id>
+    <content type="html"><![CDATA[<figure>
+      <p><img src="/assets/blog/2020-11-23-art-thinking/Sandro_Botticelli-La_nascita_di_Venere.jpg" alt="《ヴィーナスの誕生》の図像" /></p>
+      <figcaption>サンドロ・ボッティチェッリの絵画《ヴィーナスの誕生》</figcaption>
+    </figure>
+    <p>ビジネス界隈で「アート思考」と呼ばれるものの実態は「クリエイティブ思考」だろう。では、言葉の本来の意味での「アート思考」は一体どういう意味になるべきか。それは、<strong>アートの営みが拠って立つ原理のように思考すること</strong>だと思う。</p>
+    <p>ちょっと分かりにくい言い方かもしれないので、易しく言い直してみる。アートという営みは、一体どういう作動原理によって動いているのだろうか。その原理を理解し、その原理に従って様々な物事について考えてみるということ。そのような思考を「アート思考」と呼びたい。</p>
+    <p>では、アートの営みの根底にあるのは、一体どういう原理なのだろうか。それは、人工物の制作における<strong>規範と逸脱の歴史的動力学</strong>だろう。</p>
+    <p>これも簡単に言い直しておくことにする。道具にせよ作品にせよ、何らかの物を作り出す人々がいる。物を作る人は、必ず何かを手本とする。そこには従うべきルール、つまり規範がある。</p>
+    <p>そのような規範は、時代とともに移り変わっていく。移り変わるということは、つまりこういうことだ。ある時点での規範を逸脱する美意識があり、それが次第に支持を得ることで、新たな規範として取り込まれていく。逸脱のダイナミズムによって規範が更新されていく。</p>
+    <p><img src="/assets/blog/2020-11-23-art-thinking/norm-and-deviation.png" alt="規範から逸脱し、その逸脱が規範に取り込まれる流れの図解" /></p>
+    <p>そのような運動は人類史に渡って繰り返されてきたし、今後も繰り返されていく。</p>
+    <p>逸脱もまた完全に新奇であることなどない。かつて歴史上存在した規範を参照し、それを復興するという形を取ることがほとんどである。その代表例が、教会の宗教的美意識が支配的だった時代に、古代ギリシアの人間中心的美意識を復興したルネサンスだ。規範と逸脱の動力学は、過去の歴史を参照しながら繰り返される。</p>
+    <p>以上のことを短く言うと、「人工物の制作における<strong>規範と逸脱の歴史的動力学</strong>」という言葉になる。</p>
     <hr />
-    <p>僕がこんな<a href="/blog/">ブログ</a>を書いたり、あちこちで講演などの<a href="/activity/">活動</a>をしたり、<a href="/podcast/">Podcast</a>したり、<a href="https://www.youtube.com/channel/UCacqUBssrpC-_0gjNRJ98RA">YouTube動画</a>を配信したり、<a href="https://www.zerobase.jp/salon/">前衛的なサロン</a>を運営したりしているのは、<strong>物事を深く考えて物を作る仲間</strong>を増やしたいからだ。興味を持ってフォローしてもらえると嬉しい。</p>
+    <p>さて、身近なiPhoneという例について考えてみたい。それ以前の携帯電話のユーザーインターフェイスは、テンキー、カーソルキー、スタイラス（タッチペン）などを使うことが常識（規範）だった。そこに「フィンガータッチの方が優れている」という異質な美意識をぶつけた。そう、「美意識」なのだ。iPhoneの勝利は単なる技術的合理性では説明できない。これは「より便利」「より高性能」だとかいう話ではない。</p>
+    <p>2007年に最初のiPhoneを紹介したスティーブ・ジョブズのプレゼンテーションを思い出してみればいい。彼はスタイラスという当時の規範に対して、「ウンザリ」という負のレッテル貼りをした。</p>
+    <p><img src="/assets/blog/2020-11-23-art-thinking/who-wants-stylus.png" alt="&quot;Who wants a stylus?&quot; と書かれたスライドとスティーブ・ジョブズの写真" /></p>
+    <p>その上で、指で直接タッチできるスクリーンは「魔法のようだ」という美意識を訴求した。</p>
+    <p><img src="/assets/blog/2020-11-23-art-thinking/works-like-magic.png" alt="&quot;Works like magic&quot; と書かれたスライドとスティーブ・ジョブズの写真" /></p>
+    <p>iPhoneをひっさげたスティーブ・ジョブズが当時の競合スマートフォンに対して挑んだのは、技術の戦争ではない。美意識の戦争だった。この点は誤解されがちだ。</p>
+    <p>このような規範と逸脱の動力学は、まさにアートヒストリーのアナロジーで理解できる。アートの世界でも、規範を逸脱するような表現がいくつも登場してきた。その多くは単に黙殺されてきただろう。しかしその中で、当初は批判されつつも支持を集め、結果として美術史に登録されたものがある。例えば印象派、キュビズム、フォービズム、もの派など。そういった、今日我々が知るトレンド（芸術運動、アートムーブメント）も、最初は規範からの逸脱であり、批判の対象だった。</p>
+    <p>ついでに言えば、「〜派」「〜イズム」などの言葉は、当初は蔑称だったものが次第に正式名称として定着したものも多い。それらの運動が当初は逸脱として始まったことの動かぬ証拠だ。</p>
+    <p>忘れがちだが、iPhoneだって最初から理解されたわけではない。「こんなもの流行るはずがない」という懐疑的・批判的な意見の方が多かったと思う。そもそも最初から全員に理解されるものは、規範からまったく逸脱していないということになる。逆に言えば、新たなトレンドを作りたい者は、万人に理解されることをしてはならない。</p>
+    <figure>
+      <p><img src="/assets/blog/2020-11-23-art-thinking/Phase-Mother_Earth.jpg" alt="《位相-大地》の写真" /></p>
+      <figcaption>もの派の代表的な作品：関根伸夫《位相-大地》1968年<br />
+        <small>出典：作者自身による, CC BY-SA 4.0 License（<a href="https://commons.wikimedia.org/w/index.php?curid=40068012">リンク</a>）</small></figcaption>
+    </figure>
+    <p>iPhoneが作り出したスマートフォンのあり方が、現在のファッショントレンドになっている。これはあくまでトレンドであって、将来は分からない。ブラックベリー型やスタイラス型、あるいはフィーチャーフォン型の復権もありえると思う。</p>
+    <figure>
+      <p><img src="/assets/blog/2020-11-23-art-thinking/BlackBerry_Torch.jpg" alt="BlackBerry Torch 9800の写真" /></p>
+      <figcaption>BlackBerry Torch 9800 タッチパネル+スライドキーボード<br />
+        <small>出典：edans / Enrique Dans による, CC BY 2.0 License（<a href="https://commons.wikimedia.org/w/index.php?curid=12475879">リンク</a>）</small></figcaption>
+    </figure>
+    <p>技術にばかり関心が向いている人は、「携帯電話はスマートフォンに<strong>進歩</strong>した」と考えがちだ。単純な進歩史観。しかし、実際にはそうではない。</p>
+    <p>例えば、なぜ2020年にアナログレコードが売れているのか。「中高年の懐古趣味」では説明がつかない。若者に人気なのだから。彼らは技術的に優れている（と一般に思われている）配信やCDよりも、劣った（と一般的に思われている）アナログレコードを好む。これが美意識だ。技術の問題ではない。</p>
+    <figure>
+      <p><img src="/assets/blog/2020-11-23-art-thinking/analog-records.jpg" alt="アナログレコードの写真" /></p>
+      <figcaption>アナログレコード<br />
+        <small>出典：Pexelsによる, Simplified Pixabay License（<a href="https://pixabay.com/images/id-1867697/">リンク</a>）</small></figcaption>
+    </figure>
+    <p>同じことが携帯電話についても言える。そもそも携帯電話にはアクセサリー（服飾小物）としての役割もある。ファッショントレンドの変遷と無関係なはずがない。</p>
+    <hr />
+    <p>冒頭の問題意識に戻る。「アート的な思考」という言葉は、本来こういう思考を指すべきだと思う。<strong>規範と逸脱の歴史的動力学</strong>という枠組みを用いて状況を分析する思考。より抽象的に言えば、過去を参照しながら規範を逸脱していく<strong>再帰的な経路依存性</strong>において、社会の運動性を理解するということ。</p>
+    <p>「再帰的な経路依存性」を言い換えれば、要するに「新しいアイデアは無から生まれることはなく、必ず過去の歴史の中から再発見されたものの変奏として現れてくる」ということを「再帰的」と呼んでいる。</p>
+    <p>また、「過去にこうだったから、今こうなっている」という歴史的経緯が全ての物事を制約しているということ。そこから自由な逸脱や飛躍など人間社会にはありえないという制約、あるいは法則のことを「経路依存性」と呼ぶ。（余談だが、経路依存性への意識は、良い意味で、そして本来の意味での保守主義に通じる）</p>
+    <p>アート的思考とは、トレンドが移り変わっていく運動の法則を、</p>
+    <ul>
+      <li>過去の歴史を参照して自らを更新していこうとする<strong>再帰性</strong>と、</li>
+      <li>あらゆるものが過去の経緯によって制約されるという<strong>経路依存性</strong></li>
+    </ul>
+    <p>とを通じて理解していく思考のことだ。先に「規範と逸脱の歴史的動力学」について説明した。そのダイナミズムを生み出す、より根底的な力が再帰的な経路依存性だということになる。</p>
+    <hr />
+    <p>同じことはファッションについても言える。ファッションにおける美意識（おしゃれ）の本質は「差異」（人とは違うこと）だ。</p>
+    <p>あるトレンドがあまりにも普及しきって、みんな同じようになってしまえば、先進的な人（おしゃれな人）はそこから逸脱しようとする。人と違うことをしようとする。その結果、新しいトレンドが生まれる。それもまた人々に真似され、しまいにはみんなに行き渡る。そうすればまた先進的な人は差異を求めて違うことを始める。</p>
+    <p>その運動はまるで回転運動や潮の満ち引きのように定期的に繰り返す。逸脱のリソース（元ネタ）は、ほとんどの場合、過去のファッション史から引っ張り出されてくる。過去の歴史があるからこそ、新たな創造が可能になっている。</p>
+    <p><img src="/assets/blog/2020-11-23-art-thinking/norm-and-deviation-referencing-past.png" alt="過去のある時点を参照している逸脱が、再び規範に取り込まれていく流れの図解" /></p>
+    <p>アートにせよ、ファッションにせよ、デザインにせよ、学問にせよ、なんであれ人間が関わる物事（人文）には、こういう循環運動がある。いわば敗者復活戦がある。</p>
+    <p>これこそ文系（人文知）と、理系（科学・工学）との違いでもある。文系の対象が人文（人間に関わる事物）であるのに対して、理系の対象は自然（人間でないもの）である。理系の論理の中には、過去に「敗者」となった理論が復活してくることはない（ごく稀に例外はあるが）。天動説の復活はないだろう。理論は単線的に進歩し続ける。後戻りはない。そういうシンプルな進歩史観が理系の世界観だ。</p>
+    <p>しかし、アートやファッションなど文系の領域においては、過去のトレンドが何度も再来してくる。この点において理系と文系の世界観は全く違う。文系では単純な進歩史観を採用することは難しい。</p>
+    <hr />
+    <p>これまでIT業界は歴史が短かった（というのも本当は誤解なのだが、一般大衆にとってのIT業界史はせいぜい1995年くらいから始まっているだろう）。したがって、IT業界の中で歴史的循環を意識することなどなかったかもしれない。だが、IT業界の歴史も充分に長くなってきた。今後はアートやファッションと同じように、過去のトレンドの再来が普通になってくるだろう。</p>
+    <p>IT業界に多い技術的進歩史観の人には理解しづらいことだろう。彼らの考えでは、「過去は全てにおいて現在より劣っており、未来は全てにおいて現在より優れている」ということになっている。しかし現実はそうなっていない。単にIT業界の歴史が短く、過去のトレンドの再来を目にしたことがないために、単線的に進歩してきたのだと勘違いしているだけだ。</p>
+    <p>今月（2020年11月）発表された話題の新型コンピューター <a href="https://www.raspberrypi.org/products/raspberry-pi-400/">Raspberry Pi 400</a> （ラズベリーパイ400）を見てみよう。キーボードにパソコン本体が組み込まれている。電源とマウスとディスプレイを接続すれば、完全なコンピューターとして使える。このようなコンピューターは現在の市場にほとんど存在していない。</p>
+    <figure>
+      <p><img src="/assets/blog/2020-11-23-art-thinking/raspberry-pi-400.jpg" alt="Raspberry Pi 400の写真" /></p>
+      <figcaption>Raspberry Pi 400<br />
+        <small>出典：<a href="https://www.raspberrypi.org/products/raspberry-pi-400">The Raspberry Pi Foundation</a> ©</small></figcaption>
+    </figure>
+    <p>キーボード一体型パーソナル・コンピューターという形態を「新しい！」と思う人もいるかもしれない。ところが、これはむしろパーソナル・コンピューター史的には先祖返りに近い。40年ほど前には、むしろ主流だった。</p>
+    <figure>
+      <p><img src="/assets/blog/2020-11-23-art-thinking/Apple_II_typical_configuration_1977.png" alt="Apple IIおよび周辺機器の写真" /></p>
+      <figcaption>Apple II（1977年）<br />
+        本体およびモノクロ・モニター、ゲーム・パドル、カセット・デッキ<br />
+        <small>出典：FozzTexx, CC BY-SA 4.0 License（<a href="https://commons.wikimedia.org/w/index.php?curid=79580939">リンク</a>）</small></figcaption>
+    </figure>
+    <figure>
+      <p><img src="/assets/blog/2020-11-23-art-thinking/pc-6001.png" alt="PC-6001の写真" /></p>
+      <figcaption>NEC PC-6001（1981年）<br />
+        <small>出典：Morianuによる, CC BY-SA 4.0 License（<a href="https://commons.wikimedia.org/w/index.php?curid=79547564による">リンク</a>）</small></figcaption>
+    </figure>
+    <figure>
+      <p><img src="/assets/blog/2020-11-23-art-thinking/Sharp_MZ-700.jpg" alt="MZ-700の写真" /></p>
+      <figcaption>シャープMZ-700（1982年）<br />
+        <small>出典：Bilbyによる, CC BY 3.0 License（<a href="https://commons.wikimedia.org/wiki/File:Sharp_MZ-700.jpg">リンク</a>）</small></figcaption>
+    </figure>
+    <figure>
+      <p><img src="/assets/blog/2020-11-23-art-thinking/commodore-64.png" alt="コモドール64の写真" /></p>
+      <figcaption>コモドール64（1982年）</figcaption>
+    </figure>
+    <figure>
+      <p><img src="/assets/blog/2020-11-23-art-thinking/Sony_HitBit_HB-10P.jpg" alt="Sony MSX HitBit 10-Pの写真" /></p>
+      <figcaption>Sony HitBit 10-P（1985年頃？）<br />
+        MSX規格の製品例</figcaption>
+    </figure>
+    <p>ラズベリーパイ400のようなキーボード一体型デザインが、今後のトレンドになるかどうかは分からない。ただ、「過去の歴史を参照しつつ、現在の規範から逸脱する」という創造の運動性を見出すことはできるだろう。IT業界にも、アート界と同じような創造の運動がある。だからアート思考はIT業界も射程に入れることができる。</p>
+    <hr />
+    <p>この話も終わりに近づいてきた。最後に、アート思考でアイデアを出すための方法について考えておきたい。それは「歴史を学べ」という一言に尽きる。歴史の中にヒントがある。歴史上の出来事を単に点で捉えるのではなく、線として、物語として理解することだ。例えば「シンプルなトレンドが流行した後には、複雑なトレンドが来て、またその次はシンプルになる」といった具合に。</p>
+    <p>世間で「アート思考」という言葉が使われるとき、その意味は「過去や常識に囚われることなく、自由にアイデアを出す発想法」といったものだ。しかし、実際のアーティストやファッションデザイナーがやっていることは全く異なる。</p>
+    <p>作家は歴史上の作品を驚くほどたくさん知っている（専門家なのだから当然だ）。過去の作品やトレンドを参照しつつ、同時代の作品やトレンドも横目に見ながら制作している（展覧会やコレクションをまめにチェックする作家は多い）。主流の規範に、かなりの程度まで従っている（そうしないと、そもそも「作品」として成立しない）。しかし、どこかで逸脱することも常に模索している（創造の価値は、他との差異から生じるのだから）。自分の逸脱が人々に支持され、トレンドになっていけば、「新たなトレンドの創始者」として歴史に名を残すことができる。</p>
+    <p>ある種のハードコアなアーティストたちは、こういうゲームをプレイしている。村上隆を思い浮かべてもらえれば分かりやすい。彼はこのゲームのプレイヤー役を、露悪的なまでに徹底的に演じている。</p>
     <div class="jekyll-linkpreview-wrapper">
-      <p><a href="https://www.zerobase.jp/salon/2019/05/25/hardcore-oo.html" target="_blank">https://www.zerobase.jp/salon/2019/05/25/hardcore-oo.html</a></p>
+      <p><a href="https://www.gentosha.jp/article/11800/" target="_blank">https://www.gentosha.jp/article/11800/</a></p>
       <div class="jekyll-linkpreview-wrapper-inner">
         <div class="jekyll-linkpreview-content">
           <div class="jekyll-linkpreview-image">
-            <a href="https://www.zerobase.jp/salon/2019/05/25/hardcore-oo.html" target="_blank">
-              <img src="https://www.zerobase.jp/salon/images/2019-05-25-hardcore-oo-thumbnail.png" />
+            <a href="https://www.gentosha.jp/article/11800/" target="_blank">
+              <img src="http://www.gentosha.jp/files/uploads/series/1545227430_rectangle_icon.jpg" />
             </a>
           </div>
           <div class="jekyll-linkpreview-body">
             <h2 class="jekyll-linkpreview-title">
-              <a href="https://www.zerobase.jp/salon/2019/05/25/hardcore-oo.html" target="_blank">オブジェクト指向のハードコア</a>
+              <a href="https://www.gentosha.jp/article/11800/" target="_blank">日本人アーティストはなぜ世界で通用しないのか？｜芸術起業論｜村上隆</a>
             </h2>
-            <div class="jekyll-linkpreview-description">オブジェクト指向のハードコアは2019年5月25日にゼロベースサロンで行われたイベントです。「オブジェクト指向」というキーワードについて、プログラミング、デザイン、哲学などの分野を横断しつつ知的な議論ができました。記録映像は必見。</div>
+            <div class="jekyll-linkpreview-description">海外で高く評価され、作品が高く取引される村上隆。彼は、他のアーティストと何が大きく違ったのか？　稀代の芸術家が熱い情熱と冷静な分析をもって綴った名著『芸術起業論』『芸術闘争論』の待望の文庫化を記念して、まず『芸術起業論』の冒頭をお届けします。
+              芸術には、世界基準の戦略が必要である
+              　なぜ、これまで、日本人アーティストは、片手で数えるほどしか世界で通用しなかったのでしょうか。
+              　単純です。
+              「欧米の芸術の世界のルールをふまえていなかったから」なのです。
+              　欧米の芸術の世界は、確固たる不文律が存在しており、ガチガチに整備されております。
+              　そのルールに沿わない作品は「評価の対象外」</div>
           </div>
         </div>
         <div class="jekyll-linkpreview-footer">
-          <a href="//www.zerobase.jp" target="_blank">www.zerobase.jp</a>
+          <a href="//www.gentosha.jp" target="_blank">www.gentosha.jp</a>
         </div>
       </div>
     </div>
-    <div class="jekyll-linkpreview-wrapper">
-      <p><a href="https://hideishi.com/blog/2014/04/25/future-of-information-architect.html" target="_blank">https://hideishi.com/blog/2014/04/25/future-of-information-architect.html</a></p>
-      <div class="jekyll-linkpreview-wrapper-inner">
-        <div class="jekyll-linkpreview-content">
-          <div class="jekyll-linkpreview-image">
-            <a href="https://hideishi.com/blog/2014/04/25/future-of-information-architect.html" target="_blank">
-              <img src="https://hideishi.com/assets/blog/2014-04-25-future-of-information-architect/thumbnail.png" />
-            </a>
-          </div>
-          <div class="jekyll-linkpreview-body">
-            <h2 class="jekyll-linkpreview-title">
-              <a href="https://hideishi.com/blog/2014/04/25/future-of-information-architect.html" target="_blank">建築家の歴史と情報建築家の未来</a>
-            </h2>
-            <div class="jekyll-linkpreview-description">情報建築家（インフォメーション・アーキテクト）は、どこから来て、どこへ向かうのか。建築家の歴史を辿りつつ考えました。</div>
-          </div>
-        </div>
-        <div class="jekyll-linkpreview-footer">
-          <a href="//hideishi.com" target="_blank">hideishi.com</a>
-        </div>
-      </div>
-    </div>
-    <div class="jekyll-linkpreview-wrapper">
-      <p><a href="https://hideishi.com/blog/2015/08/03/consulting-for-startups.html" target="_blank">https://hideishi.com/blog/2015/08/03/consulting-for-startups.html</a></p>
-      <div class="jekyll-linkpreview-wrapper-inner">
-        <div class="jekyll-linkpreview-content">
-          <div class="jekyll-linkpreview-image">
-            <a href="https://hideishi.com/blog/2015/08/03/consulting-for-startups.html" target="_blank">
-              <img src="https://hideishi.com/assets/blog/2015-08-03-consulting-for-startups/thumbnail.png" />
-            </a>
-          </div>
-          <div class="jekyll-linkpreview-body">
-            <h2 class="jekyll-linkpreview-title">
-              <a href="https://hideishi.com/blog/2015/08/03/consulting-for-startups.html" target="_blank">アーキテクトが起業家やベンチャー企業のためにできること</a>
-            </h2>
-            <div class="jekyll-linkpreview-description">特定分野の専門家としてのコンサルティングではなく、総合的なプライマリ・ケアができます。また、エコシステムへの思考や、SF的想像力を呼びおこすことで、事業を大きく構想するためのお手伝いができます。</div>
-          </div>
-        </div>
-        <div class="jekyll-linkpreview-footer">
-          <a href="//hideishi.com" target="_blank">hideishi.com</a>
-        </div>
-      </div>
-    </div>
-    <div class="footnotes" role="doc-endnotes">
-      <ol>
-        <li id="fn:season-of-politics" role="doc-endnote">
-          <p>実際には、全共闘以後も若者の運動は続いていた。それが外山恒一著『<a href="https://www.eastpress.co.jp/goods/detail/9784781617466">全共闘以後</a>』の主張だ。しかし、一般にはそう思われていない。2015年のSEALDsですら、1968年とは比較にならない。その意味で、やはり「政治の季節」は全共闘で終わっている。 <a href="#fnref:season-of-politics" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
-        </li>
-        <li id="fn:zensho" role="doc-endnote">
-          <p>全共闘の活動家だった小川賢太郎氏はゼンショーを創業した。すき家は日本を代表する外食チェーンの一つにまで成長した。そのゼンショーが<a href="https://withnews.jp/article/f0140731009qq000000000000000W00a1001qq000010545A">労働者を搾取する企業</a>に成り果ててしまった。資本家を打倒して労働者のユートピアを作るという革命の夢を見た若者は、どこで道を誤ってしまったのだろうか。 <a href="#fnref:zensho" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
-        </li>
-        <li id="fn:daichi-history-1" role="doc-endnote">
-          <p><a href="https://www.daichi-m.co.jp/history/572/">戎谷徹也「大地を守る会40年の歩み【第1話】 目標は「大地を守る会」を消滅させること！」</a>より引用 <a href="#fnref:daichi-history-1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
-        </li>
-        <li id="fn:daichi-history-4" role="doc-endnote">
-          <p><a href="https://www.daichi-m.co.jp/history/980/">戎谷徹也「大地を守る会40年の歩み【第4話】大地を守る会は「希望」であり続けているか」</a>より引用 <a href="#fnref:daichi-history-4" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
-        </li>
-        <li id="fn:daichi-history-5" role="doc-endnote">
-          <p><a href="https://www.daichi-m.co.jp/history/1057/">戎谷徹也「大地を守る会40年の歩み【第5話】藤本敏夫・加藤登紀子の登場、そして伝説のフェアへ」</a>より引用 <a href="#fnref:daichi-history-5" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
-        </li>
-        <li id="fn:loop-tokyo" role="doc-endnote">
-          <p>Loopは<a href="https://www.sustainablebrands.jp/news/jp/detail/1195100_1501.html">2020年秋から東京でも試験運用が始まる予定</a>になっていた。実際には2020年10月時点でサービスが開始されていない。新型コロナウイルス感染症(COVID-19)の影響だろう。 <a href="#fnref:loop-tokyo" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
-        </li>
-        <li id="fn:genron-about" role="doc-endnote">
-          <p><a href="https://genron.co.jp/about">「株式会社ゲンロン 会社概要」（代表 上田洋子、創業者 東浩紀）</a>より引用 <a href="#fnref:genron-about" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
-        </li>
-        <li id="fn:genron-counter-culture" role="doc-endnote">
-          <p>東浩紀氏自身は<a href="https://genron-cafe.jp/event/20201025b/">2020年10月25日の放送</a>で自身を「オルタナティブ」の側に位置付け、「カウンター」と区別している。つまり、狭義のカウンターの目的が究極的には権力奪取（革命）であるのに対して、オルタナティブの目的は我が道を行くこと（独立）である。それはそれとして、一般的には「カウンター」と言えばオルタナティブも含む広義の批判的立場を意味するので、本文でもゲンロンを「カウンター」という括りに入れた。逆に言えば、本文全体にわたって「カウンター」という言葉にはオルタナティブの意味も込めている。 <a href="#fnref:genron-counter-culture" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
-        </li>
-        <li id="fn:shirasu" role="doc-endnote">
-          <p><a href="https://shirasu.io/">「シラス 開設にあたって」（シラス代表 東浩紀）</a>より引用 <a href="#fnref:shirasu" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
-        </li>
-        <li id="fn:za" role="doc-endnote">
-          <p>セルフマネジメントテクノロジー Za は、昨今ブームのホロクラシーなどとは本質的に異なる「自営の思想」だ。また改めて論じたいが、それ以上に、言葉ではなくプロダクトとして世に問いたい。僕のモットーは「<a href="/about/philosophy.html">思想を実装する</a>」だから。 <a href="#fnref:za" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
-        </li>
-      </ol>
-    </div>
+    <p>こう考えれば分かるように、アーティストは通俗的な「アート思考」の理解とは異なり、むしろ「過去や常識に囚われ」まくっている。まったく「自由」ではない。しかし、それは決して悪いことではなく、むしろ創造の源泉となっている。</p>
+    <p>アートというゲームにはルールがあり、観客もいる。ルールと観客の存在こそが、アーティストによるアートのプレイを可能にしている。アート思考とは、つまりはルールと観客について考えることである。それらは固定的ではない。ルールを書き換えたり、新たな観客を作り出す試みもまた、アートというゲームにおいては高得点（美術史への登録）につながりうるプレイなのである。</p>
+    <hr />
+    <p>これで「アート思考」の話は終わり。まとめておく。</p>
+    <p>創造におけるトレンドの変遷は、<strong>規範と逸脱の歴史的動力学</strong>によって理解できる。その動力学は<strong>再帰的な経路依存性</strong>の法則に支配されている。アーティストは規範という不自由なものに従ったり、逸脱したりする。規範とダンスする。その運動から価値を生み出していく。それがアーティストという存在であり、そのプレイを支えるのが（私が考える）<strong>アート思考</strong>である。それはゲームのルールと観客についての思考である。</p>
+    <p>このようなアート思考は、「過去や常識に囚われない自由な発想」などという、通俗的な「アート思考」の理解とは全く異なる。むしろ真逆に位置するものだ。そして、遥かに射程が広いものだ。あらゆる人文領域におけるトレンドの変遷を理解することに役立つ。さらには、新たな価値の創造にも役立つ。</p>
+    <p>結局のところ、アート思考とは、<strong>歴史を使って歴史に介入し、自分に有利な歴史を作っていくための戦略思考</strong>なのだ。</p>
     ]]></content>
+</entry>
+<entry>
+  <title type="html"><![CDATA[起業がふたたび社会変革の前衛になるために]]></title>
+  <link href="https://hideishi.com/blog/2020/10/14/philosophy-for-startup.html"/>
+  <updated>2020-10-14T00:00:00+09:00</updated>
+  <id>https://hideishi.com/blog/2020/10/14/philosophy-for-startup</id>
+  <content type="html"><![CDATA[<p><img src="/assets/blog/2020-10-14-philosophy-for-startup/fist.png" alt="突き上げた拳のイラスト" /></p>
+  <p>先日、ベンチャー・キャピタリストの方が来訪された。近況を話し合う中で、「最近のスタートアップには社会変革の大志がなくなった」という認識で一致してしまった。では、なぜ起業家から大志が失われてしまったのか。来客に話したことを、文章として残しておく。</p>
+  <h2 id="社会を変える">社会を変える</h2>
+  <p>多くのスタートアップは「社会を変える」と言う。「社会を変える」とは、社会問題を解決するということだ。</p>
+  <p>貧困、医療、搾取、経済格差、教育格差、機会格差、男女格差、ジェンダー差別、人種差別、民族差別、国籍差別、職業差別、暴力、ハラスメント、環境汚染、災害、エネルギー、食糧、住宅……数え上げればキリがない。</p>
+  <p>「社会を変える」と言っているスタートアップは、こういった類の社会問題に取り組んでいるだろうか。生活をちょっと便利にするアプリを提供することが「社会を変える」ことなのだろうか。ちょっとした不便が「社会問題」なのだろうか。</p>
+  <p>「社会を変える」という言葉の耐えられない軽さ。</p>
+  <h2 id="お金配りおじさん">お金配りおじさん</h2>
+  <p>全共闘以後、若者は政治音痴になった。運動嫌いになった。だから起業家もノンポリになった。目的は自己実現か金儲けになった。その成れの果てが「<a href="https://www.itmedia.co.jp/news/articles/2006/29/news098.html">お金配りおじさん</a>」。</p>
+  <p>何のために金を集めるのか。金を使って何をするのか。思想のない者が大金を稼いだところで、やることといえば金を配るくらい。そういう身も蓋もない事実が、誰の目にも明らかになった。じつに最悪で、それゆえ最良の反面教師だ。今後は説明しやすくなった。</p>
+  <p>「お金配りおじさんになりたくなかったら、ちゃんとした思想を持って起業しよう」</p>
+  <h2 id="カウンターカルチャー">カウンターカルチャー</h2>
+  <p>若者は「何か意味のあること」をしたがるもの。昔ならロックバンドをやっていたような若者が、今はスタートアップをしている。だから<a href="https://www.buzzfeed.com/jp/narumi/a-sha">スタートアップの写真がアー写っぽくなる</a>としても、何ら不思議ではない。スタートアップは格好良くなければならないと思われている。</p>
+  <div class="jekyll-linkpreview-wrapper">
+    <p><a href="https://www.buzzfeed.com/jp/narumi/a-sha" target="_blank">https://www.buzzfeed.com/jp/narumi/a-sha</a></p>
+    <div class="jekyll-linkpreview-wrapper-inner">
+      <div class="jekyll-linkpreview-content">
+        <div class="jekyll-linkpreview-image">
+          <a href="https://www.buzzfeed.com/jp/narumi/a-sha" target="_blank">
+            <img src="https://img.buzzfeed.com/buzzfeed-static/static/2018-11/27/7/enhanced/buzzfeed-prod-web-03/original-15872-1543321201-3.jpg?crop=1724:902;0,399%26downsize=1250:*" />
+          </a>
+        </div>
+        <div class="jekyll-linkpreview-body">
+          <h2 class="jekyll-linkpreview-title">
+            <a href="https://www.buzzfeed.com/jp/narumi/a-sha" target="_blank">最近のスタートアップの記事、サムネ画像がアー写感すごい説</a>
+          </h2>
+          <div class="jekyll-linkpreview-description">「ろくろ」はもう古い。</div>
+        </div>
+      </div>
+      <div class="jekyll-linkpreview-footer">
+        <a href="//www.buzzfeed.com" target="_blank">www.buzzfeed.com</a>
+      </div>
+    </div>
+  </div>
+  <p>ただし、昔のロックバンドと現代のスタートアップには決定的な違いがある。昔のロックバンドには思想や政治性があった。彼らは「今の社会は腐っている」と歌った。つまり反権力、反政府、反体制、反主流、反権威、反商業主義、反資本主義などの思想があった。そういう文化を<strong>カウンターカルチャー</strong>（対抗文化）と呼ぶ。そもそもパーソナル・コンピューターだってカウンターカルチャーだった。それを象徴したブランドがAppleだ。</p>
+  <p>ところが今のスタートアップにはカウンター（対抗）の思想がない。「社会を変える」と言っているが、口先で言っているだけだ。内実が伴っていない。今の社会を肯定し、その中で小金を稼ぐだけ。彼らの会社が経済的に成功したところで、社会はまったく変わらない。なんと保守的なスタートアップだろうか。</p>
+  <p>まあ保守的なスタートアップが多数派でも構わない。しかし、少数派であってもカウンター勢力が一定数は必要だ。カウンター勢力がいない社会では、さまざまな問題が放置されてしまう。多数派や既得権益層による不当な支配体制が温存される。不正義が放置される。そのしわ寄せは少数派や弱者へと向かう。</p>
+  <p>というわけで、<strong>カウンターカルチャーとしてのスタートアップ</strong>というものについて、いまから論じていきたい。</p>
+  <p>注釈しておくと、「前衛」という言葉には「マルクス主義」「革命運動」「左翼思想」などの含意がある。共産党が自らを「前衛党」と呼称してきたように。しかし、僕の主張は「起業家は左翼思想に染まれ」「起業家は革命を目指せ」ということではない。この文章において「前衛」とは「左」という意味ではない。社会変革の最前線で闘う、その立ち位置を「前衛」と呼んでいる。</p>
+  <h2 id="全共闘以後">全共闘以後</h2>
+  <p>かつて社会問題に真摯に取り組んだ若者がいた。1968年を頂点とする<a href="https://kotobank.jp/word/%E5%AD%A6%E7%94%9F%E9%81%8B%E5%8B%95-43684">学生運動</a>（<a href="https://kotobank.jp/word/%E3%82%B9%E3%83%81%E3%83%A5%E3%83%BC%E3%83%87%E3%83%B3%E3%83%88%E3%83%BB%E3%83%91%E3%83%AF%E3%83%BC-1347148">スチューデント・パワー</a>）の時代のことだ。彼らは国家と闘い、そして挫折した。</p>
+  <p>日本における学生運動（または学園闘争）の象徴が東大安田講堂事件。若者は派閥（セクト）の違いを超えて「全学共闘会議（全共闘）」を結成し、一丸となって大学や国家と闘った。そして敗れた。</p>
+  <div class="jekyll-linkpreview-wrapper">
+    <p><a href="https://www.sankei.com/affairs/news/190117/afr1901170050-n1.html" target="_blank">https://www.sankei.com/affairs/news/190117/afr1901170050-n1.html</a></p>
+    <div class="jekyll-linkpreview-wrapper-inner">
+      <div class="jekyll-linkpreview-content">
+        <div class="jekyll-linkpreview-image">
+          <a href="https://www.sankei.com/affairs/news/190117/afr1901170050-n1.html" target="_blank">
+            <img src="https://www.sankei.com/images/news/190117/afr1901170050-p1.jpg" />
+          </a>
+        </div>
+        <div class="jekyll-linkpreview-body">
+          <h2 class="jekyll-linkpreview-title">
+            <a href="https://www.sankei.com/affairs/news/190117/afr1901170050-n1.html" target="_blank">過激派、武装闘争の分岐点　安田講堂事件５０年</a>
+          </h2>
+          <div class="jekyll-linkpreview-description">大学の頂点・東京大学の安田講堂に昭和４４年１月、火炎ビンなどで武装した学生らが立てこもった。大学の自治確立や医学部の民主化といった要求を掲げた一大学の闘争に始ま…</div>
+        </div>
+      </div>
+      <div class="jekyll-linkpreview-footer">
+        <a href="//www.sankei.com" target="_blank">www.sankei.com</a>
+      </div>
+    </div>
+  </div>
+  <p>これが歴史の分水嶺。熱い「政治の季節」が終わった。若者は政治から撤退し、「<a href="https://ja.wikipedia.org/wiki/%E3%81%97%E3%82%89%E3%81%91%E4%B8%96%E4%BB%A3">しらけ世代</a>」となった。全共闘以後、現在までの半世紀にわたり非政治的な季節が続いている。<sup id="fnref:season-of-politics" role="doc-noteref"><a href="#fn:season-of-politics" class="footnote">1</a></sup></p>
+  <p>全共闘以後、問題意識を持つ若者には、一体どんな運動が可能なのだろうか。連合赤軍のように、より過激な武力闘争へ身を投じた若者がいた。</p>
+  <div class="jekyll-linkpreview-wrapper">
+    <p><a href="https://kc.kodansha.co.jp/product?item=0000043680" target="_blank">https://kc.kodansha.co.jp/product?item=0000043680</a></p>
+    <div class="jekyll-linkpreview-wrapper-inner">
+      <div class="jekyll-linkpreview-content">
+        <div class="jekyll-linkpreview-image">
+          <a href="https://kc.kodansha.co.jp/product?item=0000043680" target="_blank">
+            <img src="https://cv.bkmkn.kodansha.co.jp/9784063723229/9784063723229_w.jpg" />
+          </a>
+        </div>
+        <div class="jekyll-linkpreview-body">
+          <h2 class="jekyll-linkpreview-title">
+            <a href="https://kc.kodansha.co.jp/product?item=0000043680" target="_blank">『レッド（１）』（山本　直樹）　製品詳細　講談社コミックプラス</a>
+          </h2>
+          <div class="jekyll-linkpreview-description">この物語の舞台は１９６９年から１９７２年にかけての日本。ベトナム戦争や公害問題など高度成長の歪みを背景に、当たり前のように学生運動に参加していった普通の若者たちが、やがて矛盾に満ちた国家体制を打倒するという革命運動に身を投じていく様と、その行き着く先をクールに描き出す、若き革命家たちの青春群像劇である。</div>
+        </div>
+      </div>
+      <div class="jekyll-linkpreview-footer">
+        <a href="//kc.kodansha.co.jp" target="_blank">kc.kodansha.co.jp</a>
+      </div>
+    </div>
+  </div>
+  <p>あるいは、政治家として議会活動に転じた若者もいた。大学人や塾講師として学生をオルグする道を選んだ者もいたし、マスコミの社員になった者もいた。さらには、社会問題を解決するための事業を起こし、自ら経営していく道を選んだ若者もいた。<sup id="fnref:zensho" role="doc-noteref"><a href="#fn:zensho" class="footnote">2</a></sup></p>
+  <h2 id="大地を守る会">大地を守る会</h2>
+  <p>元全学連委員長の<a href="https://ja.wikipedia.org/wiki/%E8%97%A4%E6%9C%AC%E6%95%8F%E5%A4%AB">藤本敏夫</a>氏は、大地を守る会（発足時「大地を守る市民の会」、現オイシックス・ラ・大地）の初代会長になった。以下、戎谷徹也氏のオーラルヒストリーから引用する：</p>
+  <div class="jekyll-linkpreview-wrapper">
+    <p><a href="https://www.daichi-m.co.jp/history/572/" target="_blank">https://www.daichi-m.co.jp/history/572/</a></p>
+    <div class="jekyll-linkpreview-wrapper-inner">
+      <div class="jekyll-linkpreview-content">
+        <div class="jekyll-linkpreview-image">
+          <a href="https://www.daichi-m.co.jp/history/572/" target="_blank">
+            <img src="https://www.daichi-m.co.jp/wp-content/uploads/2015/06/064aed51ec004cd42e38cf6675562067-e1451032934671.jpg" />
+          </a>
+        </div>
+        <div class="jekyll-linkpreview-body">
+          <h2 class="jekyll-linkpreview-title">
+            <a href="https://www.daichi-m.co.jp/history/572/" target="_blank">【第1話】 目標は「大地を守る会」を消滅させること！</a>
+          </h2>
+          <div class="jekyll-linkpreview-description">【第1話】目標は「大地を守る会」を消滅させること！大地を守る会が2015年の夏でついに設立40年を迎える。有機農業が当たり前で、農薬による健康被害などない、食べものや水や環境が当たり前に大切にされる社会、大地を守る会のような組織がいらなくな</div>
+        </div>
+      </div>
+      <div class="jekyll-linkpreview-footer">
+        <a href="//www.daichi-m.co.jp" target="_blank">www.daichi-m.co.jp</a>
+      </div>
+    </div>
+  </div>
+  <blockquote>
+    <p>気が付けば設立当時のメンバーも藤田代表含め３名になって、そのメンバーと僕の間にいた諸先輩は一人も残っていない。そして「40周年」という年月。この節目にあたって、改めて大地を守る会が歩んできた道のりを振り返り、原点を見つめ直したいと思う。カッコよく言えば、大地を守る会の「魂」の部分を次の世代に託しておきたいと思うのである。数少ない”生き残り”の義務として。</p>
+    <p>そこでまずはあの頃の議論、「俺たちの目標は……」から始めたい。 この意味は簡単なことで、”大地を守る”などと掲げる団体が存在すること自体が、よろしくない社会だということだ。有機農業が当たり前で、農薬による健康被害などない、食べものや水や環境が当たり前に大切にされる社会、こんな組織がいらなくなる社会をつくるために、大地を守る会は設立されたんだと。</p>
+    <p>「僕らは解散に向かって、前進する！」</p>
+    <p>解散したらオイラは…と不安そうに質問した者がいて、藤本さんは胸を張って答えた。ただの八百屋になればいいのだ。あるいは農民になろう。君は肥料屋、肥料製造は静脈産業になるぞ。しかしそのためには、社会の価値観が有機農業（オーガニック）的に変わらなければならない。社会運動と事業の拡大はそんな時代を創るためにある。<sup id="fnref:daichi-history-1" role="doc-noteref"><a href="#fn:daichi-history-1" class="footnote">3</a></sup></p>
+  </blockquote>
+  <div class="jekyll-linkpreview-wrapper">
+    <p><a href="https://www.daichi-m.co.jp/history/980/" target="_blank">https://www.daichi-m.co.jp/history/980/</a></p>
+    <div class="jekyll-linkpreview-wrapper-inner">
+      <div class="jekyll-linkpreview-content">
+        <div class="jekyll-linkpreview-image">
+          <a href="https://www.daichi-m.co.jp/history/980/" target="_blank">
+            <img src="https://www.daichi-m.co.jp/wp-content/uploads/2015/06/632fe5786ceb3e2afa0bde0dc3f1fc6b.jpg" />
+          </a>
+        </div>
+        <div class="jekyll-linkpreview-body">
+          <h2 class="jekyll-linkpreview-title">
+            <a href="https://www.daichi-m.co.jp/history/980/" target="_blank">【第4話】大地を守る会は「希望」であり続けているか</a>
+          </h2>
+          <div class="jekyll-linkpreview-description">【第4話】大地を守る会は「希望」であり続けているか。社会は公害問題で揺れる時代に入っていて、高度経済成長の夢を砕くオイルショックがあり、有吉佐和子さんの『複合汚染』がベストセラーになっていた。1975年8月19日、大地を守る会の前身となる「</div>
+        </div>
+      </div>
+      <div class="jekyll-linkpreview-footer">
+        <a href="//www.daichi-m.co.jp" target="_blank">www.daichi-m.co.jp</a>
+      </div>
+    </div>
+  </div>
+  <blockquote>
+    <p>社会は公害問題で揺れる時代に入っていて、高度経済成長の夢を砕くオイルショックがあり、ローマクラブが発表した『成長の限界』が議論を呼び、有吉佐和子さんの『複合汚染』がベストセラーになっていた。</p>
+    <p>この運動に確信を持った藤田や同じ出版社に勤めていた加藤保明（現：(株)フルーツバスケット会長）たちは1975年8月19日、大手町・農協ホールを借り、大地を守る会の前身となる「大地を守る市民の会」設立集会を開催する。生産者・消費者200人が集まってくれた。会場にはまだ駆け出しの毎日新聞記者・鳥越俊太郎さんの顔があったと聞いている。<sup id="fnref:daichi-history-4" role="doc-noteref"><a href="#fn:daichi-history-4" class="footnote">4</a></sup></p>
+  </blockquote>
+  <div class="jekyll-linkpreview-wrapper">
+    <p><a href="https://www.daichi-m.co.jp/history/1057/" target="_blank">https://www.daichi-m.co.jp/history/1057/</a></p>
+    <div class="jekyll-linkpreview-wrapper-inner">
+      <div class="jekyll-linkpreview-content">
+        <div class="jekyll-linkpreview-image">
+          <a href="https://www.daichi-m.co.jp/history/1057/" target="_blank">
+            <img src="https://www.daichi-m.co.jp/wp-content/uploads/2015/07/637b355282267b97676e224674d3c8ae.jpg" />
+          </a>
+        </div>
+        <div class="jekyll-linkpreview-body">
+          <h2 class="jekyll-linkpreview-title">
+            <a href="https://www.daichi-m.co.jp/history/1057/" target="_blank">【第5話】藤本敏夫・加藤登紀子の登場、そして伝説のフェアへ</a>
+          </h2>
+          <div class="jekyll-linkpreview-description">【第5話】藤本敏夫・加藤登紀子の登場、そして伝説のフェアへ。大地を守る会の設立には至ったが、設立初期は困窮にあえぐときもあった。しかし藤本敏夫・加藤登紀子夫妻をはじめ、人に恵まれ開催した「無農薬農産物フェア」は評判を呼ぶこととなった。</div>
+        </div>
+      </div>
+      <div class="jekyll-linkpreview-footer">
+        <a href="//www.daichi-m.co.jp" target="_blank">www.daichi-m.co.jp</a>
+      </div>
+    </div>
+  </div>
+  <blockquote>
+    <p>1975年8月19日の「大地を守る市民の会」設立集会は、マスコミでも小さく取り上げられた。そのニュースを見てやってきたのが、藤本敏夫さんである。</p>
+    <p>藤本敏夫、元全学連委員長。「火の出るようなアジテーション、演説の天才だった」と藤田から聞かされたことがある。防衛庁突入なる過激な行動を指揮したカドでお縄を頂戴し、服役中に東大出身の歌手・加藤登紀子さんと結婚する。<sup id="fnref:daichi-history-5" role="doc-noteref"><a href="#fn:daichi-history-5" class="footnote">5</a></sup></p>
+  </blockquote>
+  <h2 id="前衛的な社会運動としてのスタートアップ">前衛的な社会運動としてのスタートアップ</h2>
+  <p>活動家が具体的な運動論として「起業」という選択肢を選ぶことがある。「社会を変える」と口で言ってるだけのノンポリ起業家ではない。実際に社会を変えていく社会運動のビジョンがあり、その方法論として事業経営という手段が選ばれている。これが<strong>前衛的な社会運動としてのスタートアップ</strong>のあり方だ。</p>
+  <p>もちろん、みんながみんな前衛でなくてもいい。むしろ、前衛的な起業家なんて、いつの時代だって少数派でしかありえない。とはいえ、それにしても今の時代には少なすぎる。それでは世の中が良くならない。だいいち面白くもない。僕には「応援したい」と思える起業家がほとんどいなくなってしまった。「<strong>カウンターカルチャーとしてのスタートアップ</strong>」の文化は失われてしまったのだ。</p>
+  <p>そういう起業家が全くいないわけではない。しかし「文化」としては残っていない。この文化を復興するには、まさにこうした知識を伝えていかなければならないのだろうと思う。言論の力で起業家予備軍を啓蒙していくこと。それしかない。</p>
+  <h2 id="トムザッキー">トム・ザッキー</h2>
+  <p>現代の前衛起業家も紹介しておこう。現代の起業家にとってロールモデルとなりうる人物を。</p>
+  <p>まずはテラサイクルのトム・ザッキー氏だ。</p>
+  <div class="jekyll-linkpreview-wrapper">
+    <p><a href="https://www.nikkei.com/article/DGXMZO57456440R30C20A3TL3000/" target="_blank">https://www.nikkei.com/article/DGXMZO57456440R30C20A3TL3000/</a></p>
+    <div class="jekyll-linkpreview-wrapper-inner">
+      <div class="jekyll-linkpreview-content">
+        <div class="jekyll-linkpreview-image">
+          <a href="https://www.nikkei.com/article/DGXMZO57456440R30C20A3TL3000/" target="_blank">
+            <img src="https://cf-images.ap-northeast-1.prod.boltdns.net/v1/static/4504957054001/025924dc-0aa1-4085-a7b4-2389d5c7ee30/b7b4a615-a154-4ae4-b0b9-0af0207a4346/640x360/match/image.jpg" />
+          </a>
+        </div>
+        <div class="jekyll-linkpreview-body">
+          <h2 class="jekyll-linkpreview-title">
+            <a href="https://www.nikkei.com/article/DGXMZO57456440R30C20A3TL3000/" target="_blank">祖国と別れ、ごみと出合った　リサイクルの革命児: 日本経済新聞</a>
+          </h2>
+          <div class="jekyll-linkpreview-description">「世の中から捨てるという概念をなくす。それが創業当初から一貫した我が社のパーパス（存在意義）だ」米テラサイクルの創業者で最高経営責任者（CEO）のトム・ザッキー（38）は相手の目を真っすぐ見つめて熱く語る。</div>
+        </div>
+      </div>
+      <div class="jekyll-linkpreview-footer">
+        <a href="//www.nikkei.com" target="_blank">www.nikkei.com</a>
+      </div>
+    </div>
+  </div>
+  <blockquote>
+    <p>テラサイクルのミミズ堆肥は質のよさで評判を呼び、米ホームセンターのホーム・デポなど大手チェーンも販売する人気商品になった。事業は軌道に乗っていた。だが、ザッキーは満足できなかった。「生ごみをミミズに処理させているだけでは、社会からゴミはなくならない」。08年、ザッキーは周囲の反対を押し切り、ミミズ堆肥事業を売却。テラサイクルを「リサイクル困難と思われていた素材をリサイクル可能にする企業」に転換させた。</p>
+  </blockquote>
+  <p>上手くいっている事業を売却し、また新たなスタートアップに挑戦する。金儲けが目的ならば考えられないことだ。金儲けではないのだ。</p>
+  <blockquote>
+    <p>「資本主義が利益の奴隷なのはおかしい。利益は経営の健全性を示す指標にすぎない。企業の存在意義ではない」</p>
+  </blockquote>
+  <p>まさにその通りだ。企業の目的は利益を上げることではない。目的を実現するために利益が必要なだけだ。</p>
+  <p>僕が彼を知ったのは、サービスデザイン・グローバル・カンファレンス(SDGC)2019だった。彼の<a href="https://youtu.be/ChgIUcohsIY">キーノート</a>をトロントで聴き、大きな感銘を受けた。会場も湧いていた。彼の新たな容器再利用事業Loopは、グローバル企業のCEOらと共同で<a href="https://www.nikkei.com/article/DGXMZO40452320V20C19A1000000/">ダボス会議で発表</a>された<sup id="fnref:loop-tokyo" role="doc-noteref"><a href="#fn:loop-tokyo" class="footnote">6</a></sup>。トム・ザッキー氏はミレニアル世代の若者を代表する前衛起業家だ。</p>
+  <h2 id="東浩紀">東浩紀</h2>
+  <p>1971年生まれの哲学者、東浩紀氏が創業した<a href="https://genron.co.jp/">株式会社ゲンロン</a>も、前衛的な社会運動としてのスタートアップだ：</p>
+  <blockquote>
+    <p>ゲンロンは、2010年4月に、批評家の東浩紀によって創業された小さな企業です。2020年4月で創立10周年を迎えます。</p>
+    <p>ゲンロンは、学会や人文書の常識には囚われない、領域横断的な「知のプラットフォーム」の構築を目指して創業されました。批評誌『ゲンロン』や単行本シリーズ《ゲンロン叢書》の刊行のほか、東京・五反田にあるイベントスペース「ゲンロンカフェ」の運営、友の会会員の交流事業、関連する放送プラットフォームの開発などを行っています。最先端の知を市民に開く公共的使命を担いつつも、助成金や補助金には頼らない独立の運営姿勢が高く評価され、多くのかたから支援をいただいています。</p>
+    <p>哲学（フィロソフィー）はもともと、古代ギリシア語で知（ソフィア）を愛する（フィロ）ことを意味する言葉でした。哲学の起源に戻り、知をふたたび愛されるものに変えること。それがゲンロンのミッションです。<sup id="fnref:genron-about" role="doc-noteref"><a href="#fn:genron-about" class="footnote">7</a></sup></p>
+  </blockquote>
+  <p>ゲンロンは商売ありきの会社ではない。コンテンツ事業のために人文知という商材が選ばれたのではない。その逆で、思想を実践するために起業という手段が選ばれている。大学を辞め、在野にこだわる哲学者が、株式会社という組織形態を使って社会変革の前衛で闘っている。「最先端の知を市民に開く公共的使命を担いつつも、助成金や補助金には頼らない独立の運営姿勢」。まさにカウンターカルチャーとしてのスタートアップだ。<sup id="fnref:genron-counter-culture" role="doc-noteref"><a href="#fn:genron-counter-culture" class="footnote">8</a></sup></p>
+  <p>今年、ゲンロンは独自の動画配信プラットフォーム「<a href="https://shirasu.io/">シラス</a>」を立ち上げた。驚くべきことだ。そんなものを作ろうと思ったら、数千万円は必要になるだろう。普通、哲学者は動画配信プラットフォームなど作らない。何のためにそんな事業を立ち上げるのか：</p>
+  <blockquote>
+    <p>ゲンロンを創業して10年。ゲンロンカフェを開業して7年。<br />
+      なぜ似た場所がもっと増えないのか、ずっと考え続けてきました。<br />
+      その疑問への答えがシラスです。<br />
+      いまのネットは、みなが自分の一部を切り売りして<br />
+      閲覧数を稼ぐしかなくなっています。<br />
+      だからみな同じ言葉しか発せられなくなっています。<br />
+      けれどもネットには別の可能性もあったはずです。<br />
+      ツイッターとニコ生が民主主義を更新すると（少なくとも一部では）<br />
+      信じられた時代があった。<br />
+      その理想をふたたび手繰り寄せるために、<br />
+      人間が人間でいられるための小さな空間を、泡のようにたくさん作りたい。<br />
+      シラスはそんな願いを込めて開発しました。<br />
+      シラスは広告モデルに頼りません。無料放送もしません。<br />
+      だから100万人に見られても意味がありません。<br />
+      いっときバズるよりも100人の心をしっかり掴む、<br />
+      そんな番組を作りたい配信者と、<br />
+      そんな番組を見たい観客をともに支援する<br />
+      プラットフォームを目指しています。<sup id="fnref:shirasu" role="doc-noteref"><a href="#fn:shirasu" class="footnote">9</a></sup></p>
+  </blockquote>
+  <p>シラスというプラットフォームは、東氏の思想を実装したものだ。彼はアーキテクチャの力でインターネット上の言論環境を変えようとしている。だから、これは単なる伊達や酔狂ではなく、思想的な必然性のある事業なのだ。これぞ本質的な「デザイン」の営みだ。</p>
+  <div class="jekyll-linkpreview-wrapper">
+    <p><a href="https://hideishi.com/blog/2013/12/03/semantic-turn.html" target="_blank">https://hideishi.com/blog/2013/12/03/semantic-turn.html</a></p>
+    <div class="jekyll-linkpreview-wrapper-inner">
+      <div class="jekyll-linkpreview-content">
+        <div class="jekyll-linkpreview-image">
+          <a href="https://hideishi.com/blog/2013/12/03/semantic-turn.html" target="_blank">
+            <img src="https://hideishi.com/assets/blog/2013-12-03-semantic-turn/thumbnail.png" />
+          </a>
+        </div>
+        <div class="jekyll-linkpreview-body">
+          <h2 class="jekyll-linkpreview-title">
+            <a href="https://hideishi.com/blog/2013/12/03/semantic-turn.html" target="_blank">ユーザー・エクスペリエンスについて考える人に読んで欲しいクリッペンドルフの『意味論的転回−デザインの新しい基礎理論』</a>
+          </h2>
+          <div class="jekyll-linkpreview-description">『意味論的転回』は、「デザインとは、そもそも何なのか？」という根源的な問いに答える哲学書でありつつ、実践的手法を紹介する本でもあります。</div>
+        </div>
+      </div>
+      <div class="jekyll-linkpreview-footer">
+        <a href="//hideishi.com" target="_blank">hideishi.com</a>
+      </div>
+    </div>
+  </div>
+  <p>トム・ザッキー氏と東浩紀氏の活動について見てきた。彼らような前衛起業家がもっと必要だ。そのほうが社会はより良くなっていくし、なにより面白くなっていくはずだ。そうは思わないだろうか？</p>
+  <h2 id="前衛起業家の理論武装">前衛起業家の理論武装</h2>
+  <p>起業志望の若者へ提言しておきたい。まずは『<a href="https://morning.kodansha.co.jp/c/strangelessonsbyprofessorterror.html">テロール教授の怪しい授業</a>』を読んで、カルトや洗脳への免疫をつけておこう。これは大事な準備だ。軽い気持ちで社会運動に興味を持った結果、いつの間にかカルトに洗脳されることがある。彼らの勧誘は実に巧みなので、「自分は十分に賢いから大丈夫」と思っている者ほど危ない。多くの東大生がオウム真理教のテロリストになったことを思い出そう。</p>
+  <div class="jekyll-linkpreview-wrapper">
+    <p><a href="https://morning.kodansha.co.jp/c/strangelessonsbyprofessorterror.html" target="_blank">https://morning.kodansha.co.jp/c/strangelessonsbyprofessorterror.html</a></p>
+    <div class="jekyll-linkpreview-wrapper-inner">
+      <div class="jekyll-linkpreview-content">
+        <div class="jekyll-linkpreview-image">
+          <a href="https://morning.kodansha.co.jp/c/strangelessonsbyprofessorterror.html" target="_blank">
+            <img src="https://morning.kodansha.co.jp/content/images/c/strangelessonsbyprofessorterror/wide.jpg" />
+          </a>
+        </div>
+        <div class="jekyll-linkpreview-body">
+          <h2 class="jekyll-linkpreview-title">
+            <a href="https://morning.kodansha.co.jp/c/strangelessonsbyprofessorterror.html" target="_blank">テロール教授の怪しい授業</a>
+          </h2>
+          <div class="jekyll-linkpreview-description">泣く子も黙るローレンツ・ゼミには、今年もそうとは知らない学生たちが集まっている。
+            「あなたたちはテロリスト予備軍です。」
+            予想だにしない一言に愕然とする生徒たち。脱落＝テロリスト認定。恐ろしすぎる授業が始まる——。
+            そもそもテロリズムとは何か？　日常に潜むテロの根っことは？
+            今までメディアで語られてきたテロ論は全部ウソ。テロ教授が教える、知るのは怖い、知らないのはもっと怖い「テロとカルト」の真実。
+          </div>
+        </div>
+      </div>
+      <div class="jekyll-linkpreview-footer">
+        <a href="//morning.kodansha.co.jp" target="_blank">morning.kodansha.co.jp</a>
+      </div>
+    </div>
+  </div>
+  <p>その次は『<a href="https://www.eastpress.co.jp/goods/detail/9784781617466">全共闘以後</a>』だ。1968年以後の半世紀にわたる若者の運動史を学ぼう。時代時代の若者たちは、何に怒り、どのように闘ってきたか。それはほとんど失敗と敗北の歴史でもある。先人の失敗を繰り返さないためにも、歴史を学んでおきたい。</p>
+  <div class="jekyll-linkpreview-wrapper">
+    <p><a href="https://www.eastpress.co.jp/goods/detail/9784781617466" target="_blank">https://www.eastpress.co.jp/goods/detail/9784781617466</a></p>
+    <div class="jekyll-linkpreview-wrapper-inner">
+      <div class="jekyll-linkpreview-content">
+        <div class="jekyll-linkpreview-image">
+          <a href="https://www.eastpress.co.jp/goods/detail/9784781617466" target="_blank">
+            <img src="https://www.eastpress.co.jp:443/img/cover_image_l/9784781617466.jpg" />
+          </a>
+        </div>
+        <div class="jekyll-linkpreview-body">
+          <h2 class="jekyll-linkpreview-title">
+            <a href="https://www.eastpress.co.jp/goods/detail/9784781617466" target="_blank">書籍詳細 - 改訂版　全共闘以後｜イースト・プレス</a>
+          </h2>
+          <div class="jekyll-linkpreview-description">1968年の全共闘から50年。1972年の連合赤軍事件を境に学生運動は急速に退潮し、その後は「シラケでバブルでオタクでサブカル」の時代――。そんな歴史認識は間違っている！　70年代以降も若者たちの社会運動・学生運動は、ほぼ10年おきに高揚していた。ただ、それらを一貫した視点で記述した「通史」が存在せず、これまで不可視になっていたのである。全共闘以後50年の歴史を新しく塗りかえる著者渾身の原稿用紙1000枚超の大冊！　絓秀実氏、推薦。菅野完氏、解説。</div>
+        </div>
+      </div>
+      <div class="jekyll-linkpreview-footer">
+        <a href="//www.eastpress.co.jp" target="_blank">www.eastpress.co.jp</a>
+      </div>
+    </div>
+  </div>
+  <p>いま起業する人にとって、パーソナル・コンピューターやインターネットは不可欠なツールだ。では、それらは歴史的にどういうものとして構想され、実現され、普及してきたのか。その歴史を理解することは、これらのツールの本質を理解する上でも極めて有意義なことだ。カウンターカルチャー史としてのパーソナル・コンピューター史、インターネット史を語ったことがある。そのための<a href="https://www.evernote.com/shard/s7/client/snv?noteGuid=90040ece-63fb-4ce8-bf06-d0ede90b2705&amp;noteKey=97c03a8c0100d956&amp;sn=https%3A%2F%2Fwww.evernote.com%2Fshard%2Fs7%2Fsh%2F90040ece-63fb-4ce8-bf06-d0ede90b2705%2F97c03a8c0100d956&amp;title=%25E3%2582%25AA%25E3%2583%2596%25E3%2582%25B8%25E3%2582%25A7%25E3%2582%25AF%25E3%2583%2588%25E6%258C%2587%25E5%2590%2591%25E5%25B9%25BB%25E8%25A6%259A%25E5%2589%25A4%2B%25E3%2582%25AB%25E3%2582%25A6%25E3%2583%25B3%25E3%2582%25BF%25E3%2583%25BC%25E3%2582%25AB%25E3%2583%25AB%25E3%2583%2581%25E3%2583%25A3%25E3%2583%25BC%25E3%2581%25A8%25E3%2581%2597%25E3%2581%25A6%25E3%2581%25AE%25E3%2583%2591%25E3%2583%25BC%25E3%2582%25BD%25E3%2583%258A%25E3%2583%25AB%25E3%2583%25BB%25E3%2582%25B3%25E3%2583%25B3%25E3%2583%2594%25E3%2583%25A5%25E3%2583%25BC%25E3%2583%2586%25E3%2582%25A3%25E3%2583%25B3%25E3%2582%25B0%25E5%25B0%258F%25E5%258F%25B2%25EF%25BC%2588%25E4%25BB%25AE%25EF%25BC%2589">年表</a>も用意した。いずれバージョンアップして再演したい。</p>
+  <div class="jekyll-linkpreview-wrapper">
+    <p><a href="https://www.zerobase.jp/salon/2019/12/01/object-oriented-psychedelics.html" target="_blank">https://www.zerobase.jp/salon/2019/12/01/object-oriented-psychedelics.html</a></p>
+    <div class="jekyll-linkpreview-wrapper-inner">
+      <div class="jekyll-linkpreview-content">
+        <div class="jekyll-linkpreview-image">
+          <a href="https://www.zerobase.jp/salon/2019/12/01/object-oriented-psychedelics.html" target="_blank">
+            <img src="https://www.zerobase.jp/salon/images/2019-12-01-object-oriented-psychedelics.png" />
+          </a>
+        </div>
+        <div class="jekyll-linkpreview-body">
+          <h2 class="jekyll-linkpreview-title">
+            <a href="https://www.zerobase.jp/salon/2019/12/01/object-oriented-psychedelics.html" target="_blank">オブジェクト指向幻覚剤 カウンターカルチャーとしてのパーソナル・コンピューティング小史（仮）</a>
+          </h2>
+          <div class="jekyll-linkpreview-description">2019年12月1日、Fukuoka Growth NextにてFGNエンジニアMeetup vol. 4に当社代表の石橋が登壇した際の記録映像を公開しました。タイトルは「オブジェクト指向幻覚剤 カウンターカルチャーとしてのパーソナル・コンピューティング小史（仮）」といいます。やばい歴史の話です。やばい年表もあります。
+          </div>
+        </div>
+      </div>
+      <div class="jekyll-linkpreview-footer">
+        <a href="//www.zerobase.jp" target="_blank">www.zerobase.jp</a>
+      </div>
+    </div>
+  </div>
+  <p>大地を守る市民の会が発足した時代、ローマクラブ『成長の限界』(1972)が世界的に話題となっていた。その主執筆者ドネラ・H・メドウズは、のちにシステム思考の啓蒙書を書いている。その知恵は起業家の武器になるはずだ。「社会問題の元凶はXだ」と考えてXを叩いた結果、問題は解決するどころかむしろ悪化することがある。問題の理解が表層的なまま、解決策を考えてはいけない。物事はそう単純ではない。</p>
+  <div class="jekyll-linkpreview-wrapper">
+    <p><a href="https://eijipress.ocnk.net/product/449" target="_blank">https://eijipress.ocnk.net/product/449</a></p>
+    <div class="jekyll-linkpreview-wrapper-inner">
+      <div class="jekyll-linkpreview-content">
+        <div class="jekyll-linkpreview-image">
+          <a href="https://eijipress.ocnk.net/product/449" target="_blank">
+            <img src="https://eijipress.ocnk.net/data/eijipress/product/20150127_d0f053.gif" />
+          </a>
+        </div>
+        <div class="jekyll-linkpreview-body">
+          <h2 class="jekyll-linkpreview-title">
+            <a href="https://eijipress.ocnk.net/product/449" target="_blank">世界はシステムで動く――いま起きていることの本質をつかむ考え方</a>
+          </h2>
+          <div class="jekyll-linkpreview-description">『世界がもし100人の村だったら』『成長の限界』ドネラ・H・メドウズに学ぶ「氷山の全体」を見る技術。株価の暴落、資源枯渇、価格競争のエスカレート…さまざまな出来事の裏側では何が起きているのか?　　 「…</div>
+        </div>
+      </div>
+      <div class="jekyll-linkpreview-footer">
+        <a href="//eijipress.ocnk.net" target="_blank">eijipress.ocnk.net</a>
+      </div>
+    </div>
+  </div>
+  <p>もちろん、基礎教養として、人文知の諸分野にも幅広く興味を持ってほしい。そうすることで、様々な社会問題への意識が高まり、その問題を解決するための事業構想も湧いてくる。</p>
+  <p>教養が足りない者には、その存在も知覚できないし、その意味も理解できないような問題というものがある。複雑な問題の全体像を多角的に理解することなしに、その解決などできるはずもない。誤った「解決」は、しばしば現状維持にも劣る。これは保守主義の知恵だ。急進的な改革や革命の失敗を反面教師としつつ、先に進まなければならない。</p>
+  <h2 id="あとがき">あとがき</h2>
+  <p>このようなことを来客に話したら、「スタートアップのための思想史・運動史」を講義してくれと言われた。確かにそういう啓蒙活動が必要なのだろう。僕なりにやってきたけれど、質・量ともにまったく足りない。もっと勉強して、きちんと体系化して、なにより面白がってもらえるコンテンツにして伝えていきたいと思う。</p>
+  <p>そして最後に、この文章を読んだ人なら誰でも抱くであろう疑問に応えておかなければならない。「偉そうに語っているけど、お前自身は何かやってるの？」という問いに。何かを批判する者は、その同じ批判によって自らもまた批判されなければならないのだ。</p>
+  <p>僕自身のプロジェクトについては、<a href="/">このサイト</a>に書いてある通り。中でも<a href="https://www.zerobase.jp/za/">セルフマネジメントテクノロジー Za</a>は、近代的な企業経営のイデオロギーを批判し、そこから人々を自由にするためのプロジェクトであり、僕のライフワークだ<sup id="fnref:za" role="doc-noteref"><a href="#fn:za" class="footnote">10</a></sup>。まだ偉大な成果を出すには至っていない。自社では10年を超える実践の蓄積があるが、まだ世に出せてはいない。まだまだこれから。まさにスタートアップの段階にある。</p>
+  <p>それはさておき、「成功した経営者の言うことは正しいに違いない」という<a href="https://kotobank.jp/word/%E5%BE%8C%E5%85%89%E5%8A%B9%E6%9E%9C-64519">ハロー効果</a>のバイアスには注意が必要だ。僕がこの文章で論じたことは、「金が儲かる経営術」や「組織を大きくする経営術」ではない。むしろ、単なる金儲けや規模拡大とは異なる、オルタナティブなスタートアップのあり方を論じた。したがって、僕にはこの問題について論じる資格があると思うのだが、あとは読者の判断に委ねたい。</p>
+  <hr />
+  <p>僕がこんな<a href="/blog/">ブログ</a>を書いたり、あちこちで講演などの<a href="/activity/">活動</a>をしたり、<a href="/podcast/">Podcast</a>したり、<a href="https://www.youtube.com/channel/UCacqUBssrpC-_0gjNRJ98RA">YouTube動画</a>を配信したり、<a href="https://www.zerobase.jp/salon/">前衛的なサロン</a>を運営したりしているのは、<strong>物事を深く考えて物を作る仲間</strong>を増やしたいからだ。興味を持ってフォローしてもらえると嬉しい。</p>
+  <div class="jekyll-linkpreview-wrapper">
+    <p><a href="https://www.zerobase.jp/salon/2019/05/25/hardcore-oo.html" target="_blank">https://www.zerobase.jp/salon/2019/05/25/hardcore-oo.html</a></p>
+    <div class="jekyll-linkpreview-wrapper-inner">
+      <div class="jekyll-linkpreview-content">
+        <div class="jekyll-linkpreview-image">
+          <a href="https://www.zerobase.jp/salon/2019/05/25/hardcore-oo.html" target="_blank">
+            <img src="https://www.zerobase.jp/salon/images/2019-05-25-hardcore-oo-thumbnail.png" />
+          </a>
+        </div>
+        <div class="jekyll-linkpreview-body">
+          <h2 class="jekyll-linkpreview-title">
+            <a href="https://www.zerobase.jp/salon/2019/05/25/hardcore-oo.html" target="_blank">オブジェクト指向のハードコア</a>
+          </h2>
+          <div class="jekyll-linkpreview-description">オブジェクト指向のハードコアは2019年5月25日にゼロベースサロンで行われたイベントです。「オブジェクト指向」というキーワードについて、プログラミング、デザイン、哲学などの分野を横断しつつ知的な議論ができました。記録映像は必見。</div>
+        </div>
+      </div>
+      <div class="jekyll-linkpreview-footer">
+        <a href="//www.zerobase.jp" target="_blank">www.zerobase.jp</a>
+      </div>
+    </div>
+  </div>
+  <div class="jekyll-linkpreview-wrapper">
+    <p><a href="https://hideishi.com/blog/2014/04/25/future-of-information-architect.html" target="_blank">https://hideishi.com/blog/2014/04/25/future-of-information-architect.html</a></p>
+    <div class="jekyll-linkpreview-wrapper-inner">
+      <div class="jekyll-linkpreview-content">
+        <div class="jekyll-linkpreview-image">
+          <a href="https://hideishi.com/blog/2014/04/25/future-of-information-architect.html" target="_blank">
+            <img src="https://hideishi.com/assets/blog/2014-04-25-future-of-information-architect/thumbnail.png" />
+          </a>
+        </div>
+        <div class="jekyll-linkpreview-body">
+          <h2 class="jekyll-linkpreview-title">
+            <a href="https://hideishi.com/blog/2014/04/25/future-of-information-architect.html" target="_blank">建築家の歴史と情報建築家の未来</a>
+          </h2>
+          <div class="jekyll-linkpreview-description">情報建築家（インフォメーション・アーキテクト）は、どこから来て、どこへ向かうのか。建築家の歴史を辿りつつ考えました。</div>
+        </div>
+      </div>
+      <div class="jekyll-linkpreview-footer">
+        <a href="//hideishi.com" target="_blank">hideishi.com</a>
+      </div>
+    </div>
+  </div>
+  <div class="jekyll-linkpreview-wrapper">
+    <p><a href="https://hideishi.com/blog/2015/08/03/consulting-for-startups.html" target="_blank">https://hideishi.com/blog/2015/08/03/consulting-for-startups.html</a></p>
+    <div class="jekyll-linkpreview-wrapper-inner">
+      <div class="jekyll-linkpreview-content">
+        <div class="jekyll-linkpreview-image">
+          <a href="https://hideishi.com/blog/2015/08/03/consulting-for-startups.html" target="_blank">
+            <img src="https://hideishi.com/assets/blog/2015-08-03-consulting-for-startups/thumbnail.png" />
+          </a>
+        </div>
+        <div class="jekyll-linkpreview-body">
+          <h2 class="jekyll-linkpreview-title">
+            <a href="https://hideishi.com/blog/2015/08/03/consulting-for-startups.html" target="_blank">アーキテクトが起業家やベンチャー企業のためにできること</a>
+          </h2>
+          <div class="jekyll-linkpreview-description">特定分野の専門家としてのコンサルティングではなく、総合的なプライマリ・ケアができます。また、エコシステムへの思考や、SF的想像力を呼びおこすことで、事業を大きく構想するためのお手伝いができます。</div>
+        </div>
+      </div>
+      <div class="jekyll-linkpreview-footer">
+        <a href="//hideishi.com" target="_blank">hideishi.com</a>
+      </div>
+    </div>
+  </div>
+  <div class="footnotes" role="doc-endnotes">
+    <ol>
+      <li id="fn:season-of-politics" role="doc-endnote">
+        <p>実際には、全共闘以後も若者の運動は続いていた。それが外山恒一著『<a href="https://www.eastpress.co.jp/goods/detail/9784781617466">全共闘以後</a>』の主張だ。しかし、一般にはそう思われていない。2015年のSEALDsですら、1968年とは比較にならない。その意味で、やはり「政治の季節」は全共闘で終わっている。 <a href="#fnref:season-of-politics" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+      </li>
+      <li id="fn:zensho" role="doc-endnote">
+        <p>全共闘の活動家だった小川賢太郎氏はゼンショーを創業した。すき家は日本を代表する外食チェーンの一つにまで成長した。そのゼンショーが<a href="https://withnews.jp/article/f0140731009qq000000000000000W00a1001qq000010545A">労働者を搾取する企業</a>に成り果ててしまった。資本家を打倒して労働者のユートピアを作るという革命の夢を見た若者は、どこで道を誤ってしまったのだろうか。 <a href="#fnref:zensho" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+      </li>
+      <li id="fn:daichi-history-1" role="doc-endnote">
+        <p><a href="https://www.daichi-m.co.jp/history/572/">戎谷徹也「大地を守る会40年の歩み【第1話】 目標は「大地を守る会」を消滅させること！」</a>より引用 <a href="#fnref:daichi-history-1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+      </li>
+      <li id="fn:daichi-history-4" role="doc-endnote">
+        <p><a href="https://www.daichi-m.co.jp/history/980/">戎谷徹也「大地を守る会40年の歩み【第4話】大地を守る会は「希望」であり続けているか」</a>より引用 <a href="#fnref:daichi-history-4" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+      </li>
+      <li id="fn:daichi-history-5" role="doc-endnote">
+        <p><a href="https://www.daichi-m.co.jp/history/1057/">戎谷徹也「大地を守る会40年の歩み【第5話】藤本敏夫・加藤登紀子の登場、そして伝説のフェアへ」</a>より引用 <a href="#fnref:daichi-history-5" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+      </li>
+      <li id="fn:loop-tokyo" role="doc-endnote">
+        <p>Loopは<a href="https://www.sustainablebrands.jp/news/jp/detail/1195100_1501.html">2020年秋から東京でも試験運用が始まる予定</a>になっていた。実際には2020年10月時点でサービスが開始されていない。新型コロナウイルス感染症(COVID-19)の影響だろう。 <a href="#fnref:loop-tokyo" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+      </li>
+      <li id="fn:genron-about" role="doc-endnote">
+        <p><a href="https://genron.co.jp/about">「株式会社ゲンロン 会社概要」（代表 上田洋子、創業者 東浩紀）</a>より引用 <a href="#fnref:genron-about" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+      </li>
+      <li id="fn:genron-counter-culture" role="doc-endnote">
+        <p>東浩紀氏自身は<a href="https://genron-cafe.jp/event/20201025b/">2020年10月25日の放送</a>で自身を「オルタナティブ」の側に位置付け、「カウンター」と区別している。つまり、狭義のカウンターの目的が究極的には権力奪取（革命）であるのに対して、オルタナティブの目的は我が道を行くこと（独立）である。それはそれとして、一般的には「カウンター」と言えばオルタナティブも含む広義の批判的立場を意味するので、本文でもゲンロンを「カウンター」という括りに入れた。逆に言えば、本文全体にわたって「カウンター」という言葉にはオルタナティブの意味も込めている。 <a href="#fnref:genron-counter-culture" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+      </li>
+      <li id="fn:shirasu" role="doc-endnote">
+        <p><a href="https://shirasu.io/">「シラス 開設にあたって」（シラス代表 東浩紀）</a>より引用 <a href="#fnref:shirasu" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+      </li>
+      <li id="fn:za" role="doc-endnote">
+        <p>セルフマネジメントテクノロジー Za は、昨今ブームのホロクラシーなどとは本質的に異なる「自営の思想」だ。また改めて論じたいが、それ以上に、言葉ではなくプロダクトとして世に問いたい。僕のモットーは「<a href="/about/philosophy.html">思想を実装する</a>」だから。 <a href="#fnref:za" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+      </li>
+    </ol>
+  </div>
+  ]]></content>
 </entry>
 <entry>
   <title type="html"><![CDATA[Account Code 5 勉強会でセルフマネジメントテクノロジーZaについて講演しました]]></title>
@@ -1599,15 +1738,6 @@
   <id>https://hideishi.com/activity/2017/08/09/startup-mental-research-result</id>
   <content type="html"><![CDATA[<p>日本の起業家のメンタルヘルス（心の状態）についてインターネット上で調査を実施し、その結果「起業家の37%に気分障害・不安障害の疑いあり（※一般人の約7倍）」という結果を得ました。</p>
   <p>詳しくは<a href="https://www.zerobase.jp/2017/08/09/startup-mental-research-result.html">ゼロベースのウェブサイト</a>へ。</p>
-  ]]></content>
-</entry>
-<entry>
-  <title type="html"><![CDATA[フロリディ情報哲学の座談会]]></title>
-  <link href="https://hideishi.com/activity/2017/07/07/floridi-talk-2.html"/>
-  <updated>2017-07-07T00:00:00+09:00</updated>
-  <id>https://hideishi.com/activity/2017/07/07/floridi-talk-2</id>
-  <content type="html"><![CDATA[<p>哲学者ルチアーノ・フロリディ教授の『第四の革命―情報圏(インフォスフィア)が現実をつくりかえる』についての座談会を2017年5月30日にゼロベースサロンで収録しました。</p>
-  <p>詳しくは<a href="https://www.zerobase.jp/salon/2017/07/07/floridi-talk.html">ゼロベースのウェブサイト</a>へ。</p>
   ]]></content>
 </entry>
 </feed>

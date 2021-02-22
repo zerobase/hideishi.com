@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>接触確認アプリCOCOA失敗の本質 ITの問題であると誤認せずに、正しい総括を | 石橋秀仁 (Hideto Ishibashi)</title>
+    <meta name="description" content="COCOAは日本人の能力を超えたプロジェクトでした。そのことを人々が認められないことに、僕は絶望しています。">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/print.css" media="print">
+    <link rel="canonical" href="https://hideishi.com/blog/2021/02/22/true-reason-why-cocoa-failed.html">
+    <link href="/assets/thumbnail.jpg" type="image/png" rel="icon">
+    <link href="/assets/thumbnail.jpg" rel="apple-touch-icon">
+    <link rel="pgpkey" href="/hideishi.pubkey.asc"/>
+    <link href="/atom.xml" rel="alternate" title="石橋秀仁 (Hideto Ishibashi)" type="application/atom+xml">
+    <meta property="og:title" content="接触確認アプリCOCOA失敗の本質 ITの問題であると誤認せずに、正しい総括を">
+    <meta property="og:description" content="COCOAは日本人の能力を超えたプロジェクトでした。そのことを人々が認められないことに、僕は絶望しています。">
+    <meta property="og:url" content="https://hideishi.com/blog/2021/02/22/true-reason-why-cocoa-failed.html">
+    <meta property="og:image" content="https://hideishi.com/assets/blog/2021-02-22-true-reason-why-cocoa-failed/cocoa-icon.png">
+    <meta property="og:site_name" content="石橋秀仁 (Hideto Ishibashi)">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="og:type" content="article">
+    <meta property="fb:app_id" content="422391257870402">
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:creator" content="@zerobase" />
+    <meta name="twitter:title" content="接触確認アプリCOCOA失敗の本質 ITの問題であると誤認せずに、正しい総括を" />
+    <meta name="twitter:description" content="COCOAは日本人の能力を超えたプロジェクトでした。そのことを人々が認められないことに、僕は絶望しています。" />
+    <meta name="twitter:image" content="https://hideishi.com/assets/blog/2021-02-22-true-reason-why-cocoa-failed/cocoa-icon.png">
+  </head>
+  <body>
+    <header class="site header">
+      <nav class="top_navigation container">
+        <ul class="top_navigation-items">
+          <li>
+            <a href="/">
+              <img alt="石橋秀仁の顔の写真" src="/assets/thumbnail.jpg" class="vid">
+            </a>
+          </li>
+          <li class="active">
+            <a href="/blog/">ブログ</a>
+          </li>
+          <li >
+            <a href="/activity/">活動</a>
+          </li>
+          <li >
+            <a href="/podcast/">Podcast</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="main container">
+      <main class="blog post">
+        <article>
+          <header>
+            <h1 class="page title">
+              接触確認アプリCOCOA失敗の本質
+              <span class="meta subtitle">ITの問題であると誤認せずに、正しい総括を</span>
+            </h1>
+            <p class="meta author">石橋秀仁 (Hideto Ishibashi)</p>
+            <p class="meta time">2021年2月22日</p>
+                </header>
+          <section class="article-body">
+            <div class="page-description">
+              COCOAは日本人の能力を超えたプロジェクトでした。そのことを人々が認められないことに、僕は絶望しています。
+            </div>
+            <p class="fig-small"><img src="/assets/blog/2021-02-22-true-reason-why-cocoa-failed/cocoa-icon.png" alt="接触確認アプリCOCOAのアイコン"></p>
+            <p>接触確認アプリCOCOAが政治問題化しています。</p>
+            <p>昨年6月、首相の肝煎りでリリースされ、感染対策の切り札担うかと期待されました<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote">1</a></sup>。ダウンロードは2千万件を超えました<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote">2</a></sup>。しかし、9月末から2月中旬まで、ユーザーの3割ほどを占めるAndroidユーザーに通知が届かない不具合が見つかりました<sup id="fnref:3" role="doc-noteref"><a href="#fn:3" class="footnote">3</a></sup>。そしてiOSでも深刻な不具合があると発表されました<sup id="fnref:4" role="doc-noteref"><a href="#fn:4" class="footnote">4</a></sup>。政府は、相次ぐ不具合を修正することで、COCOAを正常に機能させようと躍起になっています<sup id="fnref:5" role="doc-noteref"><a href="#fn:5" class="footnote">5</a></sup>。</p>
+            <p>僕は絶望しています。</p>
+            <p>COCOAは日本人の能力を超えたプロジェクトでした。そのことを人々が認められないことに、僕は絶望しています。厚労省だけの問題ではない。犯人探しをして処分すれば済むというものではない<sup id="fnref:6" role="doc-noteref"><a href="#fn:6" class="footnote">6</a></sup>。ITの問題ですらない。なぜそれが分からないのか。</p>
+            <p>これは日本の統治能力の問題であり、民度の問題です。</p>
+            <p>「現時点の我々の政府の能力では、このプロジェクトを成功させることはできない」という戦略的思考ができない。精神論でなんでも出来ると信じている。能力の不足を認めようとしない。あの敗戦から何も学んでいない。</p>
+            <p>開発に失敗したことを怒るべきではないのです。やったこと自体が間違いだったのですから。「なぜやったのだ」と怒るべきなのです。その合理的思考ができない人々に絶望しています。あの敗戦から何も学ばなかった人々に。</p>
+            <p>「日本人には能力が足りないから失敗した」という事実を認めることは悔しい。しかし、戦後の日本人なら、この認識に至らないといけない。太平洋戦争は昭和16年の夏に敗戦していました<sup id="fnref:7" role="doc-noteref"><a href="#fn:7" class="footnote">7</a></sup>。総力戦研究所が合理的に日本必敗の結論を出した時点で。能力不足にも関わらず開戦したこと自体が失敗だったのです。</p>
+            <dl>
+              <dt>COCOAをやるべきでなかった理由(1)</dt>
+              <dd>接触確認アプリ(ENS)が感染制御に有効であるという科学的エビデンスはない。Bluetoothによる距離測定の精度が著しく低く、ENSが原理的に信頼性に乏しいものであることは、ENS発表時点で自明だった<sup id="fnref:8" role="doc-noteref"><a href="#fn:8" class="footnote">8</a></sup>。エビデンスに基づく政策(EBPM)に関する能力の欠如を示している。</dd>
+              <dt>COCOAをやるべきでなかった理由(2)</dt>
+              <dd>エビデンス不足にも関わらず強行するなら、それ相応の手続き的正統性が必要となる。運用しながらエビデンスを得るための調査計画、及びプロジェクト終了条件やシステム廃棄手続きなど。そういうことができない。統治権力の正統性の欠如。情報倫理的な能力の欠如<sup id="fnref:9" role="doc-noteref"><a href="#fn:9" class="footnote">9</a></sup>。</dd>
+              <dt>COCOAをやるべきでなかった理由(3)</dt>
+              <dd>いわゆる「首相案件」で、緊急事態宣言解除後の県境越え移動解禁に関する首相会見のスケジュールに合わせてリリース日を設定した<sup id="fnref:10" role="doc-noteref"><a href="#fn:10" class="footnote">10</a></sup>。政治的パフォーマンスありきの無茶な開発スケジュールの設定。実質的な政策成果に対する関心の欠如。ITガバナンス能力の欠如。</dd>
+            </dl>
+            <figure>
+              <p><img src="/assets/blog/2021-02-22-true-reason-why-cocoa-failed/shinzo-abe.png" alt=""></p>
+              <figcaption>2020年5月25日の首相記者会見（<a href="https://www.kantei.go.jp/jp/98_abe/statement/2020/0525kaiken.html" target="_blank">首相官邸ウェブサイト</a>より）</figcaption>
+            </figure>
+            <p>その他、政府IT調達の問題<sup id="fnref:11" role="doc-noteref"><a href="#fn:11" class="footnote">11</a></sup>、厚労省のIT担当能力の問題<sup id="fnref:12" role="doc-noteref"><a href="#fn:12" class="footnote">12</a></sup>、オープンソース開発プロセスの問題<sup id="fnref:13" role="doc-noteref"><a href="#fn:13" class="footnote">13</a></sup>などは、すでに様々な識者が指摘している通りです。</p>
+            <p>その上で、最大の問題となるのは、これらの問題がCOCOAリリース前から分かっていたということです。だから、COCOAをやるべきではなかったと申し上げているのです。</p>
+            <p>もし「新型コロナウイルス感染症対策テックチーム」や「接触確認アプリに関する有識者検討会合」<sup id="fnref:14" role="doc-noteref"><a href="#fn:14" class="footnote">14</a></sup>が総力戦研究所のようであったなら、同じ結論に至ったはずです。</p>
+            <p>そして、その報告を受けた指導者は……東條のように行動したのでしょう。残念ながら。</p>
+            <blockquote>
+              <p>諸君の研究の労を多とするが、これはあくまでも机上の演習でありまして、（…）戦というものは、計画通りにいかない。意外裡な事が勝利に繋がっていく。（…）なお、この机上演習の経緯を、諸君は軽はずみに口外してはならぬということであります。 <sup id="fnref:15" role="doc-noteref"><a href="#fn:15" class="footnote">15</a></sup></p>
+            </blockquote>
+            <p>このような問題は、すでに情報倫理学者ルチアーノ・フロリディ教授らが指摘していました。僕はその論文を翻訳し、COCOAリリース前の5月26日に発表しました。</p>
+            <blockquote>
+              <p>粗末な設計や限定的な検証にも関わらずDTTを稼働させようとする政府は、「なんでもやってみよう」の精神を示すためにそうしようとするのであり、それゆえ批判を無視し、あらゆる犠牲を払ってでもやりかねません。これは危機の時にあっては危険なことです。 <sup id="fnref:16" role="doc-noteref"><a href="#fn:16" class="footnote">16</a></sup></p>
+            </blockquote>
+            <p>COCOAをやらない選択肢はあった。せめて慎重に検討してからやることもできた。しかし、慎重な検討を避け、政治的パフォーマンスありきで強行した。その結果は深刻な失敗です。人々の政府ITシステムに対する信頼が根本的に損なわれる結果となりました。</p>
+            <blockquote>
+              <p>COVID-19状況においては、（あらゆる意味での）コストは高く、「外部性」として無視できません。それは現在の人口と政府を深く速く直撃し、問題全体を悪化させる恐れがあります。なぜなら、倫理的に正しくない類いのDTTシステムは、単に効果がないだけでなく、解決しようとしている問題それ自体を劇化させるかもしれないからです。失敗の繰り返しや高過ぎるコストが市民の信頼を裏切ることにつながる以上、政府には正しく介入するチャンスがただの一度しか与えられていないというべきです。 <sup id="fnref:17" role="doc-noteref"><a href="#fn:17" class="footnote">17</a></sup></p>
+            </blockquote>
+            <p>ですから、これは情報倫理上の失敗であり、政治的な失敗なのです。断じてITの失敗ではありません。</p>
+            <blockquote>
+              <p>倫理的分析は、リスクと機会に光を当て、緊急の意思決定を、社会を支える長年の価値観と、統治の適切な領域設定に関する社会の期待に合わせるためのコンパスを提供します。ですから危機の時にあっても倫理的な慎重さが成功には不可欠なのです。 <sup id="fnref:18" role="doc-noteref"><a href="#fn:18" class="footnote">18</a></sup></p>
+            </blockquote>
+            <p>「ハンマーを持つ人には全てが釘に見える」という言葉があります。IT専門家がしきりにCOCOA問題について論じています。ITの問題とみなして、どうすれば上手くやれたかを論じています。しかし、そもそもやるべきだったかどうかを問わずに、やり方の問題ばかりを論じていることに、強い違和感を覚えます。</p>
+            <hr>
+            <p>COCOAを走りながら立て直そうとしないでください。いったん運用を停止し、国会に事故調査委を設置し、政治過程を究明すべきです。そして、COCOAとHER-SYSを立て直す計画を慎重に策定すべきです。その実行チームと伴走しながら監督する有識者会議を設置すべきです。科学的に有効なシステムにしていくため、必要なデータを収集し、エビデンスを集めながら、感染制御のためのフィードバックシステムとしてチューニングし続けていくべきです。そのために法改正等が必要なら実施すべきです。英国<sup id="fnref:19" role="doc-noteref"><a href="#fn:19" class="footnote">19</a></sup>、ドイツ<sup id="fnref:20" role="doc-noteref"><a href="#fn:20" class="footnote">20</a></sup>、スイス<sup id="fnref:21" role="doc-noteref"><a href="#fn:21" class="footnote">21</a></sup>などの取り組みを参考に。</p>
+            <p>いえ、政府にこんな期待をすること自体が虚しい。これができるなら、最初からやっているはずですから。いまさら何を期待できるというのでしょう。これまで出来ていなかったことが、どうすれば一朝一夕にして出来るようになるというのでしょう。まったく非現実的な夢想です。</p>
+            <p>僕は絶望しています。現実主義的に問題を分析すれば、絶望せざるをえません。みなさんも絶望すべきです。</p>
+            <p>日本人には絶望が足りない。「どうすれば上手くやれたか」という問いを止めてください。それは現実逃避です。負け惜しみです。我々は現実を直視すべきです。根本的な能力不足によって、やる前から失敗していたのです。対米戦争のように。</p>
+            <p>この無力感。徹底的な絶望。つまりは敗戦の認識。そこに至らずして、本質的な立て直しなど不可能です。単なる去勢で立て直しを叫ぶべきではありません。それは不誠実な現実逃避です。絶望こそが現実主義的で真摯な反省なのです。</p>
+            <p>それによって、はじめて「どうすれば戦争を回避できたか」「どうすればCOCOAをうまくやれる政府を作れたか」という真に有意義な議論が可能になるのです。</p>
+            <p>いちど徹底的に絶望してください。私たちはどうしようもなく無能なのだと。敗戦から真に復興する道は、その絶望からしか始まりません。</p>
+            <p>大前提、政府は「我々の政府」なのであって、こんな馬鹿な失敗をする政府が我々の政府なのだと、問題を引き受けなければなりません。それこそが真摯な反省というものです。「民間に比べて政府はダメだ」などと「お上」を批判する態度も止めるべきです。今は江戸時代ではなく民主国家なのですから。</p>
+            <p>ITガバナンスをやるには、精神を近代化しなければなりません。「我々」と「お上」を分ける江戸時代の精神から、「我々の政府」と考える近代人の精神へ。だから「民間はマシなのに」という発想はダメなのです。COCOAの失敗は日本社会のショボさの表れです。「ショボいのは日本人」という屈辱的な絶望が必要です。</p>
+            <h2 id="結論">結論</h2>
+            <p>COCOAは一時停止して失敗を総括すべきです。それなしに小手先で取り繕う限り、再び同様の失敗が起こりかねません。そもそもシステムが正常に稼働してもなお感染制御の効果が出るか怪しい。何度国民を裏切るつもりでしょうか。ダラダラ続けず、失敗を認め、総括し、ゼロベースで継続か中止かの判断をすべきです。</p>
+            <p>そして、それができないと確信できてしまうことに、僕は絶望しています。みなさんも、この認識に到達してほしいと思います。</p>
+            <hr>
+            <p>その上で、もし希望があるとすれば、政治の失敗を自分ごととして引き受け、自ら考え、手を動かして解決しようとする人たちの存在です。</p>
+            <p>採用されなかったものの、接触確認アプリの開発に名乗りを上げたCode for Japanという民間の非営利団体があります。そのミッション・ステートメントは「ともに考え、ともにつくる」です<sup id="fnref:22" role="doc-noteref"><a href="#fn:22" class="footnote">22</a></sup>。それは北欧の参加型デザイン運動の流れを汲む「コ・デザイン」の精神でもあります<sup id="fnref:23" role="doc-noteref"><a href="#fn:23" class="footnote">23</a></sup>。つまり、人民が社会の問題を自分ごととして引き受け、自ら考え、手を動かして解決していくという社会運動の精神です。政府がダメな以上、民間からボトムアップの社会改革を地道にやっていくしかありません。</p>
+            <p>あるいは幾度かの世代交代を経た何十年後かに、Code for Japanのような市民運動に理解のあるエリートが政府中枢に増えてくれば、日本でもまともなIT統治が実現するかもしれません。そのとき真の意味で政府と人民が「ともに考え、ともにつくる」というコ・デザインの時代が到来するのです。</p>
+            <p>これはデジタル庁の設立だとかいった数年単位の取り組みでどうにかなる問題ではありません。短期的な成功という非現実的な夢想を止めるべきです。いちど絶望すべきです。その上で、数十年後を見据えて草の根の活動を地道に続けていくしかありません。変革は絶望するほどゆっくりとしか起こりません。しかし、そこにしか希望はありません。</p>
+            <div class="footnotes" role="doc-endnotes">
+              <ol>
+                <li id="fn:1" role="doc-endnote">
+                  <p><a href="https://www.kantei.go.jp/jp/98_abe/statement/2020/0525kaiken.html" target="_blank">令和2年5月25日 新型コロナウイルス感染症に関する安倍内閣総理大臣記者会見 令和2年 総理の演説・記者会見など ニュース 首相官邸ホームページ</a> <a href="#fnref:1" class="reversefootnote" role="doc-backlink">↩</a></p>
+                </li>
+                <li id="fn:2" role="doc-endnote">
+                  <p><a href="https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/cocoa_00138.html" target="_blank">新型コロナウイルス接触確認アプリ（COCOA) COVID-19 Contact-Confirming Application 厚生労働省</a> <a href="#fnref:2" class="reversefootnote" role="doc-backlink">↩</a></p>
+                </li>
+                <li id="fn:3" role="doc-endnote">
+                  <p><a href="https://www3.nhk.or.jp/news/html/20210203/k10012847671000.html?utm_int=detail_contents_news-related_001" target="_blank">新型コロナ 接触確認アプリ「COCOA」一部で検知や通知行われず 新型コロナウイルス NHKニュース</a> (2021年2月3日) <a href="#fnref:3" class="reversefootnote" role="doc-backlink">↩</a></p>
+                </li>
+                <li id="fn:4" role="doc-endnote">
+                  <p><a href="https://mainichi.jp/articles/20210217/k00/00m/040/255000c" target="_blank">接触アプリ「COCOA」 「iOS」の一部でも通知届かぬ不具合 毎日新聞</a> (2021年2月17日) <a href="#fnref:4" class="reversefootnote" role="doc-backlink">↩</a></p>
+                </li>
+                <li id="fn:5" role="doc-endnote">
+                  <p><a href="https://www.itmedia.co.jp/news/articles/2102/12/news142.html" target="_blank">COCOA不具合の原因は「APIの使い方を誤った」 平井デジタル相、改善を約束 開発の下請け構造改善も — ITmedia NEWS</a> (2021年2月12日) <a href="#fnref:5" class="reversefootnote" role="doc-backlink">↩</a></p>
+                </li>
+                <li id="fn:6" role="doc-endnote">
+                  <p><a href="https://mainichi.jp/articles/20210209/k00/00m/040/217000c" target="_blank">ココア巡り関係者処分へ 接触通知届かず 年度内に検証 厚労省 毎日新聞</a> (2021年2月9日) <a href="#fnref:6" class="reversefootnote" role="doc-backlink">↩</a></p>
+                </li>
+                <li id="fn:7" role="doc-endnote">
+                  <p>猪瀬直樹著『<a href="https://www.chuko.co.jp/bunko/2020/06/206892.html" target="_blank">昭和16年夏の敗戦</a>』中央公論新社、新版初版、2020年 <a href="#fnref:7" class="reversefootnote" role="doc-backlink">↩</a></p>
+                </li>
+                <li id="fn:8" role="doc-endnote">
+                  <p><a href="https://www.bluetooth.com/blog/proximity-and-rssi/" target="_blank">Proximity and RSSI, Bluetooth® Technology Website</a> (2015年) <a href="#fnref:8" class="reversefootnote" role="doc-backlink">↩</a></p>
+                </li>
+                <li id="fn:9" role="doc-endnote">
+                  <p><a href="https://hideishi.com/blog/2020/05/26/ethical-guidelines-for-contact-tracing-apps.html" target="_blank">新型コロナウイルス接触追跡アプリのための倫理的指針 正しいアプリが正しく作られているかを評価するための16の問い 石橋秀仁</a> (2020年5月26日) <a href="#fnref:9" class="reversefootnote" role="doc-backlink">↩</a></p>
+                </li>
+                <li id="fn:10" role="doc-endnote">
+                  <p><a href="https://www.asahi.com/articles/ASP2F6GZRP2DULBJ01V.html" target="_blank">COCOA、スピード開発あだ 首相会見後に余裕なくす [新型コロナウイルス]：朝日新聞デジタル</a> (2021年2月14日) <a href="#fnref:10" class="reversefootnote" role="doc-backlink">↩</a></p>
+                </li>
+                <li id="fn:11" role="doc-endnote">
+                  <p><a href="https://xtech.nikkei.com/atcl/nxt/column/18/00001/05203/" target="_blank">COCOA不具合放置の遠因か、開発ベンダー選定で繰り返された「丸投げ」の実態 日経クロステック（xTECH）</a> (2021年2月15日) <a href="#fnref:11" class="reversefootnote" role="doc-backlink">↩</a></p>
+                </li>
+                <li id="fn:12" role="doc-endnote">
+                  <p><a href="https://www.yomiuri.co.jp/national/20210210-OYT1T50248/" target="_blank">接触アプリ、外部から不具合指摘も対応せず…厚労省ずさんな管理 : 社会 : ニュース : 読売新聞オンライン</a> (2021年2月10日) <a href="#fnref:12" class="reversefootnote" role="doc-backlink">↩</a></p>
+                </li>
+                <li id="fn:13" role="doc-endnote">
+                  <p><a href="https://xtech.nikkei.com/atcl/nxt/column/18/00001/05159/" target="_blank">Android版COCOAを「無用の長物」にした重大バグ、4カ月以上見過ごされた理由 日経クロステック（xTECH）</a> (2021年2月5日) <a href="#fnref:13" class="reversefootnote" role="doc-backlink">↩</a></p>
+                </li>
+                <li id="fn:14" role="doc-endnote">
+                  <p><a href="https://cio.go.jp/techteam" target="_blank">新型コロナウイルス感染症対策 テックチーム Anti-Covid-19 Tech Team 政府CIOポータル</a> <a href="#fnref:14" class="reversefootnote" role="doc-backlink">↩</a></p>
+                </li>
+                <li id="fn:15" role="doc-endnote">
+                  <p><a href="https://ja.wikipedia.org/wiki/%E7%B7%8F%E5%8A%9B%E6%88%A6%E7%A0%94%E7%A9%B6%E6%89%80" target="_blank">総力戦研究所 — Wikipedia</a> <a href="#fnref:15" class="reversefootnote" role="doc-backlink">↩</a></p>
+                </li>
+                <li id="fn:16" role="doc-endnote">
+                  <p><a href="https://hideishi.com/blog/2020/05/26/ethical-guidelines-for-contact-tracing-apps.html" target="_blank">新型コロナウイルス接触追跡アプリのための倫理的指針 正しいアプリが正しく作られているかを評価するための16の問い 石橋秀仁</a> (2020年5月26日) <a href="#fnref:16" class="reversefootnote" role="doc-backlink">↩</a></p>
+                </li>
+                <li id="fn:17" role="doc-endnote">
+                  <p>同上 <a href="#fnref:17" class="reversefootnote" role="doc-backlink">↩</a></p>
+                </li>
+                <li id="fn:18" role="doc-endnote">
+                  <p>同上 <a href="#fnref:18" class="reversefootnote" role="doc-backlink">↩</a></p>
+                </li>
+                <li id="fn:19" role="doc-endnote">
+                  <p><a href="https://www.turing.ac.uk/blog/demonstrating-impact-nhs-covid-19-app" target="_blank">Demonstrating the impact of the NHS COVID-19 app, The Alan Turing Institute</a> (2021年2月9日) <a href="#fnref:19" class="reversefootnote" role="doc-backlink">↩</a></p>
+                </li>
+                <li id="fn:20" role="doc-endnote">
+                  <p><a href="https://news.sap.com/2021/02/germanys-covid-19-app-break-infection-chain/" target="_blank">Designing Germany’s COVID-19 App, SAP News Center</a> (2021年2月1日) <a href="#fnref:20" class="reversefootnote" role="doc-backlink">↩</a></p>
+                </li>
+                <li id="fn:21" role="doc-endnote">
+                  <p><a href="https://github.com/admin-ch/PT-System-Documents/blob/master/SwissCovid-ExposureScore.pdf" target="_blank">PT-System-Documents/SwissCovid-ExposureScore.pdf at master · admin-ch/PT-System-Documents · GitHub</a> (2020年9月11日) <a href="#fnref:21" class="reversefootnote" role="doc-backlink">↩</a></p>
+                </li>
+                <li id="fn:22" role="doc-endnote">
+                  <p><a href="https://www.code4japan.org/" target="_blank">Code for Japan</a> <a href="#fnref:22" class="reversefootnote" role="doc-backlink">↩</a></p>
+                </li>
+                <li id="fn:23" role="doc-endnote">
+                  <p>上平崇仁著『<a href="https://www.nttpub.co.jp/search/books/detail/100002509.html" target="_blank">コ・デザイン デザインすることをみんなの手に</a>』 NTT出版、2020年 <a href="#fnref:23" class="reversefootnote" role="doc-backlink">↩</a></p>
+                </li>
+              </ol>
+            </div>
+          </section>
+          <footer>
+          </footer>
+        </article>
+      </main>
+    </div>
+    <footer class="site footer">
+      <div class="copyrights container">
+        <a rel="license" href="https://creativecommons.org/licenses/by/4.0/" target="_blank"><img alt="Creative Commons License" style="border-width:0" src="/assets/cc-by-88x31.png" width="88" height="31"></a> <a href="/">石橋秀仁 (Hideto Ishibashi)</a>
+      </div>
+    </footer>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-41591703-2']);
+      _gaq.push(['_trackPageview']);
+      
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>
